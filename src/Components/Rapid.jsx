@@ -4,21 +4,20 @@ import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 
 const images = [
-
   {
     url: '/public/seawoman1.jpg',
     title: 'Rapid',
     width: '100%',
+    site: 'https://rapidonline.ph/guest/dashboard',
   },
-
 ];
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
-  height: 200,
+  height: 800,
   [theme.breakpoints.down('sm')]: {
     width: '100% !important', // Overrides inline-style
-    height: 100,
+    height: 1000,
   },
   '&:hover, &.Mui-focusVisible': {
     zIndex: 1,
@@ -68,7 +67,7 @@ const ImageBackdrop = styled('span')(({ theme }) => ({
 }));
 
 const ImageMarked = styled('span')(({ theme }) => ({
-  height: 3,
+  height: 5,
   width: 18,
   backgroundColor: theme.palette.common.white,
   position: 'absolute',
@@ -76,6 +75,10 @@ const ImageMarked = styled('span')(({ theme }) => ({
   left: 'calc(50% - 9px)',
   transition: theme.transitions.create('opacity'),
 }));
+
+const openSiteInNewTab = (site) => {
+  window.open(site, '_blank'); // Open the provided URL in a new tab
+};
 
 export default function Rapid() {
   return (
@@ -87,6 +90,7 @@ export default function Rapid() {
           style={{
             width: image.width,
           }}
+          onClick={() => openSiteInNewTab(image.site)} // Handle click event
         >
           <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
           <ImageBackdrop className="MuiImageBackdrop-root" />

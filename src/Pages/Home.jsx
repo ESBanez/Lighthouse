@@ -30,16 +30,12 @@ function Home() {
             <br/><br/><br/><br/>
 
             {/* Additional spacing for small devices */}
-            <div className="Seaman">
-                <img src="seawoman1.jpg" 
-                    alt="Lighthouse"
-                    className="Seawoman"
-                />
-            </div>
+
             <div className="Rapidite">
                 <Rapid/>
             </div>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/>
+            <br/><br/><br/><br/>
 
         </>
     )
