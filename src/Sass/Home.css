@@ -1,0 +1,43 @@
+
+:root {
+
+    --white:                #ffffff;
+
+    --yellow:               #FFC903;
+    /* rgb(253,202,3) */
+    --blue:                 #333E6A;
+    /* rgb(51,62,106) */
+    --bluegreen:            #02699F;
+    /* rgb(2,105,159) */
+
+}
+
+
+.lhi{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+.TextReveal {
+    text-align: -webkit-center;
+}
+.Changingline {
+    margin-top: -58rem;
+}
+.Wave {
+    margin-top: -5rem;
+}
+.Seaman {
+    display: flex;
+    justify-content: center;
+}
+.Seawoman {
+    width: 100%;
+
+}
+.Rapidite {
+    display: flex;
+    margin-top: -39rem;
+}
+
+

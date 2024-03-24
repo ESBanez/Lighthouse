@@ -1,0 +1,93 @@
+ 
+ :root {
+  
+  --white:                #ffffff;
+
+  --yellow:               #FFC903;
+  /* rgb(253,202,3) */
+  --blue:                 #333E6A;
+  /* rgb(51,62,106) */
+  --bluegreen:            #02699F;
+  /* rgb(2,105,159) */
+
+ }
+  
+  
+  
+  body
+  {
+    margin:0;
+    padding:0;
+    background-color: var(--blue);
+    position: relative;
+  }
+
+  .editorial {
+    display: block;
+    width: 100%;
+    height: 90px;
+    max-height: 100px;
+    margin: 0;
+    z-index:5;
+    bottom:100;
+    position:absolute;
+    left:0px;
+    float:left;
+  }
+
+  .parallax1 > use {
+    animation: move-forever1 10s linear infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  .parallax2 > use {
+    animation: move-forever2 8s linear infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  .parallax3 > use {
+    animation: move-forever3 6s linear infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  .parallax4 > use {
+    animation: move-forever4 4s linear infinite;
+    &:nth-child(1) {
+      animation-delay: -2s;
+    }
+  }
+  @keyframes move-forever1 {
+    0% {
+      transform: translate(100px, 0%);
+    }
+    100% {
+      transform: translate(-90px, 0%);
+    }
+  }
+  @keyframes move-forever2 {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+    100% {
+      transform: translate(100px, 0%);
+    }
+  }
+  @keyframes move-forever3 {
+    0% {
+      transform: translate(100px, 0%);
+    }
+    100% {
+      transform: translate(-90px, 0%);
+    }
+  }
+  @keyframes move-forever4 {
+    0% {
+      transform: translate(-100px, 0%);
+    }
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }

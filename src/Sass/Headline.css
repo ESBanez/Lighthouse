@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
+:root {
+
+    --white:                #ffffff;
+
+    --yellow:               #FFC903;
+    /* rgb(253,202,3) */
+    --blue:                 #333E6A;
+    /* rgb(51,62,106) */
+    --bluegreen:            #02699F;
+    /* rgb(2,105,159) */
+
+}
+
+
+
+body {
+  font-family:'montserrat';
+
+}
+p {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+.container {
+    color: #ffffff;
+    font-size: 5vh;
+    text-transform: uppercase;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Add position relative */
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: -1; /* Ensure it's behind the content */
+  }
+  
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+  color:#FFC903
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 6s infinite;
+}
+
+@keyframes text-animation {
+    0% {
+      transform: translateY(0); /* Start at the top */
+    }
+    /* Adjust these percentages based on the total height needed for all words */
+    20% {
+      transform: translateY(-200px); /* Move "We" down */
+    }
+    40% {
+      transform: translateY(-212px); /* Move "are" down (2.81rem for each word) */
+    }
+    60% {
+      transform: translateY(-100px); /* Move "Innovative" down (2.81rem for each word) */
+    }
+    /* ... repeat for additional words (if any) ... */
+    80% {
+      transform: translateY(-5.62rem); /* Move back up (2.81rem) */
+    }
+    100% {
+      transform: translateY(-2.81rem); /* End slightly above "We" */
+    }
+  }
