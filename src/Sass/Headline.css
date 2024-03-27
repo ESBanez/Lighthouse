@@ -25,7 +25,7 @@ p {
 }
 .container {
     color: #ffffff;
-    font-size: 5vh;
+    font-size: 3vh;
     text-transform: uppercase;
     height: 100vh;
     display: flex;
@@ -35,7 +35,6 @@ p {
   }
   
   .container::before {
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -47,9 +46,8 @@ p {
   
 
 .animation {
-  height:50px;
+  height: 35px;
   overflow:hidden;
-  margin-left: 1rem;
   color:#FFC903
 }
 
@@ -70,19 +68,22 @@ p {
     }
     /* Adjust these percentages based on the total height needed for all words */
     20% {
-      transform: translateY(-200px); /* Move "We" down */
+      transform: translateY(-10);/* Move "We" down */
     }
     40% {
-      transform: translateY(-212px); /* Move "are" down (2.81rem for each word) */
+      transform: translateY(-10px); /* Move "are" down (2.81rem for each word) */
     }
     60% {
-      transform: translateY(-100px); /* Move "Innovative" down (2.81rem for each word) */
+      transform: translateY(-103px); /* Move "Innovative" down (2.81rem for each word) */
     }
     /* ... repeat for additional words (if any) ... */
     80% {
-      transform: translateY(-5.62rem); /* Move back up (2.81rem) */
+      transform: translateY(-108px); /* Move back up (2.81rem) */
     }
     100% {
-      transform: translateY(-2.81rem); /* End slightly above "We" */
+      transform: translateY(-192px); /* End slightly above "We" */
     }
   }
+
+
+  

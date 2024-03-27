@@ -2,11 +2,13 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
+import "../Sass/Rapid.css"
+import 'aos/dist/aos.css'; 
 
 const images = [
   {
     url: '/public/seawoman1.jpg',
-    title: 'Rapid',
+    title: 'View more',
     width: '100%',
     site: 'https://rapidonline.ph/guest/dashboard',
   },
@@ -80,38 +82,59 @@ const openSiteInNewTab = (site) => {
   window.open(site, '_blank'); // Open the provided URL in a new tab
 };
 
-export default function Rapid() {
+function Rapid() {
   return (
-    <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
-      {images.map((image) => (
-        <ImageButton
-          focusRipple
-          key={image.title}
-          style={{
-            width: image.width,
-          }}
-          onClick={() => openSiteInNewTab(image.site)} // Handle click event
-        >
-          <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
-          <ImageBackdrop className="MuiImageBackdrop-root" />
-          <Image>
-            <Typography
-              component="span"
-              variant="subtitle1"
-              color="inherit"
-              sx={{
-                position: 'relative',
-                p: 4,
-                pt: 2,
-                pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+    <div className="RapidImage">
+      <div className="" style={{width: "100vw"}}>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
+          {images.map((image) => (
+            <ImageButton
+              focusRipple
+              key={image.title}
+              style={{
+                width: image.width,
               }}
+              onClick={() => openSiteInNewTab(image.site)} // Handle click event
             >
-              {image.title}
-              <ImageMarked className="MuiImageMarked-root" />
-            </Typography>
-          </Image>
-        </ImageButton>
-      ))}
-    </Box>
+              <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+              <ImageBackdrop className="MuiImageBackdrop-root" />
+              <Image>
+                <Typography
+                  component="span"
+                  variant="subtitle1"
+                  color="inherit"
+                  sx={{
+                    position: 'relative',
+                    p: 4,
+                    pt: 2,
+                    pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                  }}
+                >
+                  {image.title}
+                  <ImageMarked className="MuiImageMarked-root" />
+                </Typography>
+              </Image>
+            </ImageButton>
+          ))}
+        </Box>
+      </div>
+      <div className="Rapidtxt">
+        <div style={{display:"flex"}}>
+          <img src="Rapid-logo.png" alt="Rapid" height={40} className="RapidlogoImage"/>
+          <div className="Rapidtxtlogo">
+            R A P I D
+          </div>
+        </div>
+        <br/><br/><br/><br/>
+
+        <div
+        >
+          Accelerating change for the better.
+        </div>
+      </div>
+    </div>
+
   );
 }
+
+export default Rapid;

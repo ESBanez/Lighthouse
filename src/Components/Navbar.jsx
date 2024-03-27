@@ -39,7 +39,7 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        <img src="lhi-logo.png" style={{width: '8rem', height: '2.5rem', marginTop: '2rem'}}/>
+        <img src="lhi-logo.png" style={{width: '8rem', height: '2.5rem', marginTop: '1rem'}}/>
       </Typography>
       <Divider />
       <List>
@@ -57,8 +57,8 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{backgroundColor: '#333E6A'}}>
-        <Toolbar sx={{margin: '3rem 4rem 0 4rem'}}>
+      <AppBar component="nav" sx={{backgroundColor: 'rgb(51,62,106, 0.9)'}}>
+        <Toolbar sx={{margin: '1rem 2rem 0 2rem'}}>
           <Typography component="div" sx={{ flexGrow: 1 }}>
             <img src="lhi-logo.png" style={{width: '8rem', height: '2.5rem', filter: 'brightness(0) invert(10)'}}/>
           </Typography>

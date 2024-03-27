@@ -1,20 +1,9 @@
-/* :root {
 
-    --white:                #ffffff;
-
-    --yellow:               #FFC903;
-     rgb(253,202,3) 
-    --blue:                 #333E6A;
-    rgb(51,62,106) 
-    --bluegreen:            #02699F;
-     rgb(2,105,159) 
-*/
 
 .black {
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     padding: 10rem;
     /* Adjust the RGBA values to make the shadow darker */
-    box-shadow: 0 20px 25px rgba(19, 16, 16, 0.5), 0 0 10px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5) inset;
     border: 1rem;
     width: 80vw;
     height: 30vh;
@@ -31,12 +20,12 @@
 }
 
 .scroll-reveal h4 {
-    font-size: 35px;
+    font-size: 23px;
     line-height: 1;
 }
 
 .scroll-reveal p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.3;
     max-width: 55inch;
     margin-inline: auto;
@@ -44,7 +33,8 @@
 
 .scroll-reveal span {
     margin: 0;
-    color: rgba(150, 0, 0, 0.1); /* Hide text initially */
+    color: var(--blue); /* Hide text initially */
+    font-style: monserrat;
     background-clip: text;
     background-repeat: no-repeat;
     background-size: 0% 100%;
@@ -67,7 +57,7 @@
     background-image: linear-gradient(90deg, #02699F, #333E6A);
 
 }
-
+/* 
 @keyframes scroll-reveal {
     to {
         background-size: 100% 100%;
@@ -77,11 +67,11 @@
 
 @media (max-width: 768px) {
     .scroll-reveal {
-        padding-block: clamp(3rem, 5vh, 10rem); /* Decreased padding for smaller devices */
+        padding-block: clamp(3rem, 5vh, 10rem); 
     }
 
     .black {
-        padding: 3rem; /* Decreased padding for smaller devices */
+        padding: 3rem; 
         margin-top: 4rem;
     
     }
@@ -99,4 +89,4 @@
     }
     
 
-}
+} */

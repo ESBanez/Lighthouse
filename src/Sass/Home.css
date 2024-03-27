@@ -15,15 +15,32 @@
 
 .lhi{
     width: 100%;
+    margin-top: -10 rem;
     height: 80vh;
     object-fit: cover;
 }
+.css-k008qs {
+    height: 10px;
+}
+
+
+.panel1{
+    position: relative;
+}
+.Changingline {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    background-color: transparent   ; /* Background color with transparency */
+    padding: 10px;
+
+  }
+
 .TextReveal {
     text-align: -webkit-center;
 }
-.Changingline {
-    margin-top: -58rem;
-}
+
 .Wave {
     margin-top: -5rem;
 }
