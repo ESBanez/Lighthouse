@@ -31,31 +31,34 @@
     margin-inline: auto;
 }
 
-.scroll-reveal span {
-    margin: 0;
-    color: var(--blue); /* Hide text initially */
-    font-style: monserrat;
-    background-clip: text;
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    animation: scroll-reveal linear forwards;
-    animation-timeline: view(); /* Apply animation */
-
-}
-
 .scroll-reveal h4 span {
     animation-range-start: contain 10vh;
     animation-range-end: contain 40vh;
-    background-image: linear-gradient(90deg, #02699F, #333E6A);
-
+    /* background-image: linear-gradient(90deg, #02699F, #333E6A); */
 }
 
 .scroll-reveal p span {
     animation-range-start: contain 5vh;
     animation-range-end: contain 40vh;
     animation-name: scroll-reveal;
-    background-image: linear-gradient(90deg, #02699F, #333E6A);
+    /* background-image: linear-gradient(90deg, #02699F, #333E6A); */
 
+}
+@media screen and (min-width:0px) and (max-width: 720px) {
+    .black {
+        background-color: transparent;
+        padding: 1rem;
+        /* Adjust the RGBA values to make the shadow darker */
+        width: 80vw;
+        height: fit-content;
+        display: flex; /* Center content vertically */
+        align-items: center; /* Center content vertically */
+        justify-content: center; /* Center content horizontally */
+    }
+  }
+
+.clan1{
+    color: var(--blue);
 }
 /* 
 @keyframes scroll-reveal {

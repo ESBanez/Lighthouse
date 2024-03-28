@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
-
+// import Btsolve from "./../Components/Btsolve"
 
 
 
@@ -39,20 +39,13 @@ function Home() {
                             </div>
                     </Grid>
                     <Grid item xs={12}
-                         data-aos="fade-up"
-                         data-aos-offset="200"
-                         data-aos-delay="10"
-                         data-aos-duration="1000"
-                         data-aos-easing="ease-in-out"
-                         data-aos-mirror="true"
-                         data-aos-once="false"
-                         data-aos-anchor-placement="top-center"
+                    style={{
+                        backgroundColor: "white",
+                        height: "auto !important",  
+                        width: "100%"
+                    }}
                     >
-                        <div className="TextReveal" id="section2">
-                            <TextRevealScroll/>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12}
+                        <div className="TextReveal" id="section2"
                         data-aos="fade-up"
                         data-aos-offset="200"
                         data-aos-delay="10"
@@ -61,14 +54,36 @@ function Home() {
                         data-aos-mirror="true"
                         data-aos-once="false"
                         data-aos-anchor-placement="top-center"
+                        >
+                            <TextRevealScroll/>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12}
+
                     >
-                        <div className="Rapidite">
+                        <div className="Rapidite"
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="10"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center">
                             <Rapid/>
                         </div>
                     </Grid>
                     <Grid item xs={12}>
-                        <div style={{backGround:"black", height: "100vh", width:"100vw"}}>
-                            
+                        <div
+                        data-aos="fade-up"
+
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                        > 
+                            {/* <Btsolve/> */}
                         </div>
                     </Grid>
                 </Grid>

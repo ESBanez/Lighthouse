@@ -1,28 +1,94 @@
 
 
-.RapidImage{
-    position: relative;
-}
 .Rapidtxt {
     position: absolute;
-    top: 60%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
+    top: 50%; /* Adjust as needed */
+    left: 25%; /* Adjust as needed */
     transform: translate(-50%, -50%);
     padding: 10px;
     color: white;
-    font-size: 3vh;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
 
   }
+  .RapidImage{
+    position: relative;
+    background-color: var(--blue);
+    height: fit-content;
+    width: 100vw;
+}
 .RapidlogoImage {
-    margin-left: -3rem;
+    margin-left: -5.3rem;
+    height: 5rem;
 }
 
 .Rapidtxtlogo{
-    margin-left: 0.1rem;
+    font-size: 6vh;
+    margin-left: 0.2rem;
+}
+.RapidAccelerate{
+    font-size: 3vh;
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  
+}
+
+@media screen and (min-width: 0px) and (max-width: 568px) {
+    /* CSS styles for screens with width between 450px and 720px */
+    /* Add your styles here */
+    .Rapidtxtlogo{
+        font-size: 4vh;
+    }
+    .RapidlogoImage{
+        height: 4rem;
+        margin-left: -2rem;
+    }
+    .RapidAccelerate{
+        font-size: 3vh;
+    
+    }
+    .Rapidtxt {
+        position: absolute;
+        top: 50%; /* Adjust as needed */
+        left: 50%; /* Adjust as needed */
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content:space-between;
+        align-items: center;
+        width: 20rem;
+    
+      }
+  }
+
+  .RapidDefinition{
+    position: absolute;
+    top: 1%;
+    right: 25%;
+    transform: translate(50%, 50%);
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 30rem;
+    height: 25rem;
+
+}
+.RapidAcro{
+    font-size: 2rem;
+    color: var(--yellow);
+}
+.RapidDescription {
+    text-indent: 3rem;
 }

@@ -9,7 +9,8 @@ const images = [
   {
     url: '/public/seawoman1.jpg',
     title: 'View more',
-    width: '100%',
+    width: '50%',
+    height: '50%',
     site: 'https://rapidonline.ph/guest/dashboard',
   },
 ];
@@ -84,53 +85,74 @@ const openSiteInNewTab = (site) => {
 
 function Rapid() {
   return (
-    <div className="RapidImage">
-      <div className="" style={{width: "100vw"}}>
-        <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
-          {images.map((image) => (
-            <ImageButton
-              focusRipple
-              key={image.title}
-              style={{
-                width: image.width,
-              }}
-              onClick={() => openSiteInNewTab(image.site)} // Handle click event
-            >
-              <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
-              <ImageBackdrop className="MuiImageBackdrop-root" />
-              <Image>
-                <Typography
-                  component="span"
-                  variant="subtitle1"
-                  color="inherit"
-                  sx={{
-                    position: 'relative',
-                    p: 4,
-                    pt: 2,
-                    pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+    <div className="Column2">
+      <div className="RapidImage">
+        <div className="">
+            <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
+              {images.map((image) => (
+                <ImageButton
+                  focusRipple
+                  key={image.title}
+                  style={{
+                    width: image.width,
                   }}
+                  onClick={() => openSiteInNewTab(image.site)} // Handle click event
                 >
-                  {image.title}
-                  <ImageMarked className="MuiImageMarked-root" />
-                </Typography>
-              </Image>
-            </ImageButton>
-          ))}
-        </Box>
-      </div>
-      <div className="Rapidtxt">
-        <div style={{display:"flex"}}>
-          <img src="Rapid-logo.png" alt="Rapid" height={40} className="RapidlogoImage"/>
-          <div className="Rapidtxtlogo">
-            R A P I D
+                  <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+                  <ImageBackdrop className="MuiImageBackdrop-root" />
+                  <Image>
+                    <Typography
+                      component="span"
+                      variant="subtitle1"
+                      color="inherit"
+                      sx={{
+                        position: 'relative',
+                        p: 4,
+                        pt: 2,
+                        pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                      }}
+                    >
+                      {image.title}
+                      <ImageMarked className="MuiImageMarked-root" />
+                    </Typography>
+                  </Image>
+                </ImageButton>
+              ))}
+            </Box>
+          </div>
+          <div className="RapidDefinition">
+            <div className="RapidAcro">
+            Resource Associates for Professional and Integrative Development
+            </div>
+            <br/><br/><br/>
+            <div className="RapidDescription">
+            RAPID offers a suite of tools developed and designed specifically for professionals to jumpstart and advance their careers. These tools were developed in partnership with the Ateneo Bulatao Center for Psychological Services as part of a commitment to IMEC. Initially focused on improving the careers of maritime professionals, the initiative has expanded to encompass professionals in any industry.            </div>
+          </div>
+          <div className="Rapidtxt">
+            <div style={{display:"flex"}}>
+              <div >
+                <img src="Rapid-logo.png" alt="Rapid" className="RapidlogoImage"/>
+              </div>
+              <div className="Rapidtxtlogo">
+                R A P I D
+              </div>
+            </div>
+            <br/><br/><br/><br/>
+            <br/><br/><br/><br/>
+            <br/><br/><br/><br/>
+            <br/><br/><br/><br/>
+            <br/><br/><br/><br/>
+
+
+
+          <div className='RapidAccelerate'>
+            Accelerating change for the better.
           </div>
         </div>
-        <br/><br/><br/><br/>
+      </div>
 
-        <div
-        >
-          Accelerating change for the better.
-        </div>
+      <div>
+
       </div>
     </div>
 

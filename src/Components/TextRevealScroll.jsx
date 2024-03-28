@@ -5,12 +5,14 @@ function TextRevealScroll() {
         <div className="black">
             <section className="row 8 scroll-reveal"> 
                 <h4 className="section-title">
-                    <span>
-                        Lighthouse Innovations, Inc.
-                    </span>
+                    <div className="TextReavealLogo">
+                        <img src="lhi-logo.png"
+                         style={{width: '10rem'}}/>
+                        
+                    </div>
                 </h4>
                 <br/><br/><br/>
-                <p>
+                <div className="blackp">
                     <span className="clan1">
                         Is a maritime BPO with strong technological 
                         foundation with professional and competent staff that 
@@ -18,7 +20,7 @@ function TextRevealScroll() {
                         career management and other services.
                     </span>
                     
-                </p>
+                </div>
             </section>
         </div>
     );
