@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
-// import Btsolve from "./../Components/Btsolve"
+import Btsolve from "./../Components/Btsolve"
 
 
 
@@ -83,7 +83,7 @@ function Home() {
                         data-aos-once="false"
                         data-aos-anchor-placement="top-center"
                         > 
-                            {/* <Btsolve/> */}
+                            <Btsolve/>
                         </div>
                     </Grid>
                 </Grid>

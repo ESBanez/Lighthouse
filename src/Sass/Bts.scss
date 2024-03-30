@@ -1,0 +1,155 @@
+.BtsSection {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: white;
+
+}
+
+.BtsWrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+
+}
+
+.BtsDefine{
+    width: 50vw;
+    height: 50vh;
+    padding: 1rem;
+}
+
+.BtsDefineLogo{
+    width: 70%;
+}
+.BtsDefineParagraph1 {
+    text-indent: 2rem;
+}
+// ======================
+.BtsCarouselContainer{
+    display: flex;
+    justify-content: center;
+}
+.BtsCarouselCard {
+    width: 28vw;
+    height: 3rem; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset -20px 0px 20px -20px rgba(0,0,0,0.6), inset 20px 0px 20px -20px rgba(0,0,0,0.9);
+
+}
+
+.BtsCarouselTrack {
+    display: flex;
+    animation: carousel 10s infinite linear;
+
+}
+
+.BtsCarouselItem {
+    width: 100px; /* Adjust width as needed */
+    height: 40px; /* Match carousel container height */
+    user-select: none; /* Prevent image dragging */
+    margin: 0 20px; /* Adjust the margin value to add space between images */
+}
+
+/* Gradient for semi-transparent ends */
+
+
+@keyframes carousel {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+// ==========================================
+
+
+.BtsCard {
+    width: 50vw;
+    height: 60vh;
+    border-radius: 15px;
+    padding: 2rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.BtsCard:hover {
+    transform: translateY(10px);
+}
+
+.BtsCard:hover:before {
+    opacity: 1;
+}
+
+.BtsCard .Btsinfo {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+}
+
+.BtsCard:hover .Btsinfo {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.BtsCard:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.BtsCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+.BtsCard .BtsInfo .BtsHeading {
+    margin: 0px;
+}
+.BtsCard .Btsinfo .BtsPara {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+.BtsButton {
+    display: inline-block; /* Set display to inline-block */
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.BtsCard .Btsinfo .BtsButton {
+    margin-top: 10px; /* Adjust as needed */
+}
+
+.BtsCard .Btsinfo .BtsButton:hover {
+    background: var(--yellow);
+    color: white;
+}
