@@ -6,7 +6,15 @@ function Btsolve() {
         <div className="BtsSection">
           <div className="BtsWrapper">
             <div className="BtsDefine">
-                <div className="BtsDefineTitle">
+                <div className="BtsDefineTitle"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+               
+                >
                     <div>
                         <img src="Btsolve.jpg" className="BtsDefineLogo"/>
                     </div>
@@ -39,7 +47,14 @@ function Btsolve() {
                     </div>
                 </div>
             </div>
-            <div className="BtsCardContainer">
+            <div className="BtsCardContainer"
+            data-aos="zoom-in-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            >
                 <div className="BtsCard">
                     <img src="Bangtan.png" alt="Bangtan" />
                     <div className="Btsinfo">
@@ -50,9 +65,9 @@ function Btsolve() {
                         <div className="BtsPara">
                         </div>
                             
-                        <div className="BtsButton">
+                        <a href="https://sslinux.btsolve.com/btssite/" target="_blank" className="BtsButton">
                             View more
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

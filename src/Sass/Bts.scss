@@ -32,9 +32,10 @@
     justify-content: center;
 }
 .BtsCarouselCard {
+    overflow-x: hidden;
     width: 28vw;
-    height: 3rem; /* Adjust height as needed */
-    overflow: hidden;
+    height: 2.7rem; /* Adjust height as needed */
+    // overflow: hidden;
     position: relative;
     box-shadow: inset -20px 0px 20px -20px rgba(0,0,0,0.6), inset 20px 0px 20px -20px rgba(0,0,0,0.9);
 
@@ -143,6 +144,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s ease;
+    text-decoration: none;
 }
 
 .BtsCard .Btsinfo .BtsButton {
@@ -152,4 +154,25 @@
 .BtsCard .Btsinfo .BtsButton:hover {
     background: var(--yellow);
     color: white;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 715px) {
+    .BtsDefine{
+        width: 80vw;
+        margin-bottom: 2rem;
+    }
+    
+    .BtsWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .BtsCard{
+        width: 80vw;
+    }
+    .BtsDefineLogo{
+        display: flex;
+        justify-content: space-around;
+    }
+
 }

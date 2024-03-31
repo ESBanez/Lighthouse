@@ -121,40 +121,50 @@ function Rapid() {
             </Box>
           </div>
           <div className="RapidDefinition">
-            <div className="RapidAcro">
-            Resource Associates for Professional and Integrative Development
-            </div>
-            <br/><br/><br/>
-            <div className="RapidDescription">
-            RAPID offers a suite of tools developed and designed specifically for professionals to jumpstart and advance their careers. These tools were developed in partnership with the Ateneo Bulatao Center for Psychological Services as part of a commitment to IMEC. Initially focused on improving the careers of maritime professionals, the initiative has expanded to encompass professionals in any industry.            </div>
-          </div>
-          <div className="Rapidtxt">
-            <div style={{display:"flex"}}>
-              <div >
+            <div className="Rapidlogo"
+            data-aos="zoom-in-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            >
+              <div>
                 <img src="Rapid-logo.png" alt="Rapid" className="RapidlogoImage"/>
               </div>
               <div className="Rapidtxtlogo">
                 R A P I D
               </div>
             </div>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-
-
-
-          <div className='RapidAccelerate'>
-            Accelerating change for the better.
+            <div className="RapidAcro"
+            data-aos="zoom-in-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            >
+              Resource Associates for Professional and Integrative Development
+            </div>
+            <br/><br/><br/>
+            <div className="RapidDescription"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+           
+            >
+              RAPID offers a suite of tools developed and designed specifically for professionals to jumpstart and advance their careers. These tools were developed in partnership with the Ateneo Bulatao Center for Psychological Services as part of a commitment to IMEC. Initially focused on improving the careers of maritime professionals, the initiative has expanded to encompass professionals in any industry.            </div>
+            </div>
           </div>
+          <div className="Rapidtxt">
+            
+  
         </div>
       </div>
-
-      <div>
-
-      </div>
-    </div>
+    
 
   );
 }

@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Services from "./Components/Services.jsx";
 import Home from "./Pages/Home";
 
 
@@ -12,11 +13,11 @@ const App = () => {
         {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */}
         {/* Nested routes */}
-        {/* <Route path="/products" element={<Products />}>
-          <Route path="/" element={<AllProducts />} />
-          <Route path=":id" element={<ProductDetails />} />
+        <Route path="/ServicesInfo" element={<Services />}>
+          <Route path=":id" element={<Services />} />
         </Route>
-        <Route path="*" element={<NotFound />} /> */}
+        
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </Router>
   );

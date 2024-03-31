@@ -1,11 +1,16 @@
 import "../Sass/TextRevealScroll.css";
-
+import 'aos/dist/aos.css'; 
+import AOS from 'aos';
 function TextRevealScroll() {
+    AOS.init();
+
     return (
         <div className="black">
             <section className="row 8 scroll-reveal"> 
                 <h4 className="section-title">
-                    <div className="TextReavealLogo">
+                    <div className="TextReavealLogo"
+                    data-aos="fade-in-down"
+                    >
                         <img src="lhi-logo.png"
                          style={{width: '10rem'}}/>
                         

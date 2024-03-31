@@ -9,6 +9,8 @@ import Box from '@mui/material/Box';
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
 import Btsolve from "./../Components/Btsolve"
+import Services from "./../Components/Services";
+import Footer from "./../Components/Footer";
 
 
 
@@ -42,64 +44,62 @@ function Home() {
                     style={{
                         backgroundColor: "white",
                         height: "auto !important",  
-                        width: "100%"
+                        width: "100%",
+
                     }}
                     >
-                        <div className="TextReveal" id="section2"
-                        data-aos="fade-up"
-                        data-aos-offset="200"
-                        data-aos-delay="10"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="top-center"
-                        >
+                        <div className="TextReveal">
                             <TextRevealScroll/>
                         </div>
                     </Grid>
-                    <Grid item xs={12}
-
-                    >
-                        <div className="Rapidite"
-                        data-aos="fade-up"
-                        data-aos-offset="200"
-                        data-aos-delay="10"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="top-center">
+                    <br/><br/><br/><br/>
+                    <br/><br/><br/><br/>
+                    <Grid item xs={12}>
+                        <div className="Rapidite">
                             <Rapid/>
                         </div>
                     </Grid>
+                    <br/><br/><br/><br/>
+                    <br/><br/><br/><br/>
+                    <br/><br/><br/><br/>
                     <Grid item xs={12}>
-                        <div
-                        data-aos="fade-up"
-
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="top-center"
-                        > 
+                        <div> 
                             <Btsolve/>
+                        </div>
+                    </Grid>
+                    <br/><br/><br/><br/><br/><br/>
+                    
+                    <div className="Services">
+                        <br/><br/>
+                        {/*----------*/}
+                        <div className="Devider">
+                            <div className="DeviderLine1"></div>
+                            <div className="DeviderServices">Services we offer</div>
+                            <div className="DeviderLine2"></div>
+                        </div>
+                        <br/><br/><br/><br/>
+                        <Grid item xs={12}>
+                            <div
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false"
+                            data-aos-anchor-placement="top-center"
+                            > 
+                                <Services/>
+                            </div>
+                        </Grid>
+                    </div>
+                    
+                    <Grid item xs={12}>
+                        <div id="section2"> 
+                            <Footer/>
                         </div>
                     </Grid>
                 </Grid>
             </Box>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
+            
         </>
     )
 }
