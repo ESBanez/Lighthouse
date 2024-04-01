@@ -91,12 +91,17 @@ function Home() {
                             </div>
                         </Grid>
                     </div>
-                    
+                    <Grid item xs={12}>
+                            <div className="Wave">
+                                <WaveDivider/>
+                            </div>
+                    </Grid>
                     <Grid item xs={12}>
                         <div id="section2"> 
                             <Footer/>
                         </div>
                     </Grid>
+                    
                 </Grid>
             </Box>
             

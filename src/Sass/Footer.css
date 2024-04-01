@@ -1,73 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Rubik:wght@400;500;700&display=swap");
 
+:root {
+  --light: #ffffff;
+  --dark: #000;
+}
 
-h3 {
+.newsletter_title {
+  font-family: montserrat;
   font-size: 2.3rem;
   font-weight: 300;
   text-align: center;
-  text-decoration: none;
-}
-.custom-input {
-    position: relative;
-    text-decoration: none;
-  }
-  
-  .custom-input input {
-    width: 100%;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  .placeholder {
-    position: absolute;
-    left: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    text-decoration: white;
-  }
-.newsletter_title{
-    color: rgb(255, 255, 255);
-}
-a {
-  text-decoration: none;
   color: black;
+
+}
+
+/* lahat ng a (may href) */
+.AllA{
+  text-decoration: none;
+  color: var(--dark);
   font-weight: 400;
   transition: 0.3s ease-in;
   border-bottom: 1px solid transparent;
   margin-bottom: 0.5rem;
   display: inline-flex;
-  text-decoration: none;
 }
-a:hover {
+/* a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 400;
+  transition: 0.3s ease-in;
+  border-bottom: 1px solid transparent;
+  margin-bottom: 0.5rem;
+  display: inline-flex;
+} */
+
+.c-nav-tool_title{
+  color: var(--yellow);
+}
+
+.AllA:hover {
   border-bottom: 1px solid var(--dark);
 }
-ul {
+
+.LahatNgUl{
   list-style-type: none;
   padding: 0;
-  text-decoration: none;
 }
+/* ul {
+  list-style-type: none;
+  padding: 0;
+} */
 button {
   appearance: none;
   border: 0;
   background: transparent;
 }
-.flex {
+
+.LahatNgFlex{
   display: flex;
 }
-.c-nav-tool_title {
-    color: var(--yellow);
-    text-decoration: none;
-}
-
-.c-nav-tool_list{
-    font-size: small;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-.c-link{
-    text-decoration: none;
-    
-}
-.footer_video {
+/* .flex {
+  display: flex;
+} */
+.footer_background {
   position: absolute;
   top: 0;
   left: 0;
@@ -79,9 +74,9 @@ button {
   border: none;
 }
 .footer_inner {
-  background: var(--blue);
-  backdrop-filter: blur(10px);
-  border: 0.1px solid var(--blue);
+  background: var(--light);
+  backdrop-filter: blur(50px);
+  border: 0.1px solid rgba(233, 232, 232, 0.208);
   border-radius: 5px;
   padding: 2rem;
   margin: 1rem 0;
@@ -90,10 +85,8 @@ button {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 100vh;
 }
 .container {
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
@@ -124,19 +117,21 @@ input:focus {
 input::placeholder {
   color: var(--dark);
 }
-
 @media (min-width: 675px) {
   .layout {
     display: flex;
     flex-wrap: nowrap;
     column-gap: 2rem;
-    
   }
   .w-50 {
     width: 50%;
   }
   .w-25 {
     width: 25%;
+  }
+
+  .newsletter_title{
+     font-size: 1rem;
   }
 }
 form {
@@ -145,9 +140,9 @@ form {
 svg {
   margin: 0.5rem;
 }
-.c-2 {
+/* .c-2 {
   margin-top: 3.5rem;
-}
+} */
 .footer_copyright {
   color: var(--light);
 }
