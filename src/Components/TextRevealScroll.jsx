@@ -12,11 +12,11 @@ function TextRevealScroll() {
                     data-aos="fade-in-down"
                     >
                         <img src="lhi-logo.png"
-                         style={{width: '10rem'}}/>
+                         style={{width: '15rem'}}/>
                         
                     </div>
                 </h4>
-                <br/><br/><br/>
+                <br/><br/><br/><br/><br/>
                 <div className="blackp">
                     <span className="clan1">
                         Is a maritime BPO with strong technological 

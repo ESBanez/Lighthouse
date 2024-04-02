@@ -117,6 +117,20 @@ input:focus {
 input::placeholder {
   color: var(--dark);
 }
+form {
+  position: relative;
+}
+svg {
+  margin: 0.5rem;
+}
+/* .c-2 {
+  margin-top: 3.5rem;
+} */
+.footer_copyright {
+  color: var(--light);
+}
+
+
 @media (min-width: 675px) {
   .layout {
     display: flex;
@@ -134,15 +148,8 @@ input::placeholder {
      font-size: 1rem;
   }
 }
-form {
-  position: relative;
-}
-svg {
-  margin: 0.5rem;
-}
-/* .c-2 {
-  margin-top: 3.5rem;
-} */
-.footer_copyright {
-  color: var(--light);
+
+
+@media (min-width: 569px) and (max-width:1020){
+
 }
