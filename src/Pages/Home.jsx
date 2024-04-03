@@ -1,4 +1,3 @@
-import DrawerAppBar from "./../Components/Navbar";
 import WaveDivider from "./../Components/WaveDivider";
 import TextRevealScroll from "./../Components/TextRevealScroll";
 import "../Sass/Home.css";
@@ -11,6 +10,7 @@ import AOS from 'aos';
 import Btsolve from "./../Components/Btsolve"
 import Services from "./../Components/Services";
 import Footer from "./../Components/Footer";
+import Navbar from "./../Components/Navbar";
 
 
 
@@ -22,7 +22,7 @@ function Home() {
             <Box sx={{ width: '100%' }}>
                 <Grid container rowSpacing={0} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                     <Grid item xs={12}>
-                        <nav><DrawerAppBar/></nav>
+                        <nav><Navbar/></nav>
                     </Grid>
                     <Grid item xs={12}>
                         <div className="panel1">

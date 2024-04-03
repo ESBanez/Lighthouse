@@ -1,0 +1,9 @@
+@media (min-width: 993px) and (max-width: 2000px) { 
+
+    :root {
+        --bs-navbar-color: var(--blue); /* Set default nav link color */
+        --bs-navbar-hover-color: var(--blue); /* Set nav link hover color */
+        --bs-navbar-disabled-color: var(--blue); /* Set disabled nav link color */
+      }
+
+    }
