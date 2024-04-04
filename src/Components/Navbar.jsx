@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import "../Sass/Navbar.css"
 
+
+
+
 const NavbarContainer = styled.nav`
   padding: 1rem;
 
@@ -34,37 +37,35 @@ const NavbarContainer = styled.nav`
 
 function Navbar() {
   return (
-    <NavbarContainer className="navbar navbar-expand-lg navbar-light">
-      <div className="container-fluid">
-      <img src="lhi-logo.png" className="navbar-brand" style={{ width: "10rem"}} alt="Your Brand Name" />
-        <button className="navbar-toggler" style={{borderColor: "var(--blue)"}} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon" style={{borderColor: "var(--blue)"}}></span>
-        </button>
-        <div className="collapse navbar-collapse" style={{}} id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-lg-0" 
-          style={{    
-            display: "flex", 
-            fleFlow: "row",
-            justifyContent: "space-evenly"
-            }}>
-            <li className="nav-item">
-              <a className="nav-link active" style={{color:"var(--blue)"}} aria-current="page" href="#">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" style={{color:"var(--blue)"}} href="#">About</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" style={{color:"var(--blue)"}} href="#" role="button" aria-expanded="false">
-                Services
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" style={{color:"var(--blue)"}} href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+  <NavbarContainer className="navbar navbar-expand-lg" style={{ backgroundColor: "#333E6A" }}>
+    <div className="container-fluid px-lg-5">
+      <div className="d-flex align-items-center" style={{ paddingRight: "10px", paddingLeft: "10px" }}>
+        <img src="lhi-logo.png" className="navbar-brand" alt="Your Brand Name" />
       </div>
-    </NavbarContainer>
+      <div style={{ paddingRight: "10px", paddingLeft: "10px" }}>
+        <button className="navbar-toggler order-lg-2" style={{ borderColor: "light" }} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon" style={{ borderColor: "light" }}></span>
+        </button>
+      </div>
+      <div className="collapse navbar-collapse justify-content-end order-lg-1" id="navbarSupportedContent">
+        <ul className="navbar-nav" style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-evenly" }}>
+          <li className="nav-item">
+            <a href="#section1" className="nav-link" aria-current="page">Home</a>
+          </li>
+          <li className="nav-item">
+            <a href="#section2" className="nav-link">About</a>
+          </li>
+          <li className="nav-item">
+            <a href="#section3" className="nav-link">Services</a>
+          </li>
+          <li className="nav-item">
+            <a href="#section4" className="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</NavbarContainer>
+
   );
 }
 

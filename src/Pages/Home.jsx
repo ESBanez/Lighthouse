@@ -1,8 +1,8 @@
 import WaveDivider from "./../Components/WaveDivider";
-import TextRevealScroll from "./../Components/TextRevealScroll";
+import LighthousePart from "./../Components/LighthousePart";
 import "../Sass/Home.css";
 import Headline from "./../Components/Headline";
-import Rapid from "./../Components/Rapid";
+import Rapid1 from "./../Components/Rapid1";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import 'aos/dist/aos.css'; 
@@ -30,7 +30,7 @@ function Home() {
                                 alt="Lighthouse"
                                 className= "lhi"
                             />
-                            <div className="Changingline" id="section1">
+                            <div className="Changingline">
                                 <Headline/>
                             </div>
                         </div>
@@ -48,15 +48,15 @@ function Home() {
 
                     }}
                     >
-                        <div className="TextReveal">
-                            <TextRevealScroll/>
+                        <div className="TextReveal" id="section2">
+                            <LighthousePart/>
                         </div>
                     </Grid>
                     <br/><br/><br/><br/>
                     <br/><br/><br/><br/>
                     <Grid item xs={12}>
                         <div className="Rapidite">
-                            <Rapid/>
+                            <Rapid1/>
                         </div>
                     </Grid>
                     <br/><br/><br/><br/>

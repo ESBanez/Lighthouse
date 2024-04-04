@@ -106,7 +106,7 @@ const lighthouseServices = [
  
 function Services() {
   return (
-    <div className="TheServices">
+    <div className="TheServices" id="#section3">
       <div className="canvas-wrapper">
         <div className="grid-container">
           

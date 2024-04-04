@@ -1,7 +1,7 @@
-import "../Sass/TextRevealScroll.css";
+import "../Sass/LighthousePart.css";
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
-function TextRevealScroll() {
+function LighthousePart() {
     AOS.init();
 
     return (
@@ -31,4 +31,4 @@ function TextRevealScroll() {
     );
 }
 
-export default TextRevealScroll;
+export default LighthousePart;
