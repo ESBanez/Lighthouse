@@ -1,7 +1,8 @@
 .TheServices{
 
-  height: 100rem;
+  height: 100%;
   background-color: var(--blue);
+  overflow: hidden; /* Prevent overflow */
 
 }
 
@@ -10,6 +11,7 @@
   font-family: system-ui;
   -webkit-font-smoothing: antialiased;
   padding: 20px 0;
+  margin-bottom: 4rem;
   
 }
 
