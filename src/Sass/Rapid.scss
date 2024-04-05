@@ -15,7 +15,7 @@
 }
 
 .RapidDefine{
-    align-items: center;
+    align-items: start;
     color: var(--yellow);
     padding: 10rem;
     
@@ -83,41 +83,87 @@
     max-width: 100%; /* Set the maximum width of the image to 100% of its container */
     height: auto; /* Maintain the aspect ratio of the image */
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
     border-radius: 15px;
 }
 
 
-.RapidButton {
+.RapidDefineButton {
     display: inline-block; /* Set display to inline-block */
     position: relative;
     padding: 0.6rem;
     outline: none;
     border: none;
     border-radius: 3px;
-    background: white;
-    color: black;
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s ease;
     text-decoration: none;
 }
 
-.Rapidinfo .RapidButton {
-    margin-top: 10px; /* Adjust as needed */
-}
 
-.Rapidinfo .Rapidinfo .RapidButton:hover {
+.RapidDefineButton a {
+    text-decoration: none;
     background: var(--yellow);
-    color: white;
+    color: var(--blue);
+    padding: 0.5rem;
+    border-radius: 7px;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1280px) {
+
+@media screen and (min-width: 1881px) and (max-width: 2280px) {
+    .RapidWrapper{
+        display: flex;
+        justify-content: right;
+        align-items: end;
+        width: 50vw;
+    }
+    
+    .RapidCard {
+        align-items: right;
+        display: flex;
+        justify-content: right;
+        width: 30vw;
+    }
+
+    .seawoman{
+        margin-top: 1rem;
+    }
+    
+    .RapidDefine {
+        width: 45vw;
+        display: flex;
+        flex-flow: column;
+        justify-content: left;
+        align-items: start;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1880px) {
+    .RapidWrapper {
+        justify-content: end;
+        
+    }
+    
+    .RapidDefine {
+        margin-top: 6rem;
+        justify-content: start;
+       
+    }
+    .RapidDefineButton {
+        display: flex;
+        justify-content: right;
+        /* align-content: end; */
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
     .RapidCard {
         margin-top: 1rem;
-
+        
     }
 
     .seawoman{
@@ -126,13 +172,13 @@
     
     .RapidDefine {
         padding: 2rem;
-        margin-top: 25rem;
+        margin-top: 8rem;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 918px) and ( max-width: 1024px ) {
     .RapidCard {
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
 
     .seawoman{
@@ -140,14 +186,52 @@
     }
     
     .RapidDefine {
-        padding: 2rem;
-        margin-top: 25rem;
+        padding: 10rem;
+        margin-top: -5rem;
     }
 }
 
-@media screen and (max-width: 414px) {
+
+@media screen and (min-width: 552px) and ( max-width: 918px ) {
     .RapidDefine {
-        padding: 2rem;
-        margin-top: 13rem;
+        padding: 6rem;
+        margin-top: 0rem;
+    }
+    .RapidDefineParagraph1{
+        margin-top: -3rem
+    }
+}
+
+@media screen and (min-width: 492px) and ( max-width: 552px ) {
+    .RapidDefine {
+        padding: 3rem;
+        margin-top: 21rem;
+    }
+    .RapidDefineParagraph1{
+        margin-top: -3rem
+    }
+}
+
+@media screen and (min-width: 376px) and ( max-width: 491px ) {
+    .RapidDefine {
+        padding: 3rem;
+        margin-top: 15rem;
+    }
+    .RapidDefineParagraph1{
+        margin-top: -3rem
+    }
+}
+
+@media screen and (min-width: 0px) and ( max-width: 375px ) {
+    .RapidDefine {
+        padding: 3rem;
+        margin-top: -2rem;
+    }
+    .RapidsDefineTitle{
+        font-size: 1.2rem;
+    }
+    .RapidDefineParagraph1{
+        margin-top: -3rem;
+        font-size: 1rem;
     }
 }

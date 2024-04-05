@@ -24,11 +24,11 @@ function Rapid1() {
                             <div className="">
                                 <img src="seawoman1.png" alt="Bangtan" className="seawoman"/>
                             </div>
-                            <div className="Rapidinfo"> 
+                            {/* <div className="Rapidinfo"> 
                                 <a href="https://rapidonline.ph/guest/dashboard" target="_blank" id="cardLink" className="RapidButton" onClick={handleClick}>
                                     View more
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -54,6 +54,12 @@ function Rapid1() {
                             services as part of a commitment to IMEC. Initially focused on improving the 
                             careers of maritime professionals, the initiative has expanded to encompass 
                             professionals in any industry.            
+                        </div>
+                        <br/> <br/>
+                        <div className="RapidDefineButton">
+                            <a href="https://rapidonline.ph/guest/dashboard" target="_blank" id="cardLink" className="RapidButton" onClick={handleClick}>
+                                View more
+                            </a>
                         </div>
                     </div>
                 </div>

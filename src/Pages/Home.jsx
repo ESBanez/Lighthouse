@@ -69,28 +69,13 @@ function Home() {
                     </Grid>
                     <br/><br/><br/><br/><br/><br/>
                     
-                    <div className="Services">
-                        <br/><br/>
-                        {/*----------*/}
-                        <div className="Devider">
-                            <div className="DeviderLine1"></div>
-                            <div className="DeviderServices">Services we offer</div>
-                            <div className="DeviderLine2"></div>
+
+                    <Grid item xs={12} className="Services">
+                        <div>
+                            <Services/>
                         </div>
-                        <br/><br/><br/><br/>
-                        <Grid item xs={12}>
-                            <div
-                            data-aos="fade-up"
-                            data-aos-duration="1000"
-                            data-aos-easing="ease-in-out"
-                            data-aos-mirror="true"
-                            data-aos-once="false"
-                            data-aos-anchor-placement="top-center"
-                            > 
-                                <Services/>
-                            </div>
-                        </Grid>
-                    </div>
+                    </Grid>
+   
                     <Grid item xs={12}>
                             <div className="Wave">
                                 <WaveDivider/>
