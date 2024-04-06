@@ -14,7 +14,7 @@ function Btsolve() {
                     data-aos-once="false"
                     data-aos-anchor-placement="top-center"
                     >
-                        <div>
+                        <div className="BtsolveLogoHolder">
                             <img src="Btsolve.jpg" className="BtsDefineLogo"/>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ function Btsolve() {
                 data-aos-anchor-placement="top-center"
                 >
                     <div className="BtsCard">
-                        <img src="Bangtan.png" alt="Bangtan" />
+                        <img src="Bangtan.png" alt="Bangtan" className="BangtanImage"/>
                         <div className="Btsinfo">
                             <div className="BtsHeading">
                                 Maritime Management Solutions

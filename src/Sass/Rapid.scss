@@ -17,7 +17,7 @@
 .RapidDefine{
     align-items: start;
     color: var(--yellow);
-    padding: 10rem;
+    // padding: 10rem;
     
     
 }
@@ -114,44 +114,38 @@
 
 
 @media screen and (min-width: 1881px) and (max-width: 2280px) {
-    .RapidWrapper{
-        display: flex;
-        justify-content: right;
-        align-items: end;
-        width: 50vw;
-    }
-    
-    .RapidCard {
-        align-items: right;
-        display: flex;
-        justify-content: right;
-        width: 30vw;
-    }
-
-    .seawoman{
-        margin-top: 1rem;
-    }
-    
-    .RapidDefine {
-        width: 45vw;
-        display: flex;
-        flex-flow: column;
-        justify-content: left;
-        align-items: start;
-        align-items: center;
-    }
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1880px) {
     .RapidWrapper {
         justify-content: end;
         
     }
     
     .RapidDefine {
-        margin-top: 6rem;
+        margin-top: -6.5rem;
         justify-content: start;
-       
+        margin-top: 5rem;
+        justify-content: start;
+        width: 30vw;
+    }
+    .RapidDefineButton {
+        display: flex;
+        justify-content: right;
+        /* align-content: end; */
+    }
+    
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1880px) {
+    .RapidWrapper {
+        justify-content: end;
+        
+    }
+    
+    .RapidDefine {
+        margin-top: -6.5rem;
+        justify-content: start;
+        margin-top: 5rem;
+        justify-content: start;
+        width: 30vw;
     }
     .RapidDefineButton {
         display: flex;
@@ -186,8 +180,11 @@
     }
     
     .RapidDefine {
-        padding: 10rem;
-        margin-top: -5rem;
+        padding: 10rem 10rem 3rem 10rem;
+        margin-top: -10rem;
+    }
+    .RapidDefineParagraph1{
+        margin-top: -3rem
     }
 }
 
@@ -195,17 +192,17 @@
 @media screen and (min-width: 552px) and ( max-width: 918px ) {
     .RapidDefine {
         padding: 6rem;
-        margin-top: 0rem;
+        margin-top: -7rem;
     }
     .RapidDefineParagraph1{
         margin-top: -3rem
     }
 }
 
-@media screen and (min-width: 492px) and ( max-width: 552px ) {
+@media screen and (min-width: 492px) and ( max-width: 551px ) {
     .RapidDefine {
         padding: 3rem;
-        margin-top: 21rem;
+        margin-top: -1rem;
     }
     .RapidDefineParagraph1{
         margin-top: -3rem
@@ -215,7 +212,7 @@
 @media screen and (min-width: 376px) and ( max-width: 491px ) {
     .RapidDefine {
         padding: 3rem;
-        margin-top: 15rem;
+        margin-top: -4rem;
     }
     .RapidDefineParagraph1{
         margin-top: -3rem

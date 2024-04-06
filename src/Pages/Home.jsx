@@ -63,7 +63,7 @@ function Home() {
                     <br/><br/><br/><br/>
                     <br/><br/><br/><br/>
                     <Grid item xs={12}>
-                        <div> 
+                        <div className="Btsolving"> 
                             <Btsolve/>
                         </div>
                     </Grid>

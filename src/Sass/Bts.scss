@@ -168,7 +168,6 @@
 
 @media screen and (min-width: 0px) and (max-width: 715px) {
     .BtsDefine{
-        width: 80vw;
         margin-bottom: 2rem;
     }
     
@@ -186,6 +185,7 @@
     .BtsCarouselContainer{
         width: 100%;
     }
+   
     
 }
 
@@ -208,37 +208,113 @@
 }
 
 @media screen and (min-width: 918px) and ( max-width: 1024px ) {
-   
-
+    .BtsDefineTitle{
+        margin-top: -3rem;
+    }
+    .BtsDefineLogo{
+        width: 60%;
+    }
+    .BtsCarouselContainer{
+        margin-top: 0rem;
+    }
+    .BtsCard{
+        width: 50vw;
+        height: 50vh;
+    }
+    .BtsDefineParagraph1{
+        margin-top: -1rem;
+    }
 }
 
 
-@media screen and (min-width: 552px) and ( max-width: 918px ) {
+@media screen and (min-width: 716px) and ( max-width: 918px ) {
+    .BtsDefineLogo{
+        width: 50%;
+    }
     .BtsCardContainer {
         height: 10rem;
     }
-    .RapidDefineParagraph1{
-        margin-top: -3rem
+    .BtsCard img {
+        height: 23rem;
+    }
+    .BtsCardContainer{
+        height: 10rem;
+       }
+    .BtsCarouselContainer{
+        margin-top: -2rem;
+    }
+    .BtsDefineParagraph1{
+        margin-top: -2rem;
+    }
+}
+@media screen and (min-width: 552px) and ( max-width: 715px ) {
+    .BtsDefineLogo{
+        width: 50%;
+    }
+    .BtsCardContainer {
+        height: 10rem;
     }
     .BtsCard img {
-        height: 20rem;
+        height: 23rem;
+    }
+    .BtsCardContainer{
+        height: 10rem;
+       }
+    .BtsCarouselContainer{
+        margin-top: -2rem;
+    }
+    .BtsDefineParagraph1{
+        margin-top: -2rem;
     }
 }
 
 @media screen and (min-width: 492px) and ( max-width: 552px ) {
-   
+   .BtsDefineLogo{
+    width: 70%;
+   }
+   .BtsDefineTitle{
+    justify-content: center;
+    display: flex;
+   }
+   .BtsDefineParagraph1{
+    width: 80%;
+   }
+   .BtsCarouselCard {
+    width: 20%;
+   }
+  
 }
 
 @media screen and (min-width: 376px) and ( max-width: 491px ) {
-    
+    .BtsDefineLogo{
+        width: 70%;
+    }
+    .BtsolveLogoHolder{
+        display: contents;
+    }
+    .BtsDefineTitle{
+        justify-content: center;
+        display: flex;
+       }
+    .BtsCarouselCard{
+        width: 60vw;
+        margin-top: -4rem;
+    }
+    .BtsCard{
+        width: 60vw;
+        height: 25vh;
+    }
 }
 
 @media screen and (min-width: 0px) and ( max-width: 375px ) {
     .BtsCarouselCard {
-        width: 100%;
+        width: 30%;
     }
     .BtsCarouselContainer{
         margin-top: 0;
+    }
+    .BtsDefineParagraph1{
+        width: 30%;
     }
     
     .BtsDefineTitle{
