@@ -37,7 +37,7 @@ const NavbarContainer = styled.nav`
 
 function Navbar() {
   return (
-  <NavbarContainer className="navbar navbar-expand-lg" style={{ backgroundColor: "#333E6A" }}>
+  <NavbarContainer className="navbar navbar-expand-xl" style={{ backgroundColor: "#333E6A" }}>
     <div className="container-fluid px-lg-5">
       <div className="d-flex align-items-center" style={{ paddingRight: "10px", paddingLeft: "10px" }}>
         <img src="lhi-logo.png" className="navbar-brand" alt="Your Brand Name" />

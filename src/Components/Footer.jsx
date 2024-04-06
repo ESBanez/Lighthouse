@@ -1,21 +1,111 @@
 import '../Sass/Footer.css';
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
+
+
 
 const Footer = () => {
+
+
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    try {
+      // Send email with customer's message
+      await emailjs.sendForm('service_kq880qc', 'template_j67t39c', e.target, '-DhGdulE7p83TuON2');
+      
+      // Send auto-reply
+      await emailjs.send('service_kq880qc', 'template_j67t39c', {
+        to_email: e.target.email.value, // Use the sender's email as the recipient for auto-reply
+        // You can include additional parameters for customization
+      }, '-DhGdulE7p83TuON2');
+  
+      alert('Email sent successfully!');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Error sending email. Please try again later.');
+    }
+  };
+
+  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState('');
+
+  const handleChange = (e) => {
+    setMessage(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+
+
     return (
+
+
     <footer className="footer">
-      <div className="footer_background">
+      {/* <div className="footer_background">
         <img src="/container.jpg"/>
       </div>
-    
-      <div className="">
+     */}
+      <div className="footercontainer">
         <div className="footer_inner">
           <div className="c-footer">
             <div className="layout">
-              <div className="layout_item w-50">
+              <div className="layout_item">
                 <div className="newsletter">
-                  <h3 className="newsletter_title">Get updates on fun stuff you probably want to know about in your inbox.</h3>
-                  <form action="">
-                    <input type="text" placeholder="Email Address"/>
+                <textarea
+                  name="message"
+                  placeholder="Get updates on fun stuff you probably want to know about in your inbox."
+                  value={message}
+                  onChange={handleChange}
+                  style={{
+                    width: '100%',
+                    minHeight: '100px',
+                    padding: '10px',
+                    borderRadius: '8px',
+                    border: '1px solid #ccc',
+                    marginTop: '10px',
+                    resize: 'none', // Disable textarea resize
+                    outline: 'none', // Remove outline
+                    boxShadow: 'none', // Remove box shadow
+                    lineHeight: '1.2', // Adjust line height
+                    backgroundColor: 'transparent', // Make background transparent
+                    color: '#000', // Adjust text color
+                    cursor: 'text' // Change cursor to text
+                  }}
+                />
+
+                  <form action="" 
+                  onSubmit={handleSubmit}
+                  >
+                  {/* 
+                      <textarea
+                      name="message"
+                      placeholder="Your message..."
+                      value={message}
+                      onChange={handleChange}
+                      style={{
+                        width: '100%',
+                        minHeight: '100px',
+                        padding: '10px',
+                        borderRadius: '8px',
+                        border: '1px solid #ccc',
+                        marginTop: '10px'
+                      }}
+                      required
+                    ></textarea> */}
+                    <input 
+                        type="hidden"    
+                        name="copyToEmail" 
+                        value="ederick_019@yahoo.com" // Change this value to your desired email address
+                      />
+                    <input type="text"    
+                    value={email}     
+                    onChange={handleEmailChange}
+                    placeholder="Email Address"/>
                     <button>
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                         <path fill="none" d="M0 0h24v24H0z" />
@@ -30,20 +120,12 @@ const Footer = () => {
                 <nav className="c-nav-tool">
                   <h4 className="c-nav-tool_title">Menu</h4>
                   <ul className="c-nav-tool_list LahatNgUl">
-                    <li>
-                      <a href="/collections/all" className="c-link AllA">Shop All</a>
-                    </li>
+
     
                     <li>
                       <a href="/pages/about-us" className="c-link AllA">About Us</a>
                     </li>
-    
-                    <li>
-                      <a href="/blogs/community" className="c-link AllA">Community</a>
-                    </li>
-                    <li>
-                      <a href="#" className="c-link AllA">Vibes</a>
-                    </li>
+
                   </ul>
                 </nav>
     
@@ -56,18 +138,6 @@ const Footer = () => {
     
                     <li className="c-nav-tool_item">
                       <a href="/pages/shipping-returns" className="c-link AllA">Technical Support</a>
-                    </li>
-    
-                    <li className="c-nav-tool_item">
-                      <a href="/pages/help" className="c-link AllA">Help &amp; FAQ</a>
-                    </li>
-    
-                    <li className="c-nav-tool_item">
-                      <a href="/pages/terms-conditions" className="c-link AllA">Terms &amp; Conditions</a>
-                    </li>
-    
-                    <li className="c-nav-tool_item">
-                      <a href="/pages/privacy-policy" className="c-link AllA">Privacy Policy</a>
                     </li>
     
                     <li className="c-nav-tool_item">
@@ -146,12 +216,37 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footer_copyright">
-          <p>&copy; 2022 The Afterlogo Company Inc.</p>
-        </div>
       </div>
     </footer>
       );
   }
   
   export default Footer;
+
+
+// ContactForm.js (React component)
+
+// import emailjs from 'emailjs-com';
+
+// const Footer = () => {
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     try {
+//       await emailjs.sendForm('service_kq880qc', 'template_j67t39c', e.target, '-DhGdulE7p83TuON2');
+//       alert('Email sent successfully!');
+//     } catch (error) {
+//       console.error('Error sending email:', error);
+//       alert('Error sending email. Please try again later.');
+//     }
+//   };
+
+//   return (
+//     <form id="contact-form" onSubmit={handleSubmit}>
+//       <input type="email" name="email" id="email" placeholder="Your Email" required />
+//       <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+//       <button type="submit">Send</button>
+//     </form>
+//   );
+// };
+
+// export default Footer;

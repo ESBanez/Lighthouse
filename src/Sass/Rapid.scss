@@ -78,15 +78,19 @@
 
 
 
-
 .RapidCard img {
     max-width: 100%; /* Set the maximum width of the image to 100% of its container */
     height: auto; /* Maintain the aspect ratio of the image */
     object-fit: cover;
-    // position: absolute;
-    // top: 0;
-    // left: 0;
     border-radius: 15px;
+    transition: transform 0.3s, filter 0.3s; /* Adding transition for smooth effect */
+}
+
+.RapidCard img:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    filter: blur(0.5px); /* Apply blur effect on hover */
+    cursor: pointer; /* Set cursor to pointer */
+
 }
 
 
@@ -111,9 +115,33 @@
     padding: 0.5rem;
     border-radius: 7px;
 }
+.RapidButton:hover {
+    background: var(--yellow);
+    color: white;
+}
 
 
-@media screen and (min-width: 1881px) and (max-width: 2280px) {
+@media screen and (min-width: 2280px) and (max-width: 2560px) {
+    .RapidWrapper {
+        justify-content: end;
+        width: 74rem;
+    }
+    
+    .RapidDefine {
+        margin-top: 7rem;
+        justify-content: start;
+        margin-top: 5rem;
+        justify-content: start;
+        width: 25vw;
+    }
+    .RapidDefineButton {
+        display: flex;
+        justify-content: center;
+        /* align-content: end; */
+    }
+    
+}
+@media screen and (min-width: 1881px) and (max-width: 2278px) {
     .RapidWrapper {
         justify-content: end;
         
@@ -144,8 +172,8 @@
         margin-top: -6.5rem;
         justify-content: start;
         margin-top: 5rem;
-        justify-content: start;
-        width: 30vw;
+        width: 40vw;
+        flex-flow: column;
     }
     .RapidDefineButton {
         display: flex;

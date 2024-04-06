@@ -33,6 +33,11 @@
   margin-bottom: 0.5rem;
   display: inline-flex;
 } */
+.footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
 
 .c-nav-tool_title{
   color: var(--yellow);
@@ -145,7 +150,7 @@ svg {
   }
 
   .newsletter_title{
-     font-size: 1rem;
+     font-size: 2rem;
   }
 }
 

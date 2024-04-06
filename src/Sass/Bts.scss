@@ -125,8 +125,8 @@
 }
 
 .BtsCard img {
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -149,7 +149,7 @@
     border: none;
     border-radius: 3px;
     background: white;
-    color: black;
+    color: var(--blue);
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s ease;
@@ -166,44 +166,95 @@
 }
 
 
-@media screen and (min-width: 0px) and (max-width: 715px) {
-    .BtsDefine{
-        margin-bottom: 2rem;
-    }
-    
-    .BtsWrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-    .BtsCard{
-        width: 80vw;
-    }
-    .BtsDefineLogo{
-        display: flex;
-        justify-content: space-around;
-    }
-    .BtsCarouselContainer{
-        width: 100%;
-    }
-   
-    
-}
 
 
 @media screen and (min-width: 1880px) and (max-width: 2880px) {
     .BtsDefine{
-     width: 50rem;
+        width: 35rem;
+       }
+       .BtsDefineParagraph1{
+        width: 30rem;
+        justify-content: center;
+        display: flex;
+        }
+        .BtsDefineParagraphHead{
+        display: flex;
+        justify-content: space-around;
+        }
+        .BtsCard img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .BtsCard{
+            width: 30vw;
+            height: 100%;
+            padding: 2rem;
+            background: white;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            transition: 0.4s ease-out;
+            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.7);
+        }
     }
- }
- 
 @media screen and (min-width: 1280px) and (max-width: 1880px) {
    .BtsDefine{
-    width: 50rem;
+    width: 35rem;
    }
+   .BtsDefineParagraph1{
+    width: 30rem;
+    justify-content: center;
+    display: flex;
+    }
+    .BtsDefineParagraphHead{
+    display: flex;
+    justify-content: space-around;
+    }
+    .BtsCard img{
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 30rem;
+    }
+    .BtsCard{
+        width: 44vw;
+        height: 100%;
+        padding: 2rem;
+        background: white;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        transition: 0.4s ease-out;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.7);
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
-    
+    .BtsCard img{
+        width: 39rem;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 30rem;
+    }
+    .BtsCard{
+        width: 47vw;
+        height: 100%;
+        padding: 2rem;
+        background: white;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        transition: 0.4s ease-out;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.7);
+    }
 
 }
 
@@ -219,10 +270,23 @@
     }
     .BtsCard{
         width: 50vw;
-        height: 50vh;
+        height: 30vh;
+    }
+    .BtsCard img{
+        width: 50vw;
+        height: 100%;
     }
     .BtsDefineParagraph1{
         margin-top: -1rem;
+    }
+    .BangtanImage{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25rem;
     }
 }
 
@@ -234,8 +298,21 @@
     .BtsCardContainer {
         height: 10rem;
     }
+    .BtsCard {
+        margin-top: 17rem;
+        width: 40vw;
+        height: 25rem;
+        /* padding: 2rem; */
+        /* background: white; */
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        transition: 0.4s ease-out;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.7);
+    }
     .BtsCard img {
-        height: 23rem;
+        height: 100%;
+        width: 100%;
     }
     .BtsCardContainer{
         height: 10rem;
@@ -255,7 +332,11 @@
         height: 10rem;
     }
     .BtsCard img {
-        height: 23rem;
+        height: 100%;
+        width: 100%;
+    }
+    .BtsCard {
+
     }
     .BtsCardContainer{
         height: 10rem;
@@ -269,20 +350,64 @@
 }
 
 @media screen and (min-width: 492px) and ( max-width: 552px ) {
-   .BtsDefineLogo{
-    width: 70%;
-   }
-   .BtsDefineTitle{
-    justify-content: center;
-    display: flex;
-   }
-   .BtsDefineParagraph1{
-    width: 80%;
-   }
-   .BtsCarouselCard {
-    width: 20%;
-   }
-  
+    .BtsCarouselCard {
+        width: 100%;
+    }
+    .BtsCarouselContainer{
+        margin-top: 0;
+    }
+    .BtsDefineParagraph1{
+        // width: 20rem;
+    }
+    .BtsDefineParagraphHead{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .BtsDefineTitle{
+        display: flex;
+        justify-content: center;
+    }
+    .BtsDefineLogo{
+        width: 13rem;
+    }
+    .BtsCard{
+        padding: 5rem;
+        height: 80%;
+    }
+    .BtsCard img {
+        height: 100%;
+        width: 100%;
+    }
+// ----------00-750px ----------
+    .BtsDefine {
+        margin-bottom: 2rem;
+        // max-width: 25rem;
+        padding: 0;
+        width: 27rem;
+    }
+    .BtsWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .BtsCard{
+        width: 80vw;
+    }
+        
+    .BtsWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .BtsCard{
+        width: 80vw;
+    }
+    .BtsDefineLogo{
+        display: flex;
+        justify-content: space-around;
+    }
+    .BtsCarouselContainer{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 376px) and ( max-width: 491px ) {
@@ -301,20 +426,38 @@
         margin-top: -4rem;
     }
     .BtsCard{
-        width: 60vw;
+        width: 70vw;
         height: 25vh;
+    }
+    .BtsWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .BtsDefineParagraph1{
+        width: 18rem;
+    }
+    .BtsCarouselContainer{
+        width: 100%;
+    }
+    .BtsCard img {
+        height: 100%;
+        width: 100%;
     }
 }
 
 @media screen and (min-width: 0px) and ( max-width: 375px ) {
     .BtsCarouselCard {
-        width: 30%;
+        width: 100%;
     }
     .BtsCarouselContainer{
         margin-top: 0;
     }
     .BtsDefineParagraph1{
-        width: 30%;
+        width: 20rem;
+    }
+    .BtsDefineParagraphHead{
+        display: flex;
+        justify-content: center;
     }
     
     .BtsDefineTitle{
@@ -324,4 +467,40 @@
     .BtsDefineLogo{
         width: 10rem;
     }
+    .BtsCard{
+        padding: 5rem;
+        height: 80%;
+    }
+    .BtsCard img {
+        height: 100%;
+        width: 100%;
+    }
+// ----------00-750px ----------
+    .BtsDefine {
+        margin-bottom: 2rem;
+        max-width: 20rem;
+    }
+    .BtsWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .BtsCard{
+        width: 80vw;
+    }
+        
+    .BtsWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .BtsCard{
+        width: 80vw;
+    }
+    .BtsDefineLogo{
+        display: flex;
+        justify-content: space-around;
+    }
+    .BtsCarouselContainer{
+        width: 100%;
+    }
+   
 }

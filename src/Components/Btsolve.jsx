@@ -20,13 +20,15 @@ function Btsolve() {
                     </div>
                     <br/><br/>
 
-                    <div className="BtsDefineParagraph1">
-                    We harness the power of technology through innovation.
-                    Our belief in technology's ability to carve a cutting 
-                    edge is pivotal in addressing today's business challenges.
-                    Customer understand operational challenges. not IT processes,
-                    so we have agile development processes that can keep pace with
-                    with how customers think.
+                    <div className="BtsDefineParagraphHead">
+                        <div className="BtsDefineParagraph1">
+                            We harness the power of technology through innovation.
+                            Our belief in technology's ability to carve a cutting 
+                            edge is pivotal in addressing today's business challenges.
+                            Customer understand operational challenges. not IT processes,
+                            so we have agile development processes that can keep pace with
+                            with how customers think.
+                        </div>
                     </div>
                     <br/><br/>
 
