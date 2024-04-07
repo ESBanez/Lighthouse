@@ -117,7 +117,7 @@ function Services() {
 
             <div className="item-1">
               <a href="#" className="ServiceCard">
-                <div className="thumb" style={{ backgroundImage: 'url(.././public/social-media-management.jpg)' }}></div>
+                <div className="thumb" style={{ backgroundImage: 'url(social-media-management.jpg)' }}></div>
                 <article>
                   <div className="ServiceHeading">Social Media Management</div>
                   <div className="ServiceName">Mary Winkler</div>
@@ -127,7 +127,7 @@ function Services() {
 
             <div className="item-2">
               <a href="#" className="ServiceCard">
-                <div className="thumb" style={{ backgroundImage: 'url(.././public/bookkeeping.jpg)' }}></div>
+                <div className="thumb" style={{ backgroundImage: 'url(bookkeeping.jpg)' }}></div>
                 <article>
                   <div className="ServiceHeading">Book keeping </div>
                   <br/>
@@ -141,7 +141,7 @@ function Services() {
 
             <div className="item-3">
               <a href="#" className="ServiceCard">
-                <div className="thumb" style={{ backgroundImage: 'url(.././public/content-creation.jpg)' }}></div>
+                <div className="thumb" style={{ backgroundImage: 'url(content-creation.jpg)' }}></div>
                 <article>
                   <div className="ServiceHeading">Content creation</div>
                   <div className="ServiceName">Mary Winkler</div>
