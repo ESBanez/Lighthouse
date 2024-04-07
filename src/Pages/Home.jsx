@@ -83,7 +83,7 @@ function Home() {
                             </div>
                     </Grid>
                     <Grid item xs={12}>
-                        <div id="section4" className="Footer"> 
+                        <div id="section4" className="Footer" > 
                             <Footer/>
                         </div>
                     </Grid>

@@ -183,7 +183,8 @@ function Services() {
             </div>
 
             
-            <div className="item-7">
+            <div className="item-7"
+            >
               <a href="#" className="ServiceCard">
                 <div className="thumb" style={{ backgroundImage: 'url(communityengagement.jpg)' }}></div>
                 <article>
