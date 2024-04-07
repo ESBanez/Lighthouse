@@ -116,42 +116,46 @@ function Services() {
         <div className="ServicesBand">
 
             <div className="item-1">
-              <a href="https://design.tutsplus.com/articles/envato-tuts-community-challenge-created-by-you-july-edition--cms-26724" className="ServiceCard">
-                <div className="thumb" style={{ backgroundImage: 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-5.jpg)' }}></div>
+              <a href="#" className="ServiceCard">
+                <div className="thumb" style={{ backgroundImage: 'url(.././public/social-media-management.jpg)' }}></div>
                 <article>
-                  <div className="ServiceHeading">International Artist Feature: Malaysia</div>
+                  <div className="ServiceHeading">Social Media Management</div>
                   <div className="ServiceName">Mary Winkler</div>
                 </article>
               </a>
             </div>
 
             <div className="item-2">
-              <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852" className="ServiceCard">
-                <div className="thumb" style={{ backgroundImage: 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg)' }}></div>
+              <a href="#" className="ServiceCard">
+                <div className="thumb" style={{ backgroundImage: 'url(.././public/bookkeeping.jpg)' }}></div>
                 <article>
-                  <div className="ServiceHeading">International Artist Feature: Malaysia</div>
+                  <div className="ServiceHeading">Book keeping </div>
+                  <br/>
+                  <div className="ServiceParagraph">
+                    We are accustomed to book keeping services.
+                  </div>
                   <div className="ServiceName">Mary Winkler</div>
                 </article>
               </a>
             </div>
 
             <div className="item-3">
-              <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852" className="ServiceCard">
-                <div className="thumb" style={{ backgroundImage: 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg)' }}></div>
+              <a href="#" className="ServiceCard">
+                <div className="thumb" style={{ backgroundImage: 'url(.././public/content-creation.jpg)' }}></div>
                 <article>
-                  <div className="ServiceHeading">International Artist Feature: Malaysia</div>
+                  <div className="ServiceHeading">Content creation</div>
                   <div className="ServiceName">Mary Winkler</div>
                 </article>
               </a>
             </div>
             
             <div className="item-4">
-              <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852" className="ServiceCard">
-                <div className="thumb" style={{ backgroundImage: 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg)' }}></div>
+              <a href="#" className="ServiceCard">
+                <div className="thumb" style={{ backgroundImage: 'url(Technical-Ship-Management.jpg)' }}></div>
                 <article>
-                  <div className="ServiceHeading">International Artist Feature: Malaysia</div>
+                  <div className="ServiceHeading">Technical Ship Management</div>
                   <div className="ServiceParagraph">
-                    Welcome to our monthly feature of fantastic tutorial results created by you, the Envato Tuts+ community!
+                    
                   </div>
                   <div className="ServiceName">Mary Winkler</div>
                 </article>
@@ -159,10 +163,10 @@ function Services() {
             </div>
 
             <div className="item-5">
-              <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852" className="ServiceCard">
-                <div className="thumb" style={{ backgroundImage: 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg)' }}></div>
+              <a href="#" className="ServiceCard">
+                <div className="thumb" style={{ backgroundImage: 'url(socialmediaadvertisement.jpg)' }}></div>
                 <article>
-                  <div className="ServiceHeading">International Artist Feature: Malaysia</div>
+                  <div className="ServiceHeading">Social Media Advertisement</div>
                   <div className="ServiceName">Mary Winkler</div>
                 </article>
               </a>
@@ -170,10 +174,10 @@ function Services() {
 
             
             <div className="item-6">
-              <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852" className="ServiceCard">
-                <div className="thumb" style={{ backgroundImage: 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg)' }}></div>
+              <a href="#" className="ServiceCard">
+                <div className="thumb" style={{ backgroundImage: 'url(Pinayseaman.jpg)' }}></div>
                 <article>
-                  <div className="ServiceHeading">International Artist Feature: Malaysia</div>
+                  <div className="ServiceHeading">Social Media Creation with Ai</div>
                   <div className="ServiceName">Mary Winkler</div>
                 </article>
               </a>
@@ -181,10 +185,10 @@ function Services() {
 
             
             <div className="item-7">
-              <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852" className="ServiceCard">
-                <div className="thumb" style={{ backgroundImage: 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg)' }}></div>
+              <a href="#" className="ServiceCard">
+                <div className="thumb" style={{ backgroundImage: 'url(communityengagement.jpg)' }}></div>
                 <article>
-                  <div className="ServiceHeading">International Artist Feature: Malaysia</div>
+                  <div className="ServiceHeading">Community Engagement</div>
                   <div className="ServiceName">Mary Winkler</div>
                 </article>
               </a>
