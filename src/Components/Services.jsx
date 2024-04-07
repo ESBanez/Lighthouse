@@ -120,7 +120,7 @@ function Services() {
                 <div className="thumb" style={{ backgroundImage: 'url(social-media-management.jpg)' }}></div>
                 <article>
                   <div className="ServiceHeading">Social Media Management</div>
-                  <div className="ServiceName">Mary Winkler</div>
+                  <div className="ServiceName">Lighthouse Innovations Inc</div>
                 </article>
               </a>
             </div>
@@ -134,7 +134,7 @@ function Services() {
                   <div className="ServiceParagraph">
                     We are accustomed to book keeping services.
                   </div>
-                  <div className="ServiceName">Mary Winkler</div>
+                  <div className="ServiceName">Lighthouse Innovations Inc</div>
                 </article>
               </a>
             </div>
@@ -144,7 +144,7 @@ function Services() {
                 <div className="thumb" style={{ backgroundImage: 'url(content-creation.jpg)' }}></div>
                 <article>
                   <div className="ServiceHeading">Content creation</div>
-                  <div className="ServiceName">Mary Winkler</div>
+                  <div className="ServiceName">Lighthouse Innovations Inc</div>
                 </article>
               </a>
             </div>
@@ -155,9 +155,8 @@ function Services() {
                 <article>
                   <div className="ServiceHeading">Technical Ship Management</div>
                   <div className="ServiceParagraph">
-                    
                   </div>
-                  <div className="ServiceName">Mary Winkler</div>
+                  <div className="ServiceName">Lighthouse Innovations Inc</div>
                 </article>
               </a>
             </div>
@@ -167,7 +166,7 @@ function Services() {
                 <div className="thumb" style={{ backgroundImage: 'url(socialmediaadvertisement.jpg)' }}></div>
                 <article>
                   <div className="ServiceHeading">Social Media Advertisement</div>
-                  <div className="ServiceName">Mary Winkler</div>
+                  <div className="ServiceName">Lighthouse Innovations Inc</div>
                 </article>
               </a>
             </div>
@@ -178,7 +177,7 @@ function Services() {
                 <div className="thumb" style={{ backgroundImage: 'url(Pinayseaman.jpg)' }}></div>
                 <article>
                   <div className="ServiceHeading">Social Media Creation with Ai</div>
-                  <div className="ServiceName">Mary Winkler</div>
+                  <div className="ServiceName">Lighthouse Innovations Inc</div>
                 </article>
               </a>
             </div>
@@ -189,7 +188,7 @@ function Services() {
                 <div className="thumb" style={{ backgroundImage: 'url(communityengagement.jpg)' }}></div>
                 <article>
                   <div className="ServiceHeading">Community Engagement</div>
-                  <div className="ServiceName">Mary Winkler</div>
+                  <div className="ServiceName">Lighthouse Innovations Inc</div>
                 </article>
               </a>
             </div>
