@@ -1,3 +1,4 @@
+import WaveDivider2 from "./../Components/WaveDivider2";
 import WaveDivider from "./../Components/WaveDivider";
 import LighthousePart from "./../Components/LighthousePart";
 import "../Sass/Home.css";
@@ -30,7 +31,7 @@ function Home() {
                                 alt="Lighthouse"
                                 className= "lhi"
                             />
-                            <div className="Changingline">
+                            <div className="Changingline" id="section1">
                                 <Headline/>
                             </div>
                         </div>
@@ -63,7 +64,7 @@ function Home() {
                     <br/><br/><br/><br/>
                     <br/><br/><br/><br/>
                     <Grid item xs={12}>
-                        <div className="Btsolving"> 
+                        <div className="Btsolving" id="section5"> 
                             <Btsolve/>
                         </div>
                     </Grid>
@@ -71,18 +72,18 @@ function Home() {
                     
 
                     <Grid item xs={12} className="Services">
-                        <div>
+                        <div id="section3">
                             <Services/>
                         </div>
                     </Grid>
    
                     <Grid item xs={12}>
                             <div className="Wave">
-                                <WaveDivider/>
+                                <WaveDivider2/>
                             </div>
                     </Grid>
                     <Grid item xs={12}>
-                        <div id="section2"> 
+                        <div id="section4" className="Footer"> 
                             <Footer/>
                         </div>
                     </Grid>
