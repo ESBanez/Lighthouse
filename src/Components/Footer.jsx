@@ -145,7 +145,13 @@ function Footer() {
               <div className="layout_item w-25">
                 <ul className="LahatNgFlex LahatNgUl">
                   <li>
-                    <img src=""/>
+                    <a href="#section5" className="footerlogoholder" ><img src="logo1.png"/></a>
+                  </li>
+                  <li>
+                    <a href="#section3" className="footerlogoholder" ><img src="logo2.png"/></a>
+                  </li>
+                  <li>
+                    <a href="#section2" className="footerlogoholder" ><img src="logo3.png"/></a>
                   </li>
                 </ul>
               </div>

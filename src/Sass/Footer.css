@@ -74,6 +74,14 @@ button {
 
 .LahatNgFlex{
   display: flex;
+  justify-content: normal;
+  align-items: center;
+}
+.footerlogoholder{
+  padding: 1rem;
+}
+.footerlogoholder >img {
+  width: 5rem;
 }
 /* .flex {
   display: flex;
@@ -94,9 +102,9 @@ button {
   backdrop-filter: blur(50px);
   border: 0.1px solid rgba(233, 232, 232, 0.208);
   border-radius: 5px;
-  padding: 2rem;
   margin: 1rem 0;
   opacity: 90%;
+  padding: 1rem;
 }
 .container {
   width: 100%;
@@ -277,7 +285,7 @@ textarea::placeholder {
     column-gap: 2rem;
   }
   .w-50 {
-    width: 50%;
+    width: 30%;
   }
   .w-25 {
     width: 25%;
@@ -298,7 +306,7 @@ textarea::placeholder {
   }
   .custom-textarea{
     min-height: 200px;
-    width: 15rem;
+    width: 10rem;
    }
   .layout {
     display: flex;
@@ -306,18 +314,25 @@ textarea::placeholder {
     column-gap: 2rem;
   }
   .w-50 {
-    width: 50%;
+    width: 15%;
   }
   .w-25 {
-    width: 25%;
+    width: 15%;
   }
 
   .newsletter_title{
      font-size: 2rem;
   }
   .footer_inner {
-    width: 50rem;
+    width: 40rem;
    }
+   .LahatNgFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+   }
+
 }
 
 @media screen and (min-width: 492px) and ( max-width: 551px ) {
@@ -327,6 +342,10 @@ textarea::placeholder {
   .custom-textarea{
     min-height: 200px;
     width: 15rem;
+   }
+   .LahatNgFlex{
+    display: flex;
+    flex-direction: column;
    }
 
 }
@@ -350,5 +369,8 @@ textarea::placeholder {
     min-height: 200px;
     width: 10rem;
    }
-
+  .LahatNgFlex {
+    display: flex;
+    flex-flow: column;
+  }
 }

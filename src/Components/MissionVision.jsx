@@ -18,8 +18,7 @@ const MissionVision = () => {
               Vision
             </div>
             <div className="misionvisionbody">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, commodi ex. Consequuntur repellat, reiciendis exercitationem obcaecati iure illum velit odit eaque excepturi sit, eos nesciunt?
-            </div>
+              Building a future where seamless technology, enlightened minds, and maritime excellence converge to elevate industries and empower global professionals.</div>
           </div>
         </div>
       </div>
