@@ -8,7 +8,7 @@ const Visibility = () => {
             <div>
                 <div className="carouseltitleholder">
                     <div className="carouseltitle" >
-                        <a href="#section2">
+                        <a href="#section5">
                             Visibility
                         </a> 
                     </div>
