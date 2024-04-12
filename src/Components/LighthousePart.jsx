@@ -5,26 +5,36 @@ function LighthousePart() {
     AOS.init();
 
     return (
-        <div className="black">
-            <section className="row 8 scroll-reveal"> 
-                <h4 className="section-title">
-                    <div className="TextReavealLogo"
+        <div className="lighthousecomponent">
+            <section className="lighthousesection"> 
+                <h4 className="lighthousehead">
+                    <div className="TextReavealLogo lighthouselogocomponent"
                     data-aos="fade-in-down"
                     >
                         <img src="lhi-logo.png"
-                         style={{width: '15rem'}}/>
+                         style={{width: '15rem'}} className="lighthouselogo"/>
                         
                     </div>
                 </h4>
                 <br/><br/><br/><br/><br/>
-                <div className="blackp">
-                    <span className="clan1">
-                        Is a maritime BPO with strong technological 
-                        foundation with professional and competent staff that 
-                        would provide tech support services, maritime accounting,
-                        career management and other services.
-                    </span>
-                    
+                <div className="lighthousebody">
+                    <div className="lighthousedefinition">
+                        <div className="lighthousetextdefine">
+                            <div>
+                            "Delivering value through
+                            </div>
+                            <div>
+                            technology, support and career growth."
+                            </div>
+                        </div>              
+                    </div>
+                    <div className="lighthousedefinition">
+                        <div className="lighthouseimagecomponent">
+                            <a href="#services">
+                                <img src="pinoyseaman.png" className="lighthouseimage" />
+                            </a>
+                        </div>              
+                    </div>
                 </div>
             </section>
         </div>

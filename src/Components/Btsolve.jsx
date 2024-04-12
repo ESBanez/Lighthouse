@@ -1,80 +1,66 @@
 import "../Sass/Bts.scss"
-
+import { Button, Popover } from 'antd';
 
 function Btsolve() {
+
+    const content = (
+        <div>
+          <p>Proceed to BTSolve website?</p>
+        </div>
+      );
+      
+
     return (
-        <div className="BtsSection">
-            <div className="BtsWrapper">
-                <div className="BtsDefine">
-                    <div className="BtsDefineTitle"
-                    data-aos="zoom-in-up"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false"
-                    data-aos-anchor-placement="top-center"
-                    >
-                        <div className="BtsolveLogoHolder">
-                            <img src="Btsolve.jpg" className="BtsDefineLogo"/>
-                        </div>
-                    </div>
-                    <br/><br/>
-
-                    <div className="BtsDefineParagraphHead">
-                        <div className="BtsDefineParagraph1">
-                            We harness the power of technology through innovation.
-                            Our belief in technology's ability to carve a cutting 
-                            edge is pivotal in addressing today's business challenges.
-                            Customer understand operational challenges. not IT processes,
-                            so we have agile development processes that can keep pace with
-                            with how customers think.
-                        </div>
-                    </div>
-                    <br/><br/>
-
-                    <div className="BtsCarouselContainer">
-                        <div className="BtsCarouselCard">
-                            <div className="BtsCarouselTrack">
-                                {/* React Native */}
-                                <img src="https://www.onu.ro/wp/wp-content/uploads/2020/03/react-native-logo-768x890.png" className="BtsCarouselItem"/>
-                                {/* HTML5 */}
-                                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" className="BtsCarouselItem"/>
-                                {/* CSS */}
-                                <img src="https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3.pnghttps://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747__340.png" className="BtsCarouselItem"/>
-                                {/* jAVA */}
-                                <img src="https://download.logo.wine/logo/Java_(programming_language)/Java_(programming_language)-Logo.wine.png" className="BtsCarouselItem"/>
-                                {/* kOTLIN */}
-                                <img src="https://download.logo.wine/logo/Kotlin_(programming_language)/Kotlin_(programming_language)-Logo.wine.png" className="BtsCarouselItem"/>
-                                {/* js */}
-                                <img src="https://logodix.com/logo/374972.png" className="BtsCarouselItem"/>
-                                {/* fLUTTER */}
-                                <img src="https://raw.githubusercontent.com/flutter/website/master/src/_assets/image/flutter-lockup.png" className="BtsCarouselItem"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="BtsCardContainer"
-                data-aos="zoom-in-left"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                data-aos-anchor-placement="top-center"
-                >
+        <div className="btssection">
+            <div className="btscomponent">
+                <div className="btscardcontainer ">
                     <div className="BtsCard">
                         <img src="Bangtan.png" alt="Bangtan" className="BangtanImage"/>
-                        <div className="Btsinfo">
-                            <div className="BtsHeading">
-                                Maritime Management Solutions
+                    </div>
+                </div>
+                <div className="btsdefinition">
+                    <div className="btsdefinitioncomponent">
+                        <div className="btslogocomponent">
+                            <div className="btslogoholder">
+                                <img src="bts.png" className="btslogo"/>
                             </div>
-
-                            <div className="BtsPara">
+                            <div>
+                                BTSolve Inc.
                             </div>
-                                
-                            <a href="https://sslinux.btsolve.com/btssite/" target="_blank" className="BtsButton">
-                                View more
-                            </a>
                         </div>
+                        <br/><br/>
+                        <div className="btsparagraphholder">
+                            <div className="btsparagraph">
+                                "Stable, secure and scalable cloud solutions."
+                            </div>
+                        </div>
+                        <Popover
+                            content={content}
+                            title="Title"
+                            trigger="hover"
+                            style={{ display: "flex", justifyContent: "center", alignContent: "center" }}
+                        >
+                            <a href="https://sslinux.btsolve.com/btssite/" style={{ display: "flex", justifyContent: "center", textDecoration: "none" }}>
+                                <Button
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center", // Changed alignContent to alignItems for button alignment
+                                        backgroundColor: "var(--blue)",
+                                        borderColor: "var(--yellow)",
+                                        borderRadius: "50px",
+                                        fontSize: "1.1rem",
+                                        borderWidth: "3px",
+                                        alignSelf: "center",
+                                        color: "var(--yellow)",
+                                    }}
+                                    type="primary"
+                                >
+                                    <span style={{ alignSelf: "center", textDecoration: "none" }}>View</span>
+                                </Button>
+                            </a>
+                        </Popover>
+
                     </div>
                 </div>
             </div>

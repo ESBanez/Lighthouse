@@ -20,69 +20,25 @@ body {
   font-family:'montserrat';
 
 }
+.autobuttoncon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  justify-items: center;
+}
 p {
-  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
 }
-.container {
-    color: #ffffff;
-    font-size: 3vh;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; /* Add position relative */
+
+@media screen and (max-width: 1024px) {
+  .autobuttoncon {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
-  
-  .container::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-    z-index: -1; /* Ensure it's behind the content */
-  }
-  
-
-.animation {
-  height: 35px;
-  overflow:hidden;
-  color:#FFC903
 }
-
-.animation > div > div {
-  padding: 0.25rem 0.75rem;
-  height:2.81rem;
-  margin-bottom: 2.81rem;
-  display:inline-block;
-}
-
-.animation div:first-child {
-  animation: text-animation 6s infinite;
-}
-
-@keyframes text-animation {
-    0% {
-      transform: translateY(0); /* Start at the top */
-    }
-    /* Adjust these percentages based on the total height needed for all words */
-    20% {
-      transform: translateY(-10);/* Move "We" down */
-    }
-    40% {
-      transform: translateY(-10px); /* Move "are" down (2.81rem for each word) */
-    }
-    60% {
-      transform: translateY(-103px); /* Move "Innovative" down (2.81rem for each word) */
-    }
-    /* ... repeat for additional words (if any) ... */
-    80% {
-      transform: translateY(-108px); /* Move back up (2.81rem) */
-    }
-    100% {
-      transform: translateY(-192px); /* End slightly above "We" */
-    }
-  }
 
 
   

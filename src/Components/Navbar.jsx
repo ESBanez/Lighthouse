@@ -56,7 +56,7 @@ function Navbar() {
             <a href="#section2" className="nav-link">About</a>
           </li>
           <li className="nav-item">
-            <a href="#section3" className="nav-link">Services</a>
+            <a href="#services" className="nav-link">Services</a>
           </li>
           <li className="nav-item">
             <a href="#section4" className="nav-link">Contact</a>

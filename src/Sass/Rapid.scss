@@ -1,262 +1,93 @@
-
-// .Rapidite{
- 
-// }
-
-.RapidSection {
-    background: var(--blue);
+.rapidsection {
+    height: fit-content;
+    width: 100vw;
+    padding: 1rem;
+}
+.rapidcomponent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; /* Adjust the gap as needed */
 }
 
-.RapidWrapper {
+
+
+.rapidcardcontainer{
+    justify-content: end;
+}
+
+
+.rapidCard > img {
+    max-width: 100%; /* Limit the image width to 100% of its container */
+    height: auto; /* Maintain the aspect ratio by setting height to auto */
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+
+.rapiddefinition{
+    background-position: center;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     padding: 3rem;
+    width: auto;    
+    background-size: cover;                                                               
 
 }
 
-.RapidDefine{
-    align-items: start;
-    color: var(--yellow);
-    // padding: 10rem;
-    
-    
-}
-.RapidsDefineTitle{
-    text-align: center;
-    color: var(--yellow);
-    font-size: 1.5rem;
+.rapidlogoholder{
+    align-items: center;
+    justify-content: center;
 }
 
-.RapidDefineParagraph1 {
-    text-indent: 3rem;
-    color: white;
-    text-align: justify;
+.rapiddefinitioncomponent{
+    align-content: center;
 
 }
 
-// .seawoman{
-//     width: 80%;
-//     height: 100%;
-//     align-items: center;
-//     justify-content: center;
-//     background: var(--yellow);
-//     display: flex;
-// }
-
-.RapidCard {
-    width: 30rem;
-    border-radius: 15px;
-    background: white;
-    position: relative;
+.rapidlogo{
+    height: 5rem;
+    width: 5rem;
+}
+.rapidlogocomponent{
     display: flex;
-    align-items: flex-end;
-    transition: 0.4s ease-out;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-}
-
-.RapidCard:hover {
-    transform: translateY(10px);
-}
-
-.RapidCard:hover:before {
-    opacity: 0.5;
-}
-
-.RapidCard .Rapidinfo {
-    position: relative;
-    z-index: 3;
-    color: white;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.5s;
-}
-
-.RapidCard:hover .Rapidinfo {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-
-
-.RapidCard img {
-    max-width: 100%; /* Set the maximum width of the image to 100% of its container */
-    height: auto; /* Maintain the aspect ratio of the image */
-    object-fit: cover;
-    border-radius: 15px;
-    transition: transform 0.3s, filter 0.3s; /* Adding transition for smooth effect */
-}
-
-.RapidCard img:hover {
-    transform: scale(1.1); /* Increase size on hover */
-    filter: blur(0.5px); /* Apply blur effect on hover */
-    cursor: pointer; /* Set cursor to pointer */
-
-}
-
-
-.RapidDefineButton {
-    display: inline-block; /* Set display to inline-block */
-    position: relative;
-    padding: 0.6rem;
-    outline: none;
-    border: none;
-    border-radius: 3px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.4s ease;
-    text-decoration: none;
-}
-
-
-.RapidDefineButton a {
-    text-decoration: none;
-    background: var(--yellow);
+    font-family: "montserrat";
     color: var(--blue);
-    padding: 0.5rem;
-    border-radius: 7px;
-}
-.RapidButton:hover {
-    background: var(--yellow);
-    color: white;
+    font-size: 1.5rem;
+    align-items: center;
+
 }
 
+.rapidparagraph{
+    color: black;
+    text-align: center;
+}
 
-@media screen and (min-width: 2280px) and (max-width: 2560px) {
-    .RapidWrapper {
-        justify-content: end;
-        width: 74rem;
-    }
+.rapidparagraphholder{
+    margin-bottom: 3rem;
+}
+.rapidCard{
     
-    .RapidDefine {
-        margin-top: 7rem;
-        justify-content: start;
-        margin-top: 5rem;
-        justify-content: start;
-        width: 25vw;
-    }
-    .RapidDefineButton {
+    width: 100%;
+}
+@media screen and (max-width: 736px) {
+    .rapidcomponent{
         display: flex;
-        justify-content: center;
-        /* align-content: end; */
+        flex-direction: column-reverse;
     }
+
+    .rapidCard{
+        text-align: center;
+        }
+
+    .rapiddefinitioncomponent{
+        clip-path: margin-box;
     
-}
-@media screen and (min-width: 1881px) and (max-width: 2278px) {
-    .RapidWrapper {
-        justify-content: end;
-        
     }
-    
-    .RapidDefine {
-        margin-top: -6.5rem;
-        justify-content: start;
-        margin-top: 5rem;
-        justify-content: start;
-        width: 30vw;
+    .rapidlogocomponent{
+        padding-left: 0;
     }
-    .RapidDefineButton {
-        display: flex;
-        justify-content: right;
-        /* align-content: end; */
-    }
-    
-}
-
-@media screen and (min-width: 1281px) and (max-width: 1880px) {
-    .RapidWrapper {
-        justify-content: end;
-        
-    }
-    
-    .RapidDefine {
-        margin-top: -6.5rem;
-        justify-content: start;
-        margin-top: 5rem;
-        width: 40vw;
-        flex-flow: column;
-    }
-    .RapidDefineButton {
-        display: flex;
-        justify-content: right;
-        /* align-content: end; */
-    }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-    .RapidCard {
-        margin-top: 1rem;
-        
-    }
-
-    .seawoman{
-        margin-top: 1rem;
-    }
-    
-    .RapidDefine {
-        padding: 2rem;
-        margin-top: 8rem;
-    }
-}
-
-@media screen and (min-width: 918px) and ( max-width: 1024px ) {
-    .RapidCard {
-        margin-top: 3rem;
-    }
-
-    .seawoman{
-        margin-top: 1rem;
-    }
-    
-    .RapidDefine {
-        padding: 10rem 10rem 3rem 10rem;
-        margin-top: -10rem;
-    }
-    .RapidDefineParagraph1{
-        margin-top: -3rem
-    }
-}
-
-
-@media screen and (min-width: 552px) and ( max-width: 918px ) {
-    .RapidDefine {
-        padding: 6rem;
-        margin-top: -7rem;
-    }
-    .RapidDefineParagraph1{
-        margin-top: -3rem
-    }
-}
-
-@media screen and (min-width: 492px) and ( max-width: 551px ) {
-    .RapidDefine {
-        padding: 3rem;
-        margin-top: -1rem;
-    }
-    .RapidDefineParagraph1{
-        margin-top: -3rem
-    }
-}
-
-@media screen and (min-width: 376px) and ( max-width: 491px ) {
-    .RapidDefine {
-        padding: 3rem;
-        margin-top: -4rem;
-    }
-    .RapidDefineParagraph1{
-        margin-top: -3rem
-    }
-}
-
-@media screen and (min-width: 0px) and ( max-width: 375px ) {
-    .RapidDefine {
-        padding: 3rem;
-        margin-top: -2rem;
-    }
-    .RapidsDefineTitle{
-        font-size: 1.2rem;
-    }
-    .RapidDefineParagraph1{
-        margin-top: -3rem;
-        font-size: 1rem;
+    .rapiddefinition{
+        align-self: center;
     }
 }

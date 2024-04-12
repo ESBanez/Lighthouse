@@ -1,0 +1,66 @@
+
+.missionvisionmain{
+    background-image: url("../../public/pyramid.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+
+.missionvisionmain{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem 2rem 2rem 2rem;
+
+}
+
+.missionvisioncomponent{
+    line-break: anywhere;
+}
+
+
+.missiovisionnsub {
+    background: linear-gradient(to bottom right, var(--blue), #000); /* Adjust the colors as needed */
+    width: 20rem;
+    border-radius: 15px;
+    height: fit-content;
+    margin-top: 10rem;
+}
+
+
+.missionvisiontitle{
+    font-size: 1.5rem;
+    color: var(--yellow);
+    text-align: center;
+    font-weight: 400;
+    padding: 1rem 0 0 0;
+}
+
+.misionvisionbody{
+    text-indent: 3rem;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+.btslogocomponent{
+    font-size: var(--title);
+   
+}
+.btsparagraph{
+    font-size: var(--body);
+}
+@media screen and (max-width: 736px){
+    .missionvisionmain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .missiovisionnsub {
+        margin-bottom: 2rem; /* Add spacing below each item */
+    }
+
+    /* Optional: If you want to remove the spacing from the last child */
+    .missionvisionmain > .missiovisionnsub:last-child {
+        margin-bottom: 0;
+    }
+}

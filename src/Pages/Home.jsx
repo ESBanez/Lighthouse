@@ -2,16 +2,18 @@ import WaveDivider2 from "./../Components/WaveDivider2";
 import WaveDivider from "./../Components/WaveDivider";
 import LighthousePart from "./../Components/LighthousePart";
 import "../Sass/Home.css";
-import Headline from "./../Components/Headline";
 import Rapid1 from "./../Components/Rapid1";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
 import Btsolve from "./../Components/Btsolve"
-import Services from "./../Components/Services";
+// import Services from "./../Components/Services";
 import Footer from "./../Components/Footer";
 import Navbar from "./../Components/Navbar";
+import CarouselComponent from "./../Components/CarouselComponent/CarouselComponent";
+import MissionVision from "./../Components/MissionVision";
+import Service from "../Components/Service";
 
 
 
@@ -25,30 +27,16 @@ function Home() {
                     <Grid item xs={12}>
                         <nav><Navbar/></nav>
                     </Grid>
-                    <Grid item xs={12}>
-                        <div className="panel1">
-                            <img src="anna-rosar-ZxFyVBHMK-c-unsplash.jpg" 
-                                alt="Lighthouse"
-                                className= "lhi"
-                            />
-                            <div className="Changingline" id="section1">
-                                <Headline/>
-                            </div>
-                        </div>
+                    <Grid item xs={12} className="carouselComp">
+                                <CarouselComponent />
                     </Grid>
-                    <Grid item xs={12}>
-                            <div className="Wave">
+                    <Grid item xs={12} >
                                 <WaveDivider/>
-                            </div>
                     </Grid>
-                    <Grid item xs={12}
-                    style={{
-                        backgroundColor: "white",
-                        height: "auto !important",  
-                        width: "100%",
-
-                    }}
-                    >
+                    <Grid item xs={12} >
+                                <MissionVision/>
+                    </Grid>
+                    <Grid item xs={12}>
                         <div className="TextReveal" id="section2">
                             <LighthousePart/>
                         </div>
@@ -56,26 +44,31 @@ function Home() {
                     <br/><br/><br/><br/>
                     <br/><br/><br/><br/>
                     <Grid item xs={12}>
-                        <div className="Rapidite">
-                            <Rapid1/>
-                        </div>
-                    </Grid>
-                    <br/><br/><br/><br/>
-                    <br/><br/><br/><br/>
-                    <br/><br/><br/><br/>
-                    <Grid item xs={12}>
                         <div className="Btsolving" id="section5"> 
                             <Btsolve/>
                         </div>
                     </Grid>
-                    <br/><br/><br/><br/><br/><br/>
-                    
-
-                    <Grid item xs={12} className="Services">
-                        <div id="section3">
-                            <Services/>
+                   
+                    <br/><br/><br/><br/>
+                    <br/><br/><br/><br/>
+                    <br/><br/><br/><br/>
+                    <Grid item xs={12}>
+                        <div className="Rapidite" id="section3">
+                            <Rapid1/>
                         </div>
                     </Grid>
+                    <br/><br/><br/><br/><br/><br/>
+                    <Grid item xs={12} className="servicesbackground">
+                        <div id="services" style={{}}>
+                            <Service/>
+                        </div>
+                    </Grid>
+
+                    {/* <Grid item xs={12} className="Services">
+                        <div id="services">
+                            <Services/>
+                        </div>
+                    </Grid> */}
    
                     <Grid item xs={12}>
                             <div className="Wave">

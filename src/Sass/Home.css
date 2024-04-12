@@ -1,24 +1,33 @@
-
+/* Define custom properties (variables) for title and body font sizes */
 :root {
-
-    --white:                #ffffff;
-
-    --yellow:               #FFC903;
-    /* rgb(253,202,3) */
-    --blue:                 #333E6A;
-    /* rgb(51,62,106) */
-    --bluegreen:            #02699F;
-    /* rgb(2,105,159) */
-
+    --title: 1.5rem; /* Customize this value as needed */
+    --body: 1.1rem; /* Customize this value as needed */
 }
 
-
-.lhi{
-    width: 100%;
-    margin-top: -10 rem;
+.carouselComp{
+    background-image: url(../../public/Light.jpg);
     height: 80vh;
-    object-fit: cover;
+    object-fit: contain;
+    background-size: cover;
+    align-items: space-around;
+    align-content: center;
 }
+.servicesbackground {
+    background-image: url(../../public/visibility.png);
+    height: 130vh;
+    object-fit: contain;
+    background-size: cover;
+    align-items: space-around;
+    align-content: center;
+}
+.Btsolving{
+    height: 100%;
+}
+/* .lhi{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+} */
 .css-k008qs {
     height: 10px;
 }
@@ -28,12 +37,6 @@
     position: relative;
 }
 .Changingline {
-    position: absolute;
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
-    transform: translate(-50%, -50%);
-    background-color: transparent   ; /* Background color with transparency */
-    padding: 10px;
 
   }
 
@@ -42,9 +45,6 @@
 
 }
 
-.Wave {
-    margin-top: -5rem;
-}
 
 .Rapidite {
     display: flex;

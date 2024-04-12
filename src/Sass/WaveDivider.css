@@ -12,15 +12,7 @@
 
  }
   
-  
-  
-  body
-  {
-    margin:0;
-    padding:0;
-    background-color: var(--blue);
-    position: relative;
-  }
+
 
   .editorial {
     display: block;
@@ -33,6 +25,7 @@
     position:absolute;
     left:0px;
     float:left;
+    margin-top: -5rem;
   }
 
   .parallax1 > use {

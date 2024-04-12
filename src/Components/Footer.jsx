@@ -110,13 +110,18 @@ function Footer() {
                   <h4 className="c-nav-tool_title">Support</h4>
                   <ul className="c-nav-tool_list LahatNgUl">
                     <li className="c-nav-tool_item">
-                      <a href="#section4" className="c-link AllA">
-                        Technical Support
+                      <a href="#section2" className="c-link AllA">
+                        info@lighthouse.com
                       </a>
                     </li>
                     <li className="c-nav-tool_item">
-                      <a href="#section4" className="c-link AllA">
-                        Contact
+                      <a href="#section5" className="c-link AllA">
+                        info@btsolve.com
+                      </a>
+                    </li>
+                    <li className="c-nav-tool_item">
+                      <a href="#section3" className="c-link AllA">
+                        info@rapid.com
                       </a>
                     </li>
                   </ul>
@@ -139,7 +144,9 @@ function Footer() {
               </div>
               <div className="layout_item w-25">
                 <ul className="LahatNgFlex LahatNgUl">
-                  {/* Social media links */}
+                  <li>
+                    <img src=""/>
+                  </li>
                 </ul>
               </div>
             </div>
