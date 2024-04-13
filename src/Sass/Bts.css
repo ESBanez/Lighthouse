@@ -45,6 +45,7 @@
 }
 .btsdefinitioncomponent{
     padding: 1rem;
+    align-content: center;
 }
 
 @media screen and (max-width: 736px) {
