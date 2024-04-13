@@ -1,0 +1,60 @@
+.btscomponent {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 1rem;
+    background: linear-gradient(
+        to right,
+        #333E6A 0%,
+        #2b3a76 50%, /* Start of gradient with your blue color */
+        #111069 75%,
+        #1f1e66 100% /* End of gradient with another color, adjust as needed */
+    );
+    color: var(--yellow);
+    contain: content;
+    border-radius: 15px;
+}
+
+
+.btslogocomponent{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.btscardcontainer{
+    display: flex;
+    justify-content: center;
+}
+.BtsCard > img{
+    width: 25rem;
+    border-radius: 15px;
+}
+.btslogoholder > img{
+    height: 4rem;
+    
+}
+.btscardcontainer{
+    align-content: center;    
+}
+.btsdefinitioncontainer{
+    align-content: center;
+}
+.btsparagraph{
+    color: aliceblue;
+}
+.btsdefinitioncomponent{
+    padding: 1rem;
+}
+
+@media screen and (max-width: 736px) {
+
+    .btscomponent {
+        display: flex;
+        flex-direction: column;
+    }
+    .btsparagraph{
+        display: flex;
+        justify-content: center;
+    }
+}

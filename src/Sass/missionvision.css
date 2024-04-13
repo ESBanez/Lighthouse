@@ -1,29 +1,28 @@
+.missionvisioncomponent{
+    text-align: justify;
+}
 
 .missionvisionmain{
     background-image: url("../../public/pyramid.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
+    background-position: center;
+    background-size: contain;
+
 }
 
 .missionvisionmain{
     display: flex;
     justify-content: space-evenly;
-    padding: 5rem 2rem 2rem 2rem;
-
+    padding: 10rem;
 }
 
-.missionvisioncomponent{
-    text-align: justify;
-}
 
 
 .missiovisionnsub {
     background: linear-gradient(to bottom right, var(--blue), #000); /* Adjust the colors as needed */
     width: 20rem;
     border-radius: 15px;
-    height: fit-content;
-    margin-top: 10rem;
+
 }
 
 

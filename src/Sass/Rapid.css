@@ -1,0 +1,57 @@
+.rapidcomponent {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 1rem;
+    color: var(--yellow);
+    contain: content;
+    border-radius: 15px;
+}
+
+
+.rapidlogocomponent{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.rapidcardcontainer{
+    display: flex;
+    justify-content: center;
+}
+.RapidCard > img{
+    width: 25rem;
+    border-radius: 15px;
+}
+.rapidlogoholder > img{
+    height: 4rem;
+    
+}
+.rapidcardcontainer{
+    align-content: center;    
+}
+.rapiddefinitioncontainer{
+    align-content: center;
+}
+.rapidparagraph{
+    color: rgb(0, 0, 0);
+}
+.rapiddefinitioncomponent{
+    padding: 1rem;
+}
+.rapiddefinition{
+    align-content: center;
+} 
+
+@media screen and (max-width: 736px) {
+
+    .rapidcomponent {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .rapidparagraph{
+        display: flex;
+        justify-content: center;
+    }
+}

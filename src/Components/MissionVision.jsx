@@ -10,7 +10,7 @@ const MissionVision = () => {
               Mission
             </div>
             <div className="misionvisionbody">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur hic voluptas. Maiores, suscipit? Blanditiis ea tempora animi delectus excepturi. Inventore esse nostrum tempora similique.
+            To lead the maritime industry into the future by integrating advanced technology, fostering innovative thinking, and delivering excellence. We empower global professionals and elevate industries through sustainable practices and seamless, high-quality solutions.
             </div>
           </div>
           <div className="missiovisionnsub">

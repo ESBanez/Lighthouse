@@ -1,25 +1,28 @@
-import Carousel from 'react-elastic-carousel';
+import Carousel from "react-elastic-carousel";
 import MainCarousel from "./MainCarousel";
 import Visibility from "./Visibility";
 import Insight from "./Insight";
 import Values from "./Values";
-import "../../Sass/maincarousel.css"
+import "../../Sass/maincarousel.css";
 
-  
 const CarouselComponent = () => {
-   
-    return (
-      <div className="carouselcontainer" >
-        <Carousel 
-        // enableAutoPlay
-        >
-          <MainCarousel/>
-          <Visibility/>
-          <Insight/>
-          <Values/>
+  return (
+    <section
+      className="hero-section d-flex justify-content-center align-items-center"
+      id="section_1"
+    >
+
+      <div className="carouselparent">
+        <Carousel>
+          <MainCarousel />
+          <Visibility />
+          <Insight />
+          <Values />
         </Carousel>
       </div>
-    )
-  }
 
-  export default CarouselComponent;
+    </section>
+  );
+};
+
+export default CarouselComponent;

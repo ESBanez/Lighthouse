@@ -4,14 +4,72 @@
     --body: 1.1rem; /* Customize this value as needed */
 }
 
-.carouselComp{
-    background-image: url(../../public/Light.jpg);
-    height: 80vh;
-    object-fit: contain;
+/* .carouselComp{
+    background-repeat: no-repeat;
     background-size: cover;
-    align-items: space-around;
-    align-content: center;
+    background-position: center;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100vh;
+    min-height: 670px;
+    margin-bottom: -90px;
+} */
+
+/*---------------------------------------
+  HERO        
+-----------------------------------------*/
+.carouselparent{
+    width: 50rem;
 }
+
+.hero-section {
+    background-image: url(../../public/Light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 100px;
+    /* padding-bottom: 100px; */
+    height: 100vh;
+    min-height: 670px;
+    margin-bottom: -90px;
+  }
+  
+  .hero-50 {
+    height: auto;
+    min-height: 540px;
+    margin-bottom: -100px;
+  }
+  
+  .hero-50 .container + svg {
+    transform: rotate(180deg);
+  }
+  
+  .hero-section .ratio {
+    border-radius: var(--border-radius-medium);
+    overflow: hidden;
+  }
+  
+  .hero-section svg {
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+  
+
+  
+  .hero-section .container + svg {
+    top: auto;
+    bottom: -1px;
+  }
+  
+  .hero-section .row {
+    position: relative;
+    z-index: 22;
+  }
+  /*=======================  */
+
 .servicesbackground {
     background-image: url(../../public/visibility.png);
     height: 130vh;
@@ -20,9 +78,7 @@
     align-items: space-around;
     align-content: center;
 }
-.Btsolving{
-    height: 100%;
-}
+
 /* .lhi{
     width: 100%;
     height: 90vh;
@@ -52,7 +108,25 @@
 .Footer{
     /* margin-top: 5rem; */
 }
-@media screen and (min-width: 552px) and ( max-width: 918px ) {
-    
+
+
+
+@media screen and (min-width: 0) and (max-width: 320px) {
+    /* Your CSS rules for this screen width range go here */
+
+    .carouselComp {
+        margin-top: -4rem;
+        margin-bottom: 2.4rem;
+    }
+
+}
+
+@media screen and (min-width: 1040px) and (max-width: 1440px) {
+    /* Your CSS rules for this screen width range go here */
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+    /* Your CSS rules for this screen width range go here */
 
 }
