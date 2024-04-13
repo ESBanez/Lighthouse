@@ -10,8 +10,8 @@ const Values = () => {
             <div>
                 <div className="carouseltitleholder">
                     <div className="carouseltitle">
-                        <a href="#section2" id="Values">
-                            Values
+                        <a href="#section2" id="valu">
+                            Value
                         </a> 
                     </div>
                 </div>

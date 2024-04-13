@@ -9,7 +9,7 @@ const Insight = () => {
             <div>
                 <div className="carouseltitleholder">
                     <div className="carouseltitle">
-                        <a href="#section3" id="">
+                        <a href="#section3" id="insi">
                             Insight
                         </a> 
                     </div>

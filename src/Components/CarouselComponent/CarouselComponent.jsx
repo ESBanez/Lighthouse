@@ -10,7 +10,9 @@ const CarouselComponent = () => {
    
     return (
       <div className="carouselcontainer" >
-        <Carousel enableAutoPlay>
+        <Carousel 
+        // enableAutoPlay
+        >
           <MainCarousel/>
           <Visibility/>
           <Insight/>

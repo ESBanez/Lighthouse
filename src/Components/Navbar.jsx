@@ -36,11 +36,15 @@ const NavbarContainer = styled.nav`
 
 
 function Navbar() {
+  const refreshPage = () => {
+    window.location.reload();
+};
+
   return (
   <NavbarContainer className="navbar navbar-expand-xl" style={{ backgroundColor: "#333E6A" }}>
     <div className="container-fluid px-lg-5">
       <div className="d-flex align-items-center" style={{ paddingRight: "10px", paddingLeft: "10px" }}>
-        <img src="lhi-logo.png" className="navbar-brand" alt="Your Brand Name" />
+        <img src="lhi-logo.png" className="navbar-brand" alt="Lighthouse-logo" onClick={refreshPage}/>
       </div>
       <div style={{ paddingRight: "10px", paddingLeft: "10px" }}>
         <button className="navbar-toggler order-lg-2" style={{ borderColor: "light" }} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +54,7 @@ function Navbar() {
       <div className="collapse navbar-collapse justify-content-end order-lg-1" id="navbarSupportedContent">
         <ul className="navbar-nav" style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-evenly" }}>
           <li className="nav-item">
-            <a href="#section1" className="nav-link" aria-current="page">Home</a>
+            <a href="#section1" className="nav-link" aria-current="page"  onClick={refreshPage}>Home</a>
           </li>
           <li className="nav-item">
             <a href="#section2" className="nav-link">About</a>

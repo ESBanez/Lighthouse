@@ -6,9 +6,9 @@ const Visibility = () => {
     return (
         <>
             <div>
-                <div className="carouseltitleholder">
+                <div className="carouseltitleholder" >
                     <div className="carouseltitle" >
-                        <a href="#section5">
+                        <a href="#section5" id="visi">
                             Visibility
                         </a> 
                     </div>
