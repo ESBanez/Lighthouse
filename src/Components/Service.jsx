@@ -50,8 +50,10 @@ const images = [
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
   height: 200,
+  boxShadow: '5px 5px 20px rgba(0, 0, 0, 0.5)', // Make sure the values match your design expectations
+
   [theme.breakpoints.down('sm')]: {
-    width: '100% !important', // Overrides inline-style
+    width: '100%', // Overrides inline-style
     height: 100,
   },
   '&:hover, &.Mui-focusVisible': {
@@ -127,7 +129,12 @@ export default function Service() {
     <>
         <div style={{display:"flex", justifyContent:"center", flexDirection:"column"}}>
             <div style={{display:"flex", justifyContent:"center", marginTop:"-10rem", padding:"3rem", color:"var(--yellow)", fontSize:"2rem"}}>
+                <div style={{borderBottom: "2px solid var(--yellow)", flex:"1", alignSelf: "center"  }}></div>
+                <div>
                 Services we offer
+                </div>
+                <div style={{borderBottom: "2px solid var(--yellow)", flex:"1", alignSelf: "center" }}></div>
+
             </div>
             <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%', gap: 3, justifyContent:"center"}}>
                 {images.map((image) => (

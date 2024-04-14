@@ -324,7 +324,7 @@ textarea::placeholder {
      font-size: 2rem;
   }
   .footer_inner {
-    width: 40rem;
+    width: 55rem;
    }
    .LahatNgFlex{
     display: flex;
@@ -358,7 +358,9 @@ textarea::placeholder {
     min-height: 200px;
     width: 15rem;
    }
-
+   .footer_inner {
+    width: 45rem;
+    }
 }
 
 @media screen and (min-width: 0px) and ( max-width: 375px ) {
@@ -372,5 +374,11 @@ textarea::placeholder {
   .LahatNgFlex {
     display: flex;
     flex-flow: column;
+  }
+  .footer_inner {
+  width: 45rem;
+  }
+  .layout{
+    text-align: -webkit-center;
   }
 }
