@@ -81,7 +81,7 @@ button {
   padding: 1rem;
 }
 .footerlogoholder >img {
-  width: 5rem;
+  width: 10rem;
 }
 /* .flex {
   display: flex;
@@ -143,12 +143,11 @@ form {
 svg {
   margin: 0.5rem;
 }
-/* .c-2 {
-  margin-top: 3.5rem;
-} */
-.footer_copyright {
-  color: var(--light);
+.c-2 {
+  justify-content: center;
 }
+  
+
 /* CSS file or within <style> tag */
 textarea::placeholder {
   color: var(--blue); /* Adjust placeholder color */
