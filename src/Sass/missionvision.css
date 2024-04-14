@@ -17,13 +17,14 @@
 }
 
 
-
 .missiovisionnsub {
     background: linear-gradient(to bottom right, var(--blue), #000); /* Adjust the colors as needed */
     width: 20rem;
     border-radius: 15px;
-
+    border: 3px ridge rgb(253,202,3, 0.3);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 }
+
 
 
 .missionvisiontitle{

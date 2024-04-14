@@ -3,16 +3,20 @@
     justify-content: space-evenly;
     align-content: center;
     padding: 1rem;
-    background: linear-gradient(
-        to right,
-        #333E6A 0%,
-        #2b3a76 50%, /* Start of gradient with your blue color */
-        #111069 75%,
-        #1f1e66 100% /* End of gradient with another color, adjust as needed */
+    background: radial-gradient(
+        circle at top, /* Radial gradient centered */
+        #1f1ca0 10%, /* Start with a dark color close to the center */
+        #1a2653 30%, /* Dark blue as the second color */
+        #2a2881 60%, /* Deep purple or blue as the third color */
+        #232f5d 80%, /* Lighter purple towards the outer edge */
+        #0e0f6d 100% /* A lighter shade at the very edge */
     );
     color: var(--yellow);
     contain: content;
     border-radius: 15px;
+    border: 3px ridge rgba(64, 55, 55, 0.3);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+
 }
 
 
@@ -29,6 +33,9 @@
 .BtsCard > img{
     width: 25rem;
     border-radius: 15px;
+    border: 3px ridge rgba(40, 39, 36, 0.3);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+
 }
 .btslogoholder > img{
     height: 4rem;
