@@ -155,7 +155,10 @@ textarea::placeholder {
   font-size: 2rem;
 }
 
+.firstlayout{
+  padding: 0 4rem;
 
+}
 
 @media screen and (min-width: 2280px) and (max-width: 2685px) {
   textarea::placeholder {

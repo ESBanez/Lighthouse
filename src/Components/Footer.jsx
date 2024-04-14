@@ -40,7 +40,7 @@ function Footer() {
         <div className="footer_inner">
           <div className="c-footer">
             <div className="layout">
-              <div className="layout_item">
+              <div className="layout_item firstlayout">
                 <div className="newsletter">
                   <form action="" onSubmit={handleSubmit} className='forma'>
                      <textarea
@@ -83,7 +83,7 @@ function Footer() {
                   </form>
                 </div>
               </div>
-              <div className="layout_item w-25">
+              <div className="layout_item w-25 ">
                 <nav className="c-nav-tool">
                   <h4 className="c-nav-tool_title">Menu</h4>
                   <ul className="c-nav-tool_list LahatNgUl">
