@@ -110,3 +110,55 @@
       }
     }
   }
+  .servicesbackground {
+    object-fit: contain;
+    background-size: cover;
+    align-items: space-around;
+    align-content: end;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+    align-content: end;
+    background: radial-gradient(
+      circle at top, /* Radial gradient centered */
+      rgba(24, 81, 112, 0.9) 10%, /* Start with a dark color close to the center */
+      rgba(15, 72, 103, 0.9) 30%, /* Dark blue as the second color */
+      rgba(10, 88, 130, 0.9) 50%, /* Deep purple or blue as the third color */
+      rgba(10, 84, 124, 0.9) 60%, /* Deep purple or blue as the third color */
+      rgba(4, 72, 109, 0.9) 80%, /* Lighter purple towards the outer edge */
+      rgba(2, 59, 90, 0.9) 100% /* A lighter shade at the very edge */
+  );
+  
+   
+  }
+
+  
+@media screen and (min-width: 0) and (max-width: 320px) {
+  /* Your CSS rules for this screen width range go here */
+
+  .servicesbackground {
+  object-fit: contain;
+  background-size: cover;
+  align-items: space-around;
+  align-content: end;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+  align-content: end;
+ 
+}
+
+}
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  /* Your CSS rules for this screen width range go here */
+
+  .servicesbackground {
+  object-fit: contain;
+  background-size: cover;
+  align-items: space-around;
+  align-content: center;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+  align-content: end;
+  height: 100vh;
+}
+
+}

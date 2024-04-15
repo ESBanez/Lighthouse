@@ -1,22 +1,41 @@
+:root {
+
+    --white:                #ffffff;
+
+    --yellow:               #FFC903;
+    /* rgb(253,202,3) */
+    --blue:                 #333E6A;
+    /* rgb(51,62,106) */
+    --bluegreen:            #02699F;
+    /* rgb(2,105,159) */
+
+}
+
+#section5{
+    text-align: -webkit-center;
+}
+
+
 .btscomponent {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
     padding: 1rem;
     background: radial-gradient(
         circle at top, /* Radial gradient centered */
-        #1f1ca0 10%, /* Start with a dark color close to the center */
-        #1a2653 30%, /* Dark blue as the second color */
-        #2a2881 60%, /* Deep purple or blue as the third color */
-        #232f5d 80%, /* Lighter purple towards the outer edge */
-        #0e0f6d 100% /* A lighter shade at the very edge */
+        #185170 10%, /* Start with a dark color close to the center */
+        #0f4867 30%, /* Dark blue as the second color */
+        #0a5882 50%, /* Deep purple or blue as the third color */
+        #0a547c 60%, /* Deep purple or blue as the third color */
+        #04486d 80%, /* Lighter purple towards the outer edge */
+        #023b5a 100% /* A lighter shade at the very edge */
     );
     color: var(--yellow);
     contain: content;
     border-radius: 15px;
     border: 3px ridge rgba(64, 55, 55, 0.3);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
-
+    width: fit-content;
 }
 
 
@@ -29,6 +48,7 @@
 .btscardcontainer{
     display: flex;
     justify-content: center;
+    margin: 0 5rem;
 }
 .BtsCard > img{
     width: 25rem;
@@ -55,7 +75,7 @@
     align-content: center;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (min-width:365px)and (max-width: 736px) {
 
     .btscomponent {
         display: flex;
@@ -64,5 +84,20 @@
     .btsparagraph{
         display: flex;
         justify-content: center;
+    }
+}
+@media screen and (min-width:0)and (max-width: 365px) {
+
+    .BtsCard > img{
+        width: 45rem;
+        
+    }
+    .btsparagraph{
+        display: flex;
+        justify-content: center;
+    }
+    .btscomponent {
+        display: flex;
+        flex-direction: column;
     }
 }

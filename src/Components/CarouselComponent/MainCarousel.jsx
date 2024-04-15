@@ -15,13 +15,13 @@ function MainCarousel () {
             <h1 className="cd-headline rotate-1 mb-4 pb-2">
               <span className="cd-words-wrapper">
                 <b className="is-visible">
-                  <a href="#visi" className="text-warning">Visibility.</a>
+                  <a href="#visi" className="text-warning">Visibility</a>
                 </b>
                 <b> 
-                  <a href="#insi" className="text-warning">Insight.</a>
+                  <a href="#insi" className="text-warning">Insight</a>
                 </b>
                 <b>
-                  <a href="#valu" className="text-warning">Value.</a>
+                  <a href="#valu" className="text-warning">Value</a>
                 </b>
               </span>
             </h1>

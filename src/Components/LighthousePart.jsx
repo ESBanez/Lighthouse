@@ -16,7 +16,7 @@ function LighthousePart() {
                         
                     </div>
                 </h4>
-                <br/><br/>
+                <br/>
                 <div className="lighthousebody">
                     <div className="lighthousedefinition">
                         <div className="lighthousetextdefine">

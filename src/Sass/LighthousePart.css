@@ -1,6 +1,4 @@
-.lighthousecomponent {
-    
-}
+
 
 .lighthousebody{
     display: flex;
@@ -10,10 +8,7 @@
 }
 
 .lighthousetextdefine {
-    /* background-color: var(--blue);
-    color: var(--yellow);
-    padding: 1.5rem;
-    border-radius: 15px; */
+    font-size: 1.5rem;
 }
 .lighthouseimage{
     max-width: 100%; /* Limit the image width to 100% of its container */

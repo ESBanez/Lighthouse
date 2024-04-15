@@ -1,8 +1,21 @@
-/* Define custom properties (variables) for title and body font sizes */
 :root {
-    --title: 1.5rem; /* Customize this value as needed */
-    --body: 1.1rem; /* Customize this value as needed */
+
+  --white:                #ffffff;
+
+  --yellow:               #FFC903;
+  /* rgb(253,202,3) */
+  --blue:                 #333E6A;
+  /* rgb(51,62,106) */
+  --bluegreen:            #02699F;
+  /* rgb(2,105,159) */
+
+
+
+  --title: 2.5rem; /* Customize this value as needed */
+  --body: 1.5rem; /* Customize this value as needed */
 }
+
+
 
 /* .carouselComp{
     background-repeat: no-repeat;
@@ -70,13 +83,9 @@
   }
   /*=======================  */
 
-.servicesbackground {
-    background-image: url(../../public/visibility.png);
-    height: 130vh;
-    object-fit: contain;
-    background-size: cover;
-    align-items: space-around;
-    align-content: center;
+.btrapiserv{
+  width: "";
+
 }
 
 /* .lhi{
@@ -92,9 +101,6 @@
 .panel1{
     position: relative;
 }
-.Changingline {
-
-  }
 
 .TextReveal {
     text-align: -webkit-center;
@@ -111,22 +117,26 @@
 
 
 
+
+
+@media screen and (min-width: 1440px) and (max-width: 2720px) {
+    /* Your CSS rules for this screen width range go here */
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  /* Your CSS rules for this screen width range go here */
+
+}
+
+@media screen and (min-width: 563px) and (max-width: 768px) {
+    /* Your CSS rules for this screen width range go here */
+
+}
 @media screen and (min-width: 0) and (max-width: 320px) {
-    /* Your CSS rules for this screen width range go here */
+  /* Your CSS rules for this screen width range go here */
 
-    .carouselComp {
-        margin-top: -4rem;
-        margin-bottom: 2.4rem;
-    }
-
-}
-
-@media screen and (min-width: 1040px) and (max-width: 1440px) {
-    /* Your CSS rules for this screen width range go here */
-
-}
-
-@media screen and (min-width: 1440px) and (max-width: 2560px) {
-    /* Your CSS rules for this screen width range go here */
+  .carouselComp {
+      margin-top: -4rem;
+      margin-bottom: 2.4rem;
+  }
 
 }

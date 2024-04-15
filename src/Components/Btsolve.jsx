@@ -9,7 +9,7 @@ function Btsolve() {
   );
 
   return (
-    <div className="btssection container-xxl">
+    <div className="btssection container-fluid">
       <div className="btscomponent">
         <div className="btscardcontainer">
           <div className="BtsCard">

@@ -43,7 +43,7 @@ function Navbar() {
   return (
   <NavbarContainer className="navbar navbar-expand-xl" style={{ backgroundColor: "#333E6A" }}>
     <div className="container-fluid px-lg-5">
-      <div className="d-flex align-items-center" style={{ paddingRight: "10px", paddingLeft: "10px" }}>
+      <div className="d-flex align-items-center" style={{ padding:"0 2rem" }}>
         <img src="lhi-logo.png" className="navbar-brand" alt="Lighthouse-logo" onClick={refreshPage}/>
       </div>
       <div style={{ paddingRight: "10px", paddingLeft: "10px" }}>
