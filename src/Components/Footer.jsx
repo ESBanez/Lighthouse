@@ -107,11 +107,11 @@ function Footer() {
               </div>
               <div className="layout_item w-25">
                 <nav className="c-nav-tool">
-                  <h4 className="c-nav-tool_title">Support</h4>
+                  <h4 className="c-nav-tool_title">Email us</h4>
                   <ul className="c-nav-tool_list LahatNgUl">
                     <li className="c-nav-tool_item">
                       <a href="#section2" className="c-link AllA">
-                        info@lighthouse.com
+                        info@lighthousemanila.com
                       </a>
                     </li>
                     <li className="c-nav-tool_item">
@@ -121,7 +121,7 @@ function Footer() {
                     </li>
                     <li className="c-nav-tool_item">
                       <a href="#section3" className="c-link AllA">
-                        info@rapid.com
+                        info@rapidonline.ph
                       </a>
                     </li>
                   </ul>

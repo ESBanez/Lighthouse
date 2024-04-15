@@ -9,6 +9,7 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Button from "@mui/material/Button";
 import { useState } from "react";
+import "../Sass/Services.scss"
 
 const images = [
   {
@@ -125,6 +126,7 @@ export default function Service() {
       <div
         className="servicesbackground"
       >
+        
         <div
           style={{
             display: "flex",
@@ -136,7 +138,7 @@ export default function Service() {
         >
           <div
             style={{
-              borderBottom: "2px solid var(--yellow)",
+              borderBottom: "2px solid var(--blue)",
               flex: "1",
               alignSelf: "center",
             }}
@@ -144,7 +146,7 @@ export default function Service() {
           <div>Services we offer</div>
           <div
             style={{
-              borderBottom: "2px solid var(--yellow)",
+              borderBottom: "2px solid var(--blue)",
               flex: "1",
               alignSelf: "center",
             }}

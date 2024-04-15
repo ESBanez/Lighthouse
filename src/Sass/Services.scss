@@ -101,20 +101,11 @@
   }
 
 
-  .item-1 {
-    @media (min-width: 60em) {
-      grid-column: 1 / span 2;
-      
-      .ServiceHeading {
-        font-size: 24px;
-      }
-    }
-  }
   .servicesbackground {
     object-fit: contain;
     background-size: cover;
     align-items: space-around;
-    align-content: end;
+    align-content: normal;
     border-radius: 15px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
     align-content: end;
@@ -127,38 +118,14 @@
       rgba(4, 72, 109, 0.9) 80%, /* Lighter purple towards the outer edge */
       rgba(2, 59, 90, 0.9) 100% /* A lighter shade at the very edge */
   );
-  
-   
+    height: 45rem;
   }
 
-  
-@media screen and (min-width: 0) and (max-width: 320px) {
+
+@media screen and (min-width: 0px) and (max-width: 599px) {
   /* Your CSS rules for this screen width range go here */
 
   .servicesbackground {
-  object-fit: contain;
-  background-size: cover;
-  align-items: space-around;
-  align-content: end;
-  border-radius: 15px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
-  align-content: end;
- 
-}
-
-}
-@media screen and (min-width: 321px) and (max-width: 375px) {
-  /* Your CSS rules for this screen width range go here */
-
-  .servicesbackground {
-  object-fit: contain;
-  background-size: cover;
-  align-items: space-around;
-  align-content: center;
-  border-radius: 15px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
-  align-content: end;
-  height: 100vh;
-}
-
+      height: 27rem;
+  }
 }
