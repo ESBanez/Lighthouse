@@ -72,6 +72,7 @@
 }
 .btsdefinitioncomponent{
     padding: 1rem;
+    align-self: center;
     align-content: center;
 }
 

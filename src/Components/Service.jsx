@@ -134,6 +134,7 @@ export default function Service() {
             marginTop: "-10rem",
             color: "var(--yellow)",
             fontSize: "2rem",
+            padding: "1rem 0"
           }}
         >
           <div
