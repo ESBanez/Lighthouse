@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import "../../Sass/maincarousel.css"
 
   
@@ -19,6 +20,9 @@ const Insight = () => {
                         <li>Does the Filipino Seafarer Multidimensional Assessment accurately reflect the unique challenges faced by Filipino seafarers?</li>
                         <li>How can the Achievers Mindset tool help me develop the qualities I need to succeed in the maritime industry? or maritime businesses?</li>
                     </ul>
+                    <Button variant="contained" href="#section3">
+                        Click here
+                    </Button>
                 </div>
             </div>
         </>

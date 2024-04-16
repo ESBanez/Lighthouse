@@ -54,6 +54,10 @@
   color: var(--yellow);
 }
 
+.c-nav-tool {
+  align-self: baseline;
+}
+
 .AllA:hover {
   border-bottom: 1px solid var(--dark);
 }
@@ -70,6 +74,11 @@ button {
   appearance: none;
   border: 0;
   background: transparent;
+}
+.lowerlayout{
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .LahatNgFlex{
@@ -104,7 +113,8 @@ button {
   border-radius: 5px;
   margin: 1rem 0;
   opacity: 90%;
-  padding: 1rem;
+  padding: 3rem 0 0 0;
+
 }
 .container {
   width: 100%;
@@ -146,7 +156,11 @@ svg {
 .c-2 {
   justify-content: center;
 }
-  
+
+.w-25{
+  text-align: center;
+}
+
 
 /* CSS file or within <style> tag */
 textarea::placeholder {
@@ -155,14 +169,16 @@ textarea::placeholder {
 }
 
 .firstlayout{
-  padding: 0 4rem;
+  align-self: center;
 
 }
 
 
 .uppperlayout{
-  padding: 2rem 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
 }
+
 @media screen and (min-width: 2280px) and (max-width: 2685px) {
   textarea::placeholder {
     font-size: 1rem;
@@ -172,12 +188,6 @@ textarea::placeholder {
     width: 20rem;
    }
 
-  .layout {
-    display: flex;
-    flex-wrap: nowrap;
-    column-gap: 15rem;
-    
-  }
   .w-50 {
     width: 50%;
   }
@@ -200,11 +210,7 @@ textarea::placeholder {
     min-height: 200px;
     width: 20rem;
    }
-  .layout {
-    display: flex;
-    flex-wrap: nowrap;
-    column-gap: 12rem;
-  }
+
   .w-50 {
     width: 50%;
   }
@@ -230,11 +236,7 @@ textarea::placeholder {
     min-height: 200px;
     width: 20rem;
    }
-  .layout {
-    display: flex;
-    flex-wrap: nowrap;
-    column-gap: 10rem;
-  }
+
   .w-50 {
     width: 50%;
   }
@@ -259,11 +261,7 @@ textarea::placeholder {
     width: 20rem;
     
    }
-  .layout {
-    display: flex;
-    flex-wrap: nowrap;
-    column-gap: 2rem;
-  }
+
   .w-50 {
     width: 50%;
   }
@@ -287,11 +285,7 @@ textarea::placeholder {
     min-height: 200px;
     width: 20rem;
    }
-  .layout {
-    display: flex;
-    flex-wrap: nowrap;
-    column-gap: 2rem;
-  }
+
   .w-50 {
     width: 30%;
   }
@@ -316,11 +310,7 @@ textarea::placeholder {
     min-height: 200px;
     width: 10rem;
    }
-  .layout {
-    display: flex;
-    flex-wrap: nowrap;
-    column-gap: 2rem;
-  }
+
   .w-50 {
     width: 15%;
   }

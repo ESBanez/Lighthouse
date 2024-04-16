@@ -1,4 +1,5 @@
 
+import { Button } from "@mui/material";
 import "../../Sass/maincarousel.css"
 
 
@@ -21,13 +22,9 @@ const Values = () => {
                         <li>What skills and qualities do I need to be a strong leader at sea </li>
                         <li>Do you offer any training or coaching programs alongside these assessments?</li>
                     </ul>
-                    <div className="headingbutton">
-                        Click here 
-                        <span className="headingbuttonspan"></span>
-                        <span className="headingbuttonspan"></span>
-                        <span className="headingbuttonspan"></span>
-                        <span className="headingbuttonspan"></span>
-                    </div>
+                    <Button variant="contained" href="#section2">
+                        Click here
+                    </Button>
                 </div>
             </div>
         </>

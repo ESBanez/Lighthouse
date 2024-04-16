@@ -83,29 +83,29 @@ function Footer() {
                   </form>
                 </div>
               </div>
-              <div className="layout_item w-25 ">
+              <div className=" layout_item w-25 ">
                 <nav className="c-nav-tool">
                   <h4 className="c-nav-tool_title">Menu</h4>
                   <ul className="c-nav-tool_list LahatNgUl">
                     <li>
                       <a href="#section2" className="c-link AllA">
-                        About Us
+                        About Lighthouse
                       </a>
                     </li>
                     <li>
                       <a href="#section3" className="c-link AllA">
-                        Rapid
+                        About Rapid
                       </a>
                     </li>
                     <li>
                       <a href="#section5" className="c-link AllA">
-                        Btsolve
+                        About Btsolve
                       </a>
                     </li>
                   </ul>
                 </nav>
               </div>
-              <div className="layout_item w-25">
+              <div className="layout_email layout_item w-25">
                 <nav className="c-nav-tool">
                   <h4 className="c-nav-tool_title">Email us</h4>
                   <ul className="c-nav-tool_list LahatNgUl">
@@ -131,7 +131,7 @@ function Footer() {
             <br/>
             <div className="layout c-2">
               <div className="layout_item">
-                <ul className="LahatNgFlex LahatNgUl">
+                <ul className="LahatNgUl lowerlayout">
                   <li>
                     <a href="#section5" className="footerlogoholder" ><img src="logo1.png"/></a>
                   </li>

@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import "../../Sass/maincarousel.css"
   
 const Visibility = () => {
@@ -19,6 +20,9 @@ const Visibility = () => {
                         <li>How can I optimize the performance and efficiency of my fleet?</li>
                         <li>Do you offer budgeting and forecasting services for maritime businesses?</li>
                     </ul>
+                    <Button variant="contained" href="#section5">
+                        Click here
+                    </Button>
                 </div>
             </div>
         </>
