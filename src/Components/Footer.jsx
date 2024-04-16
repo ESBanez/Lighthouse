@@ -39,7 +39,7 @@ function Footer() {
       <div className="footercontainer">
         <div className="footer_inner">
           <div className="c-footer">
-            <div className="layout">
+            <div className="uppperlayout layout">
               <div className="layout_item firstlayout">
                 <div className="newsletter">
                   <form action="" onSubmit={handleSubmit} className='forma'>

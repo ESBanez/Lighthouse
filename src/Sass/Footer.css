@@ -159,6 +159,10 @@ textarea::placeholder {
 
 }
 
+
+.uppperlayout{
+  padding: 2rem 0 0 0;
+}
 @media screen and (min-width: 2280px) and (max-width: 2685px) {
   textarea::placeholder {
     font-size: 1rem;
@@ -172,6 +176,7 @@ textarea::placeholder {
     display: flex;
     flex-wrap: nowrap;
     column-gap: 15rem;
+    
   }
   .w-50 {
     width: 50%;
@@ -252,6 +257,7 @@ textarea::placeholder {
   .custom-textarea{
     min-height: 200px;
     width: 20rem;
+    
    }
   .layout {
     display: flex;
