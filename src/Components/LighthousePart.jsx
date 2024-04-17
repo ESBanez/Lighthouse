@@ -31,7 +31,7 @@ function LighthousePart() {
                     <div className="lighthousedefinition">
                         <div className="lighthouseimagecomponent">
                             <a href="#services">
-                                <img src="pinoyseaman.png" className="lighthouseimage" data-aos="fade-right" />
+                                <img src="pinoyseaman.png" className="lighthouseimage" data-aos="zoom-in-up"/>
                             </a>
                         </div>              
                     </div>
