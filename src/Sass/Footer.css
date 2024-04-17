@@ -385,7 +385,5 @@ textarea::placeholder {
   .layout{
     text-align: -webkit-center;
   }
-  .footercontainer{
-    width: 90%;
-  }
+
 }
