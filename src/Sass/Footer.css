@@ -254,7 +254,7 @@ textarea::placeholder {
      font-size: 2rem;
   }
   .footer_inner {
-    width: 100rem;
+    width: 90rem;
      }
 }
 
@@ -279,7 +279,7 @@ textarea::placeholder {
      font-size: 2rem;
   }
   .footer_inner {
-    width: 60rem;
+    width: 50rem;
    }
 }
 
@@ -303,7 +303,7 @@ textarea::placeholder {
      font-size: 2rem;
   }
   .footer_inner {
-    width: 60rem;
+    width: 50rem;
    }
 }
 
@@ -328,7 +328,7 @@ textarea::placeholder {
      font-size: 2rem;
   }
   .footer_inner {
-    width: 55rem;
+    width: 50rem;
    }
    .LahatNgFlex{
     display: flex;
@@ -380,7 +380,7 @@ textarea::placeholder {
     flex-flow: column;
   }
   .footer_inner {
-  width: 60rem;
+  width: 50rem;
   }
   .layout{
     text-align: -webkit-center;

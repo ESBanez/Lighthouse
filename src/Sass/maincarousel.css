@@ -46,13 +46,13 @@
     justify-content: center;
     font-size: 1.5rem;
     background: radial-gradient(
-      circle at top, /* Radial gradient centered */
-      #185170 10%, /* Start with a dark color close to the center */
+      circle at right, /* Radial gradient centered */
+      #333E6A 10%, /* Start with a dark color close to the center */
       #0f4867 30%, /* Dark blue as the second color */
       #0a5882 50%, /* Deep purple or blue as the third color */
       #0a547c 60%, /* Deep purple or blue as the third color */
       #04486d 80%, /* Lighter purple towards the outer edge */
-      #023b5a 100% /* A lighter shade at the very edge */
+      #333E6A 100% /* A lighter shade at the very edge */
   );
     width: fit-content;
     margin-bottom: -2rem;
