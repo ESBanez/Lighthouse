@@ -363,7 +363,7 @@ textarea::placeholder {
     width: 15rem;
    }
    .footer_inner {
-    width: 45rem;
+    width: 60rem;
     }
 }
 
@@ -380,7 +380,7 @@ textarea::placeholder {
     flex-flow: column;
   }
   .footer_inner {
-  width: 45rem;
+  width: 60rem;
   }
   .layout{
     text-align: -webkit-center;
