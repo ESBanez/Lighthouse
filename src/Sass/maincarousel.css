@@ -23,21 +23,6 @@
     justify-content: space-evenly;
     width: 100vw;
 }
-.carouseltitle1 {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    background-color: var(--blue);
-    width: fit-content;
-    border-radius: 50px;
-    z-index: 1;
-    color: var(--yellow);
-    width: 10rem;
-    padding: 0.5rem;
-    border-width: 1rem;
-    border: ridge;
-
-}
 
 .carouseltitle {
   z-index: 10;
@@ -60,13 +45,23 @@
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
-    background-color: var(--blue);
+    background: radial-gradient(
+      circle at top, /* Radial gradient centered */
+      #185170 10%, /* Start with a dark color close to the center */
+      #0f4867 30%, /* Dark blue as the second color */
+      #0a5882 50%, /* Deep purple or blue as the third color */
+      #0a547c 60%, /* Deep purple or blue as the third color */
+      #04486d 80%, /* Lighter purple towards the outer edge */
+      #023b5a 100% /* A lighter shade at the very edge */
+  );
     width: fit-content;
     margin-bottom: -2rem;
     z-index: 10;
     color: var(--yellow);
     width: 10rem;
     padding: 0.5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+
 
 }
 

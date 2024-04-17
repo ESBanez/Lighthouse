@@ -1,3 +1,17 @@
+.navbarmaincomponent{
+  background: radial-gradient(
+    circle at right, /* Radial gradient centered */
+    #333E6A 10%, /* Start with a dark color close to the center */
+    #0f4867 30%, /* Dark blue as the second color */
+    #0a5882 50%, /* Deep purple or blue as the third color */
+    #0a547c 60%, /* Deep purple or blue as the third color */
+    #04486d 80%, /* Lighter purple towards the outer edge */
+    #333E6A 100% /* A lighter shade at the very edge */
+);
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+
+}
+
 @media (min-width: 0px) and (max-width: 2561px) {
   * {
     --bs-navbar-color: var(--yellow); 
