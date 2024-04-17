@@ -1,7 +1,14 @@
 import "../Sass/Bts.css";
 import { Button, Popover } from "antd";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+
+
 
 function Btsolve() {
+  AOS.init();
+
   const content = (
     <div>
       <p>Proceed to BTSolve website?</p>
@@ -11,18 +18,18 @@ function Btsolve() {
   return (
     <div className="btssection container-fluid">
       <div className="btscomponent">
-        <div className="btscardcontainer">
+        <div className="btscardcontainer" data-aos="fade-right">
           <div className="BtsCard">
             <img src="Bangtan.png" alt="Bangtan" className="BangtanImage" />
           </div>
         </div>
         <div className="btscardcontainer">
           <div className="btsdefinitioncomponent">
-            <div className="btslogocomponent">
+            <div data-aos="fade-left" className="btslogocomponent">
               <div className="btslogoholder">
                 <img src="btslogo.png" className="btslogo" />
               </div>
-              <div>BTSolve Inc.</div>
+              <div >BTSolve Inc.</div>
             </div>
             <br />
             <br />

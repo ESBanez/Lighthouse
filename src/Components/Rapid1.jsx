@@ -4,7 +4,7 @@ import { Button, Popover } from "antd";
 function Rapid1() {
   const content = (
     <div>
-      <p>Proceed to Rapid website?</p>
+      <p data-aos="fade-right">Proceed to Rapid website?</p>
     </div>
   );
 
@@ -13,7 +13,7 @@ function Rapid1() {
       <div className="rapidcomponent">
         <div className="rapiddefinition">
           <div className="rapiddefinitioncomponent">
-            <div className="rapidlogocomponent">
+            <div className="rapidlogocomponent" data-aos="fade-right">
               <div className="rapidlogoholder">
                 <img src="Rapid-logo.png" className="rapidlogo" />
               </div>
@@ -21,7 +21,7 @@ function Rapid1() {
             </div>
             <br />
             <br />
-            <div className="rapidparagraphholder">
+            <div className="rapidparagraphholder" data-aos="fade-left">
               <div className="rapidparagraph">"Motivation and Success."</div>
             </div>
             <br /><br />

@@ -20,10 +20,10 @@ function LighthousePart() {
                 <div className="lighthousebody">
                     <div className="lighthousedefinition">
                         <div className="lighthousetextdefine">
-                            <div>
+                            <div data-aos="fade-right">
                             "Delivering value through
                             </div>
-                            <div>
+                            <div data-aos="fade-left">
                             technology, support and career growth."
                             </div>
                         </div>              
@@ -31,7 +31,7 @@ function LighthousePart() {
                     <div className="lighthousedefinition">
                         <div className="lighthouseimagecomponent">
                             <a href="#services">
-                                <img src="pinoyseaman.png" className="lighthouseimage" />
+                                <img src="pinoyseaman.png" className="lighthouseimage" data-aos="fade-right" />
                             </a>
                         </div>              
                     </div>

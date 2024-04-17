@@ -122,6 +122,7 @@ export default function Service() {
       >
         
         <div
+          data-aos="fade-right"
           className="servicesweoffercontainer"
           style={{
             display: "flex",
@@ -153,6 +154,7 @@ export default function Service() {
         <Box className="servicecard">
           {images.map((image) => (
             <ImageButton
+              data-aos="fade-left"
               focusRipple
               key={image.title}
               className="servicebut"

@@ -37,7 +37,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footercontainer">
-        <div className="footer_inner">
+        <div className="footer_inner" data-aos="fade-up">
           <div className="c-footer">
             <div className="uppperlayout layout">
               <div className="layout_item firstlayout">
