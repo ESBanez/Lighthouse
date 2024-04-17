@@ -1,131 +1,42 @@
-.TheServices{
-
-  height: 100%;
-  background-color: var(--blue);
-  overflow: hidden; /* Prevent overflow */
-
-}
-
-.ServicesBody {
-  background: var(--blue);
-  font-family: system-ui;
-  -webkit-font-smoothing: antialiased;
-  padding: 20px 0;
-  margin-bottom: 4rem;
-  
-}
 
 
-.ServicesHead {  
-  width: 90%;
-  max-width: 1240px;
-  color: var(--yellow);
-  margin: 0 auto;
-  font-size: 2rem;
-}
 
-
-.ServicesBand{
-  width: 90%;
-  max-width: 1240px;
-  margin: 0 auto;
-  
-  display: grid;
-  
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-gap: 20px;
-  
-  @media (min-width: 30em) {
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  @media (min-width: 60em) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.ServiceCard{
+.servicecard{
     background: white;
     text-decoration: none;
     color: #444;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
-    flex-direction: column;
-    min-height: 100%;
+    flex-wrap: wrap; /* Allows items to wrap to next line */
+    justify-content: center;
+    gap: 3rem;
 
-    /* // sets up hover state */
-    position: relative;
-    top: 0;
-    transition: all .1s ease-in;
-      
-    &:hover {
-      top: -2px;
-      box-shadow: 0 4px 5px rgba(0,0,0,0.2);
-    }
-
-    article {
-      padding: 20px;
-      flex: 1;
-      
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .ServiceHeading {
-      font-size: 20px;
-      margin: 0;
-      color: #333;
-    }
-
-    .ServiceParagraph {
-      flex: 1;
-      line-height: 1.4;
-    }
-
-    .ServiceName {
-      font-size: 12px;
-      font-weight: bold;
-      color: #999;
-      text-transform: uppercase;
-      letter-spacing: .05em;
-      margin: 2em 0 0 0;
-    }
-
-    .thumb {
-      padding-bottom: 60%;
-      background-size: cover;
-      background-position: center center;
-    }
-  }
+}
 
 
-  .servicesbackground {
-    object-fit: contain;
-    background-size: cover;
-    align-items: space-around;
-    align-content: normal;
-    border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
-    align-content: end;
-    background: radial-gradient(
+.servicesweoffercontainer {
+  background: radial-gradient(
       circle at top, /* Radial gradient centered */
-      rgba(24, 81, 112, 0.9) 10%, /* Start with a dark color close to the center */
-      rgba(15, 72, 103, 0.9) 30%, /* Dark blue as the second color */
-      rgba(10, 88, 130, 0.9) 50%, /* Deep purple or blue as the third color */
-      rgba(10, 84, 124, 0.9) 60%, /* Deep purple or blue as the third color */
-      rgba(4, 72, 109, 0.9) 80%, /* Lighter purple towards the outer edge */
-      rgba(2, 59, 90, 0.9) 100% /* A lighter shade at the very edge */
+      #185170 10%, /* Start with a dark color close to the center */
+      #0f4867 30%, /* Dark blue as the second color */
+      #0a5882 50%, /* Deep purple or blue as the third color */
+      #0a547c 60%, /* Deep purple or blue as the third color */
+      #04486d 80%, /* Lighter purple towards the outer edge */
+      #023b5a 100% /* A lighter shade at the very edge */
   );
-    height: 45rem;
-  }
+  margin-bottom: 3rem;
+}
 
 
-@media screen and (min-width: 0px) and (max-width: 599px) {
+.servicebut {
+  width: 48%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
   /* Your CSS rules for this screen width range go here */
-
-  .servicesbackground {
-      height: 27rem;
+  .servicecard > button {
+    width: 40rem;
+    height: 20rem;
   }
+
 }

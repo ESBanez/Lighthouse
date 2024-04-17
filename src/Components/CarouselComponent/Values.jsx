@@ -22,7 +22,7 @@ const Values = () => {
                         <li>What skills and qualities do I need to be a strong leader at sea </li>
                         <li>Do you offer any training or coaching programs alongside these assessments?</li>
                     </ul>
-                    <Button variant="contained" href="#section2">
+                    <Button variant="contained" href="#section2" className="carouselbutton">
                         Click here
                     </Button>
                 </div>

@@ -20,7 +20,7 @@ function Btsolve() {
           <div className="btsdefinitioncomponent">
             <div className="btslogocomponent">
               <div className="btslogoholder">
-                <img src="bts.png" className="btslogo" />
+                <img src="btslogo.png" className="btslogo" />
               </div>
               <div>BTSolve Inc.</div>
             </div>

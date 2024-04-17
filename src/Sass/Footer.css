@@ -179,6 +179,12 @@ textarea::placeholder {
   justify-content: space-evenly;
 }
 
+
+@media screen and (min-width: 2686px) and (max-width: 3000px) {
+.footer_inner{
+  width: 100rem;
+}
+}
 @media screen and (min-width: 2280px) and (max-width: 2685px) {
   textarea::placeholder {
     font-size: 1rem;

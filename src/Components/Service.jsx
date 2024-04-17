@@ -15,32 +15,26 @@ const images = [
   {
     url: "content-creation.jpg",
     title: "Content creation",
-    width: "45%",
   },
   {
     url: "bookkeeping.jpg",
     title: "Bookkeeping",
-    width: "45%",
   },
   {
     url: "social-media-management.jpg",
     title: "Social Media Posting",
-    width: "45%",
   },
   {
     url: "socialmediaadvertisement.jpg",
     title: "Social Media Advertisement",
-    width: "45%",
   },
   {
     url: "community.jpg",
     title: "Community Engagement",
-    width: "45%",
   },
   {
     url: "Technical-Ship-Management.jpg",
     title: "Technical Ship Management",
-    width: "45%",
   },
 ];
 
@@ -128,6 +122,7 @@ export default function Service() {
       >
         
         <div
+          className="servicesweoffercontainer"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -144,7 +139,9 @@ export default function Service() {
               alignSelf: "center",
             }}
           ></div>
-          <div>Services we offer</div>
+          <div className="servicesweoffer">
+            Services we offer
+          </div>
           <div
             style={{
               borderBottom: "2px solid var(--blue)",
@@ -153,23 +150,12 @@ export default function Service() {
             }}
           ></div>
         </div>
-        <Box
-          sx={{
-            display: "flex",
-            flexWrap: "wrap",
-            minWidth: 300,
-            width: "100%",
-            gap: 3,
-            justifyContent: "center",
-          }}
-        >
+        <Box className="servicecard">
           {images.map((image) => (
             <ImageButton
               focusRipple
               key={image.title}
-              style={{
-                width: image.width,
-              }}
+              className="servicebut"
               onClick={handleClickOpen}
             >
               <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
@@ -182,6 +168,7 @@ export default function Service() {
                   sx={{
                     position: "relative",
                     p: 4,
+                    fontSize: "1.5rem",
                     pt: 2,
                     pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
                   }}

@@ -6,7 +6,9 @@
         align-items: center;
     }
 }
-
+.rec-carousel-item{
+  align-content: center;
+}
 
 
 .carouselcontainer{
@@ -24,7 +26,7 @@
 .carouseltitle1 {
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 3rem;
     background-color: var(--blue);
     width: fit-content;
     border-radius: 50px;
@@ -39,14 +41,18 @@
 
 .carouseltitle {
   z-index: 10;
+  font-size: 3rem;
 }
 .carouselbody{
-    font-size: 1rem;
+    font-size: 2.5rem;
     background-color: white;
     opacity: 0.55;
     border-radius: 15px;
     padding: 2.5rem 2rem 0.5rem 2rem;
     text-align: -webkit-center;
+}
+.carouselbutton{
+    font-size: 1.7rem;
 }
 
 .carouseltitle a {

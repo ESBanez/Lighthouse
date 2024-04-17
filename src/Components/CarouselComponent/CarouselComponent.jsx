@@ -14,7 +14,7 @@ const CarouselComponent = () => {
 
       <div className="carouselparent">
         <Carousel>
-          <MainCarousel />
+          <MainCarousel style={{alignContent: "center"}}/>
           <Visibility />
           <Insight />
           <Values />

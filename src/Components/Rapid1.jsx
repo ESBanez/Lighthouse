@@ -15,7 +15,7 @@ function Rapid1() {
           <div className="rapiddefinitioncomponent">
             <div className="rapidlogocomponent">
               <div className="rapidlogoholder">
-                <img src="rapid.png" className="rapidlogo" />
+                <img src="Rapid-logo.png" className="rapidlogo" />
               </div>
               <div>R A P I D</div>
             </div>
