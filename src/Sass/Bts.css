@@ -16,9 +16,7 @@
 }
 
 
-.btssection{
-    
-}   
+ 
 
 .btscomponent {
     display: flex;
@@ -60,6 +58,9 @@
     border: 3px ridge rgba(40, 39, 36, 0.3);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 
+}
+.BtsCard {
+    align-content: center;
 }
 .btslogoholder > img{
     height: 6rem;

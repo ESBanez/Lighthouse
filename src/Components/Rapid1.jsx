@@ -1,5 +1,6 @@
 import "../Sass/Rapid.css";
 import { Button, Popover } from "antd";
+import RapidCarousel from "./RapidCarousel";
 
 function Rapid1() {
   const content = (
@@ -70,11 +71,7 @@ function Rapid1() {
         </div>
         <div className="rapidcardcontainer ">
           <div className="rapidCard">
-            <img
-              src="achieverLogo2.png"
-              alt="Bangtan"
-              className="BangtanImage"
-            />
+              <RapidCarousel/>
           </div>
         </div>
       </div>

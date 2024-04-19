@@ -2,6 +2,7 @@ import "../Sass/Bts.css";
 import { Button, Popover } from "antd";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import BtsCarousel from "./BtsCarousel";
 // ..
 
 
@@ -20,7 +21,7 @@ function Btsolve() {
       <div className="btscomponent">
         <div className="btscardcontainer" data-aos="fade-right">
           <div className="BtsCard">
-            <img src="Bangtan.png" alt="Bangtan" className="BangtanImage" />
+            <BtsCarousel/>
           </div>
         </div>
         <div className="btscardcontainer">
