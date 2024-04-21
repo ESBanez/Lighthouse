@@ -8,9 +8,9 @@ function BtsCarousel() {
         <div className="btscarousel-wrapper">
           <div className="btscarousel-container">
             <div className="btscarousel">
-              <div className="btsimage-one"></div>
-              <div className="btsimage-two"></div>
-              <div className="btsimage-three"></div>
+              <a href="https://sslinux.btsolve.com/btssite/"><div className="btsimage-one"></div></a>
+              <a href="https://sslinux.btsolve.com/btssite/"><div className="btsimage-two"></div></a>
+              <a href="https://sslinux.btsolve.com/btssite/"><div className="btsimage-three"></div></a>
             </div>
           </div>
         </div>

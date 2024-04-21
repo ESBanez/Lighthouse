@@ -1,13 +1,17 @@
-import $ from 'jquery';
-
-// Owl Carousel initialization
-$(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
-        animateOut: 'fadeOut',
-        items: 1,
-        loop: true,
-        autoplayHoverPause: false,
-        autoplay: true,
-        smartSpeed: 1000,
-    });
-});
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll(".btsimage");
+    let currentSlide = 0;
+  
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove("active"));
+      slides[index].classList.add("active");
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds (adjust as needed)
+  });
+  

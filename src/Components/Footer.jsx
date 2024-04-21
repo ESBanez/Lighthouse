@@ -133,13 +133,19 @@ function Footer() {
               <div className="layout_item">
                 <ul className="LahatNgUl lowerlayout">
                   <li>
-                    <a href="#section5" className="footerlogoholder" ><img src="logo btsolve black.png"/></a>
+                    <a href="#section5" className="footerlogoholder" data-aos="fade-up-right">
+                      <img src="logo btsolve black.png"/>
+                    </a>
                   </li>
                   <li>
-                    <a href="#section3" className="footerlogoholder" ><img src="logo rapid.png"/></a>
+                    <a href="#section3" className="footerlogoholder" data-aos="fade-up">
+                      <img src="logo rapid.png"/>
+                    </a>
                   </li>
                   <li>
-                    <a href="#section2" className="footerlogoholder" ><img src="logo lighthouse.png"/></a>
+                    <a href="#section2" className="footerlogoholder" data-aos="fade-up-left">
+                      <img src="logo lighthouse.png"/>
+                    </a>
                   </li>
                 </ul>
               </div>

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
@@ -8,33 +9,40 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Button from "@mui/material/Button";
-import { useState } from "react";
-import "../Sass/Services.scss"
+import Tooltip from "@mui/material/Tooltip"; // Import Tooltip
+
+import "../Sass/Services.scss";
 
 const images = [
   {
     url: "content-creation.jpg",
     title: "Content creation",
+    hovercomment: "The process of generating material for online platforms, including articles, videos, images, and more, to engage and inform an audience.",
   },
   {
     url: "bookkeeping.jpg",
     title: "Bookkeeping",
+    hovercomment: "The systematic recording, organizing, and managing of financial transactions for a business, ensuring accuracy and compliance with regulations.",
   },
   {
     url: "social-media-management.jpg",
     title: "Social Media Posting",
+    hovercomment: "The act of publishing content, such as updates, photos, or videos, on social media platforms to communicate with and engage an audience.",
   },
   {
     url: "socialmediaadvertisement.jpg",
     title: "Social Media Advertisement",
+    hovercomment: " Paid promotional content displayed on social media platforms to increase brand visibility, drive traffic, and achieve marketing goals.",
   },
   {
     url: "community.jpg",
     title: "Community Engagement",
+    hovercomment: " Interaction and involvement with a group of people sharing common interests or characteristics, often facilitated through activities, events, or online discussions.",
   },
   {
     url: "Technical-Ship-Management.jpg",
     title: "Technical Ship Management",
+    hovercomment: "Technical Ship Management for social media.",
   },
 ];
 
@@ -106,21 +114,25 @@ const ImageMarked = styled("span")(({ theme }) => ({
 
 export default function Service() {
   const [open, setOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-  const handleClickOpen = () => {
+
+  const handleClickOpen = (image) => {
     setOpen(true);
+    setSelectedImage(image);
   };
 
   const handleClose = () => {
     setOpen(false);
+    setSelectedImage(null);
   };
+
+
+
 
   return (
     <>
-      <div
-        className="servicesbackground"
-      >
-        
+      <div className="servicesbackground">
         <div
           data-aos="fade-right"
           className="servicesweoffercontainer"
@@ -130,7 +142,7 @@ export default function Service() {
             marginTop: "-10rem",
             color: "var(--yellow)",
             fontSize: "2rem",
-            padding: "1rem 0"
+            padding: "1rem 0",
           }}
         >
           <div
@@ -140,9 +152,7 @@ export default function Service() {
               alignSelf: "center",
             }}
           ></div>
-          <div className="servicesweoffer">
-            Services we offer
-          </div>
+          <div className="servicesweoffer">Services we offer</div>
           <div
             style={{
               borderBottom: "2px solid var(--blue)",
@@ -154,50 +164,50 @@ export default function Service() {
         <Box className="servicecard">
           {images.map((image) => (
             <ImageButton
-              data-aos="fade-left"
-              focusRipple
               key={image.title}
               className="servicebut"
-              onClick={handleClickOpen}
+              onClick={() => handleClickOpen(image)}
             >
               <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
               <ImageBackdrop className="MuiImageBackdrop-root" />
               <Image>
-                <Typography
-                  component="span"
-                  variant="subtitle1"
-                  color="inherit"
-                  sx={{
-                    position: "relative",
-                    p: 4,
-                    fontSize: "1.5rem",
-                    pt: 2,
-                    pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-                  }}
-                >
-                  {image.title}
-                  <ImageMarked className="MuiImageMarked-root" />
-                </Typography>
+                <Tooltip title={image.hovercomment}>
+                  <Typography
+                    component="span"
+                    variant="subtitle1"
+                    color="inherit"
+                    sx={{
+                      position: "relative",
+                      p: 4,
+                      fontSize: "1.5rem",
+                      pt: 2,
+                      pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                    }}
+                  >
+                    {image.title}
+                    <ImageMarked className="MuiImageMarked-root" />
+                  </Typography>
+                </Tooltip>
               </Image>
             </ImageButton>
           ))}
         </Box>
+
+        {/* Dialog */}
         <Dialog
           open={open}
           onClose={handleClose}
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description"
         >
-          <DialogTitle id="alert-dialog-title">
-            {"Wanted our service?"}
-          </DialogTitle>
+          <DialogTitle id="alert-dialog-title">{"Wanted our service?"}</DialogTitle>
           <DialogContent>
             <DialogContentText id="alert-dialog-description">
-              You can email us at the contact information below.
+              {selectedImage && selectedImage.hovercomment}
             </DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button onClick={handleClose}>Disagree</Button>
+            <Button onClick={handleClose} disabled>Disagree</Button>
             <Button onClick={handleClose} autoFocus>
               Agree
             </Button>

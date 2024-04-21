@@ -49,6 +49,7 @@ function Btsolve() {
                 justifyContent: "center",
                 alignContent: "center",
               }}
+              data-aos="fade-right"
             >
               <a
                 href="https://sslinux.btsolve.com/btssite/"
@@ -59,6 +60,7 @@ function Btsolve() {
                 }}
               >
                 <Button
+                  data-aos="fade-right"
                   style={{
                     display: "flex",
                     justifyContent: "center",
