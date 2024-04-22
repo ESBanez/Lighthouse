@@ -51,6 +51,7 @@ const CarouselComponent = () => {
                   </div>
                 </div>
                 <div className="carouselbody">
+                  <br />
                   <ul>
                     <li>
                       What is the best application for crew management and
@@ -65,8 +66,9 @@ const CarouselComponent = () => {
                       maritime businesses?
                     </li>
                   </ul>
+                  <br />
                   <Button variant="contained" href="#section5">
-                    Click here
+                    View more
                   </Button>
                 </div>
               </div>
@@ -88,6 +90,7 @@ const CarouselComponent = () => {
                   </div>
                 </div>
                 <div className="carouselbody">
+                  <br />
                   <ul>
                     <li>
                       Does the Filipino Seafarer Multidimensional Assessment
@@ -100,6 +103,7 @@ const CarouselComponent = () => {
                       maritime businesses?
                     </li>
                   </ul>
+                  <br />
                   <Button variant="contained" href="#section3">
                     Click here
                   </Button>
@@ -123,6 +127,7 @@ const CarouselComponent = () => {
                   </div>
                 </div>
                 <div className="carouselbody">
+                  <br />
                   <ul>
                     <li>
                       How can I improve my chances of becoming a successful
@@ -137,6 +142,7 @@ const CarouselComponent = () => {
                       these assessments?
                     </li>
                   </ul>
+                  <br />
                   <Button
                     variant="contained"
                     href="#section2"

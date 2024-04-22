@@ -6,10 +6,10 @@ function MainCarousel() {
     <div className="maincarousel">
       <div className="container">
         <div className="row">
-          <div className="col-lg-12 col-12 mb-5 mb-lg-0" style={{textAlign: "right"}}>
-            <h2 className="text-white" style={{fontSize:"xxx-large"}}>Lighthouse Innovations Inc.</h2>
+          <div className="col-lg-12 col-12 mb-5 mb-lg-0">
+            <h2 className="text-white" style={{fontSize:"xx-large"}}>Lighthouse Innovations Inc.</h2>
 
-            <h1 className="cd-headline rotate-1 mb-4 pb-2">
+            <div className="cd-headline rotate-1 mb-4 pb-2">
               <span className="cd-words-wrapper">
                 <b className="is-visible">
                   <a href="#visi" className="text-warning">
@@ -27,7 +27,7 @@ function MainCarousel() {
                   </a>
                 </b>
               </span>
-            </h1>
+            </div>
             {/* 
             <div className="custom-btn-group">
               <a href="#section_2" className="btn custom-btn smoothscroll me-3">
