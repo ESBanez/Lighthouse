@@ -116,7 +116,7 @@ function Footer() {
                     </li>
                     <li className="c-nav-tool_item">
                       <a href="#section5" className="c-link AllA">
-                        info@btsolve.com
+                        support@btsolve.com
                       </a>
                     </li>
                     <li className="c-nav-tool_item">
