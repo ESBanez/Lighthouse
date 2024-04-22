@@ -56,8 +56,8 @@ function Rapid1() {
                     borderWidth: "3px",
                     alignSelf: "center",
                     color: "var(--yellow)",
-                    width: "8rem"
-
+                    width: "8rem",
+                    height: "auto",
                   }}
                   type="primary"
                 >

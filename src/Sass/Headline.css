@@ -14,31 +14,3 @@
 
 }
 
-
-
-body {
-  font-family:'montserrat';
-
-}
-.autobuttoncon {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  padding: 1rem;
-  justify-items: center;
-}
-p {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: white;
-}
-
-@media screen and (max-width: 1024px) {
-  .autobuttoncon {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-  }
-}
-
-
-  

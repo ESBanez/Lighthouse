@@ -6,8 +6,8 @@ function MainCarousel() {
     <div className="maincarousel">
       <div className="container">
         <div className="row">
-          <div className="col-lg-12 col-12 mb-5 mb-lg-0">
-            <h2 className="text-white" style={{fontSize:"xxx-large"}}>Lighthouse Innovations</h2>
+          <div className="col-lg-12 col-12 mb-5 mb-lg-0" style={{textAlign: "right"}}>
+            <h2 className="text-white" style={{fontSize:"xxx-large"}}>Lighthouse Innovations Inc.</h2>
 
             <h1 className="cd-headline rotate-1 mb-4 pb-2">
               <span className="cd-words-wrapper">
