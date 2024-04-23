@@ -140,7 +140,7 @@ export default function Service() {
             display: "flex",
             justifyContent: "center",
             marginTop: "-10rem",
-            color: "var(--yellow)",
+            color: "white",
             fontSize: "2rem",
             padding: "1rem 0",
           }}

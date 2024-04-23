@@ -32,7 +32,7 @@
         #04486d 80%, /* Lighter purple towards the outer edge */
         #333E6A 100% /* A lighter shade at the very edge */
     );
-    color: var(--yellow);
+    color: white;
     contain: content;
     border-radius: 15px;
     border: 3px ridge rgba(64, 55, 55, 0.3);
@@ -46,6 +46,7 @@
     align-content: center;
     align-items: center;
     justify-content: center;
+    margin-left: -1.7rem;
 }
 .btscardcontainer{
     display: flex;
