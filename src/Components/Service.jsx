@@ -48,7 +48,7 @@ const images = [
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: "relative",
-  height: 200,
+  height: "",
   boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.5)", // Make sure the values match your design expectations
 
   [theme.breakpoints.down("sm")]: {
