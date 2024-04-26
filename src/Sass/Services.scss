@@ -10,7 +10,7 @@
     flex-wrap: wrap; /* Allows items to wrap to next line */
     justify-content: center;
     gap: 3rem;
-
+    height: auto;
 }
 
 
@@ -32,14 +32,22 @@
 
 .servicebut {
   width: 48%;
-  height: 30vh;
+  height: "30vh";
 }
+.servicecard > button {
+  width: 35rem;
+  height: 20rem;
+}
+
 
 @media screen and (min-width: 0px) and (max-width: 575px) {
   /* Your CSS rules for this screen width range go here */
   .servicecard > button {
     width: 40rem;
     height: 20rem;
+  }
+  .servicebut{
+    height: auto;
   }
 
 }
