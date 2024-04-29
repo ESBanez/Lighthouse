@@ -14,12 +14,14 @@ const Visibility = () => {
                         </a> 
                     </div>
                 </div>
+                <br />
                 <div className="carouselbody">
                     <ul>
                         <li>What is the best application for crew management and training?</li>
                         <li>How can I optimize the performance and efficiency of my fleet?</li>
                         <li>Do you offer budgeting and forecasting services for maritime businesses?</li>
                     </ul>
+                    <br />
                     <Button variant="contained" href="#section5">
                         Click here
                     </Button>
