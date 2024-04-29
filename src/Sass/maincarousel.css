@@ -515,12 +515,9 @@ ol, li {
 } */
 
 .carousel__snapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: center;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
 }
 
 @media (hover: hover) {
@@ -623,3 +620,51 @@ ol, li {
 }
 
 
+/* added new caroussel */
+
+
+
+button {
+  height: 10%;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  padding: 1em;
+  display: flex;
+}
+
+button .arrow {
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 10px;
+  transition: transform 0.3s ease-out;
+  outline: none;
+}
+
+#right-btn {
+  margin: auto 0 auto -2em;
+}
+
+#right-btn .arrow {
+  transform: rotate(-45deg);
+}
+
+#left-btn {
+  z-index: 0;
+  margin: auto -2em auto 0;
+}
+
+#left-btn .arrow {
+  transform: rotate(135deg);
+}
+
+
+.caros{
+  background: local;
+}
+
+.carousel__slide{
+  align-content: center;
+}
