@@ -37,7 +37,7 @@ const images = [
   {
     url: "community.jpg",
     title: "Community Engagement",
-    hovercomment: " Interaction and involvement with a group of people sharing common interests or characteristics, often facilitated through activities, events, or online discussions.",
+    hovercomment: " Interaction and involvement with a group of people sharing common interests or characteristics, often facilitated through activities, events, or online discussions. ",
   },
   {
     url: "Technical-Ship-Management.jpg",

@@ -7,12 +7,12 @@ import Box from '@mui/material/Box';
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
 import Btsolve from "./../Components/Btsolve"
-import Footer from "./../Components/Footer";
 import Navbar from "./../Components/Navbar";
 import CarouselComponent from "./../Components/CarouselComponent/CarouselComponent";
 import MissionVision from "./../Components/MissionVision";
 import Service from "../Components/Service";
 import "../Sass/Home.css";
+import FooterKen from "./../Components/FooterKen";
 
 
 
@@ -67,7 +67,7 @@ function Home() {
                     <br /><br />
                     <div>
                         <div id="section4" className="Footer" > 
-                            <Footer/>
+                            <FooterKen/>
                         </div>
                     </div>
                     
