@@ -26,6 +26,10 @@
 .footernameemail, .footerphonecompany, .footerinquiries, .footersubmit{
     display: flex;
 }
+
+.footeremail{
+    text-align: -webkit-center;
+}
 .footeremailcardtab{
     width: 35rem;
     height: 10rem;
@@ -48,7 +52,7 @@
 }
 .footeremailustitle{
     padding: 1rem;
-    color: var(--yellow);
+    color: blue;
     font-size: 1.3rem;
 }
 .emails{
@@ -69,6 +73,13 @@
 }
 .footeremailtab{
     text-align-last: center;
+    background: center;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    height: 10rem;
+
 }
 .footerlogoholder > img {
     height: 5rem;

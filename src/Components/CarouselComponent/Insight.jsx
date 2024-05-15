@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import "../../Sass/maincarousel.css"
 
   
-const Insight = () => {
+const Insight = ({onScrollToSection}) => {
   
 
     return (
@@ -10,7 +10,7 @@ const Insight = () => {
             <div>
                 <div className="carouseltitleholder">
                     <div className="carouseltitle">
-                        <a href="#section3" id="insi">
+                        <a onClick={() => onScrollToSection("section3")} id="insi">
                             Insight
                         </a> 
                     </div>
@@ -22,7 +22,11 @@ const Insight = () => {
                         <li>How can the Achievers Mindset tool help me develop the qualities I need to succeed in the maritime industry? or maritime businesses?</li>
                     </ul>
                     <br />
-                    <Button variant="contained" href="#section3">
+                    <Button 
+                        variant="contained" 
+                        className="carouselbutton"
+                        onClick={() => onScrollToSection("section3")}
+                        >
                         Click here
                     </Button>
                 </div>

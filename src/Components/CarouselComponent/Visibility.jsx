@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import "../../Sass/maincarousel.css"
   
-const Visibility = () => {
+const Visibility = ({onScrollToSection}) => {
   
 
     return (
@@ -9,7 +9,9 @@ const Visibility = () => {
             <div>
                 <div className="carouseltitleholder" >
                     <div className="carouseltitle" >
-                        <a href="#section5" id="visi">
+                        <a 
+                        onClick={() => onScrollToSection("section5")}
+                        id="visi">
                             Visibility
                         </a> 
                     </div>
@@ -22,7 +24,11 @@ const Visibility = () => {
                         <li>Do you offer budgeting and forecasting services for maritime businesses?</li>
                     </ul>
                     <br />
-                    <Button variant="contained" href="#section5">
+                    <Button 
+                        variant="contained" 
+                        className="carouselbutton"
+                        onClick={() => onScrollToSection("section5")}
+                        >
                         Click here
                     </Button>
                 </div>

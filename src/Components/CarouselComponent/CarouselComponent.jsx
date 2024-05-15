@@ -4,14 +4,14 @@ import Visibility from '../CarouselComponent/Visibility.jsx';
 import Insight from '../CarouselComponent/Insight.jsx';
 import Values from '../CarouselComponent/Values.jsx';
 
-function CarouselComponent() {
+function CarouselComponent({ onScrollToSection }) {
   const [position, setPosition] = useState(0); // Using state to track position
 
   const pictures = [
-    { key: 'main', component: <MainCarousel /> },
-    { key: 'visibility', component: <Visibility /> },
-    { key: 'insight', component: <Insight /> },
-    { key: 'values', component: <Values /> },
+    { key: 'main', component: <MainCarousel onScrollToSection={onScrollToSection} /> },
+    { key: 'visibility', component: <Visibility onScrollToSection={onScrollToSection} /> },
+    { key: 'insight', component: <Insight onScrollToSection={onScrollToSection} /> },
+    { key: 'values', component: <Values onScrollToSection={onScrollToSection} /> },
   ];
 
   const moveRight = () => {
@@ -25,7 +25,7 @@ function CarouselComponent() {
   };
 
   useEffect(() => {
-    // Automatically move to the next slide every 4 seconds
+    // Automatically move to the next slide every 10 seconds
     const intervalId = setInterval(moveRight, 10000);
 
     // Clear the interval when the component unmounts or when position changes

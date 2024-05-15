@@ -27,6 +27,9 @@ align-content: center;
 .carouseltitle {
 z-index: 10;
 font-size: 2rem;
+text-decoration: none !important;
+cursor: pointer;
+color: white;
 }
 .carouselbody{
   font-size: 1.3rem;

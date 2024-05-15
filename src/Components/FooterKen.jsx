@@ -186,7 +186,7 @@ function FooterKen () {
             <br/>
             <br/>
             <br/>
-            <div className="footeremailtab container">
+            <div className="footeremailtab">
                 <div className="footeremailustitle">
                     Email Us
                 </div>

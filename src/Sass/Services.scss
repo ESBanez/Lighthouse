@@ -1,53 +1,46 @@
-
-
-
-.servicecard{
-    background: white;
-    text-decoration: none;
-    color: #444;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to next line */
-    justify-content: center;
-    gap: 3rem;
-    height: auto;
+.servicecard {
+  background: white;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+  height: auto;
 }
-
 
 .servicesweoffercontainer {
   background: radial-gradient(
-    circle at right, /* Radial gradient centered */
-    #333E6A 10%, /* Start with a dark color close to the center */
-    #0f4867 30%, /* Dark blue as the second color */
-    #0a5882 50%, /* Deep purple or blue as the third color */
-    #0a547c 60%, /* Deep purple or blue as the third color */
-    #04486d 80%, /* Lighter purple towards the outer edge */
-    #333E6A 100% /* A lighter shade at the very edge */
-);
+    circle at right,
+    #333e6a 10%,
+    #0f4867 30%,
+    #0a5882 50%,
+    #0a547c 60%,
+    #04486d 80%,
+    #333e6a 100%
+  );
   margin-bottom: 3rem;
   border-radius: 15px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  margin-top: -10rem;
+  color: white;
+  font-size: 1.3rem;
+  padding: 1rem 0;
 }
-
 
 .servicebut {
-  width: 48%;
-  height: "30vh";
-}
-.servicecard > button {
-  width: 35rem;
-  height: 20rem;
+  width: 100%;
+  height: 200px;
 }
 
-
-@media screen and (min-width: 0px) and (max-width: 575px) {
-  /* Your CSS rules for this screen width range go here */
-  .servicecard > button {
-    width: 40rem;
-    height: 20rem;
+@media (min-width: 600px) {
+  .servicecard {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .servicebut{
-    height: auto;
-  }
+}
 
+@media (min-width: 900px) {
+  .servicecard {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

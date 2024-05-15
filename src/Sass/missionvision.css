@@ -1,14 +1,14 @@
 .missionvisioncomponent{
     text-align: justify;
 }
-
+/* 
 .missionvisionmain{
     background-image: url("../../public/pyramid.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 
-}
+} */
 
 .missionvisionmain{
     display: flex;

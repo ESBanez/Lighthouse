@@ -2,6 +2,10 @@ import '../Sass/Footer.css';
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
 emailjs.init('-DhGdulE7p83TuON2')
+import TextField from '@mui/material/TextField';
+import Box from '@mui/material/Box';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+
 
 
 function Footer() {
@@ -43,7 +47,10 @@ function Footer() {
               <div className="layout_item firstlayout">
                 <div className="newsletter">
                   <form action="" onSubmit={handleSubmit} className='forma'>
-                     <textarea
+                    <TextField id="outlined-basic" label="Full-name" required variant="outlined" />
+                    <TextField style={{marginTop: '10px',}} id="outlined-basic" label="Phone number" variant="outlined" />
+                    <TextField style={{marginTop: '10px',}} id="outlined-basic" label="Company" variant="outlined" />
+                    <TextField
                     className="custom-textarea"
                     name="message"
                     placeholder={"Hey! you can leave us a message here."}
@@ -62,7 +69,7 @@ function Footer() {
                       cursor: 'text', // Change cursor to text
                     }}
                   />
-                    <div className="EmailAndSend">
+                    {/* <div className="EmailAndSend">
                       <input
                         type="email"
                         id="email"
@@ -78,7 +85,7 @@ function Footer() {
                           <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
                         </svg>
                       </button>
-                    </div>
+                    </div> */}
 
                   </form>
                 </div>

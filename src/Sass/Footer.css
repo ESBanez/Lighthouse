@@ -16,6 +16,7 @@
 .forma{
   display: flex;
   flex-direction: column;
+  font-size: larger;
 }
 .EmailAndSend{
   display: flex;

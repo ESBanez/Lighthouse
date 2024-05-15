@@ -9,8 +9,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip"; // Import Tooltip
-
+import Tooltip from "@mui/material/Tooltip";
 import "../Sass/Services.scss";
 
 const images = [
@@ -32,12 +31,12 @@ const images = [
   {
     url: "socialmediaadvertisement.jpg",
     title: "Social Media Advertisement",
-    hovercomment: " Paid promotional content displayed on social media platforms to increase brand visibility, drive traffic, and achieve marketing goals.",
+    hovercomment: "Paid promotional content displayed on social media platforms to increase brand visibility, drive traffic, and achieve marketing goals.",
   },
   {
     url: "community.jpg",
     title: "Community Engagement",
-    hovercomment: " Interaction and involvement with a group of people sharing common interests or characteristics, often facilitated through activities, events, or online discussions. ",
+    hovercomment: "Interaction and involvement with a group of people sharing common interests or characteristics, often facilitated through activities, events, or online discussions.",
   },
   {
     url: "Technical-Ship-Management.jpg",
@@ -48,12 +47,11 @@ const images = [
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: "relative",
-  height: "",
-  boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.5)", // Make sure the values match your design expectations
-
+  height: "200px",
+  boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.5)",
   [theme.breakpoints.down("sm")]: {
-    width: "100%", // Overrides inline-style
-    height: 100,
+    width: "100%",
+    height: "150px",
   },
   "&:hover, &.Mui-focusVisible": {
     zIndex: 1,
@@ -72,7 +70,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
 const ImageSrc = styled("span")({
   position: "absolute",
   left: 0,
-  right: 1,
+  right: 0,
   top: 0,
   bottom: 0,
   backgroundSize: "cover",
@@ -116,7 +114,6 @@ export default function Service() {
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
-
   const handleClickOpen = (image) => {
     setOpen(true);
     setSelectedImage(image);
@@ -126,9 +123,6 @@ export default function Service() {
     setOpen(false);
     setSelectedImage(null);
   };
-
-
-
 
   return (
     <>
@@ -141,7 +135,7 @@ export default function Service() {
             justifyContent: "center",
             marginTop: "-10rem",
             color: "white",
-            fontSize: "2rem",
+            fontSize: "1.3rem",
             padding: "1rem 0",
           }}
         >
@@ -152,7 +146,9 @@ export default function Service() {
               alignSelf: "center",
             }}
           ></div>
-          <div className="servicesweoffer">Services we offer</div>
+          <div className="servicesweoffer" style={{ width: "fit-content" }}>
+            Services we offer
+          </div>
           <div
             style={{
               borderBottom: "2px solid var(--blue)",
@@ -179,7 +175,7 @@ export default function Service() {
                     sx={{
                       position: "relative",
                       p: 4,
-                      fontSize: "1.5rem",
+                      fontSize: "1.2rem",
                       pt: 2,
                       pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
                     }}
@@ -207,7 +203,9 @@ export default function Service() {
             </DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button onClick={handleClose} disabled>Disagree</Button>
+            <Button onClick={handleClose} disabled>
+              Disagree
+            </Button>
             <Button onClick={handleClose} autoFocus>
               Agree
             </Button>
