@@ -68,6 +68,10 @@ function FooterKen () {
 
     return (
         <div className="footercomponent">
+            <video autoPlay loop muted className="video-background">
+                <source src="backvid.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
             <div className="footerbody container">
                 <form className="footerform" onSubmit={handleSubmit}>
                     {/* Name and Email fields */}
@@ -227,6 +231,11 @@ function FooterKen () {
                 <img src="logo lighthouse.png"/>
             </a>
 
+        </div>
+    </div>
+    <div className="footerall">
+        <div className="footeralltab">
+            All rights reserved 2024.
         </div>
     </div>
   </div>

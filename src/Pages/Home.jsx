@@ -32,12 +32,10 @@ function Home() {
                     <div className="carouselComp">
                         <CarouselComponent onScrollToSection={scrollToSection} />
                     </div>
-                    <br /><br /><br />
-                    <br /><br /><br />
-                    <div>
+                    <div className="spacer"></div> {/* Use CSS to create space */}
+                    <div className="missionvi">
                         <MissionVision/>
                     </div>
-                    <br /><br /><br />
                     <div className="TextReveal" id="section2">
                         <LighthousePart onScrollToSection={scrollToSection} />
                     </div>
@@ -53,8 +51,9 @@ function Home() {
                         <div className="servicehomediv container" id="services">
                             <Service onScrollToSection={scrollToSection} />
                         </div>
+                        <div className="spacer"></div> {/* Use CSS to create space */}
+
                     </div>
-                    <br /><br />
                     <div>
                         <div id="section4" className="Footer"> 
                             <FooterKen/>

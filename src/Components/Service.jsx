@@ -196,10 +196,23 @@ export default function Service() {
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description"
         >
-          <DialogTitle id="alert-dialog-title">{"Wanted our service?"}</DialogTitle>
+          <DialogTitle id="alert-dialog-title" style={{placeSelf: "center"}}>{"Wanted our service?"}</DialogTitle>
           <DialogContent>
             <DialogContentText id="alert-dialog-description">
-              {selectedImage && selectedImage.hovercomment}
+            <div style={{ display: "flex" }}>
+                <div>
+                  {selectedImage && (
+                    <img
+                      src={selectedImage.url}
+                      alt={selectedImage.title}
+                      style={{ width: "200px", height: "200px", objectFit: "cover" }}
+                    />
+                  )}
+                </div>
+                <div style={{ padding: "1rem" }}>
+                  {selectedImage && selectedImage.hovercomment}
+                </div>
+              </div>
             </DialogContentText>
           </DialogContent>
           <DialogActions>

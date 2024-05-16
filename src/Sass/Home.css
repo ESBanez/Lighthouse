@@ -107,12 +107,26 @@
 
 }
 
+.spacer {
+  background-color: #ffffff;
+  height: 5rem; /* Adjust the height as needed for spacing */
+}
 
-.Rapidite {
-    display: flex;
+.Rapidite, nav, .TextReveal, .btrapiserv, .missionvi, .carouselComp {
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+.missionvi{
+  padding-top: 5rem;
+}
+
+.Rapidite{
+  display: flex;
+
 }
 .Footer{
-    /* margin-top: 5rem; */
+
 }
 
 
