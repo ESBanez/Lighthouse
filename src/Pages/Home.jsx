@@ -36,6 +36,8 @@ function Home() {
                     <div className="missionvi">
                         <MissionVision/>
                     </div>
+                    <div className="spacer"></div> {/* Use CSS to create space */}
+
                     <div className="TextReveal" id="section2">
                         <LighthousePart onScrollToSection={scrollToSection} />
                     </div>

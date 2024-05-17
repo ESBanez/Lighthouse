@@ -209,6 +209,7 @@ export default function Service() {
                     />
                   )}
                 </div>
+                
                 <div style={{ padding: "1rem" }}>
                   {selectedImage && selectedImage.hovercomment}
                 </div>

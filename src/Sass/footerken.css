@@ -118,3 +118,24 @@
     color: white;
     padding: 1rem;
 }
+
+
+@media screen and (min-width: 0px) and (max-width: 1079px){
+    .footerbody{
+        
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    flex-direction: column;
+    }
+    .footerform{
+        margin-bottom: 3rem;
+    }
+    .footeremailtab{
+        height: 7rem;
+    }
+}

@@ -110,6 +110,7 @@
 .spacer {
   background-color: #ffffff;
   height: 5rem; /* Adjust the height as needed for spacing */
+  z-index: 100;
 }
 
 .Rapidite, nav, .TextReveal, .btrapiserv, .missionvi, .carouselComp {
