@@ -11,7 +11,7 @@ import emailjs from 'emailjs-com';
 import "../Sass/footerken.css";
 
 // Initialize emailjs
-emailjs.init('-DhGdulE7p83TuON2');
+emailjs.init('rwtQS8LXen3PXBWRU');
 
 function FooterKen() {
     const [name, setName] = useState('');
@@ -60,7 +60,7 @@ function FooterKen() {
                 inquiry,
                 message,
             };
-            await emailjs.send('service_kq880qc', 'template_j67t39c', formData, '-DhGdulE7p83TuON2');
+            await emailjs.send('service_kq880qc', 'template_j67t39c', formData, 'rwtQS8LXen3PXBWRU');
             alert('Email sent successfully!');
 
 

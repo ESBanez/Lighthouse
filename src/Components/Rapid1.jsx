@@ -28,7 +28,7 @@ function Rapid1() {
             <br /><br />
             <Popover
               content={content}
-              title="Title"
+              title="Rapid"
               trigger="hover"
               style={{
                 display: "flex",
@@ -45,24 +45,10 @@ function Rapid1() {
                 }}
               >
                 <Button
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center", // Changed alignContent to alignItems for button alignment
-                    backgroundColor: "var(--blue)",
-                    borderColor: "var(--yellow)",
-                    borderRadius: "50px",
-                    fontSize: "1.1rem",
-                    borderWidth: "3px",
-                    alignSelf: "center",
-                    color: "var(--yellow)",
-                    width: "8rem",
-                    height: "auto",
-                  }}
                   type="primary"
                 >
                   <span style={{ alignSelf: "center", textDecoration: "none" }}>
-                    View
+                    View more
                   </span>
                 </Button>
               </a>

@@ -139,3 +139,12 @@
         height: 7rem;
     }
 }
+
+.footerlogoholder img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .footerlogoholder img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }

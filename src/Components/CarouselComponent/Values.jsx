@@ -27,7 +27,7 @@ const Values = ({ onScrollToSection }) => {
                         className="carouselbutton"
                         onClick={() => onScrollToSection("section2")}
                     >
-                        Click here
+                        View more
                     </Button>
                 </div>
             </div>

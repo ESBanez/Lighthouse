@@ -27,7 +27,7 @@ const Insight = ({onScrollToSection}) => {
                         className="carouselbutton"
                         onClick={() => onScrollToSection("section3")}
                         >
-                        Click here
+                        View more
                     </Button>
                 </div>
             </div>

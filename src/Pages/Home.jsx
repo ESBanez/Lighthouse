@@ -12,6 +12,7 @@ import Rapid1 from "./../Components/Rapid1";
 import Service from "../Components/Service";
 import FooterKen from "./../Components/FooterKen";
 import "../Sass/Home.css";
+import Timelinee from '../Components/Timelinee';
 
 function Home() {
     React.useEffect(() => {
@@ -49,10 +50,19 @@ function Home() {
                         <div className="Rapidite" id="section3">
                             <Rapid1 onScrollToSection={scrollToSection} />
                         </div>
-                        <div style={{backgroundColor:"white", height:"30vh"}}></div>
+                        <div className="spacer"></div> {/* Use CSS to create space */}
+                        <div className="spacer"></div> {/* Use CSS to create space */}
+
+                        {/* <Timelinee/> */}
+                        <div className="spacer"></div> {/* Use CSS to create space */}
+                        <div className="spacer"></div> {/* Use CSS to create space */}
+                        <div className="spacer"></div> {/* Use CSS to create space */}
+
                         <div className="servicehomediv container" id="services">
                             <Service onScrollToSection={scrollToSection} />
                         </div>
+                        <div className="spacer"></div> {/* Use CSS to create space */}
+
                         <div className="spacer"></div> {/* Use CSS to create space */}
 
                     </div>

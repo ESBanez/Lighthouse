@@ -29,7 +29,7 @@ const Visibility = ({onScrollToSection}) => {
                         className="carouselbutton"
                         onClick={() => onScrollToSection("section5")}
                         >
-                        Click here
+                        View more
                     </Button>
                 </div>
             </div>

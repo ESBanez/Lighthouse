@@ -3,7 +3,6 @@ import { Button, Popover } from "antd";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import BtsCarousel from "./BtsCarousel";
-// ..
 
 
 
@@ -15,6 +14,8 @@ function Btsolve() {
       <p>Proceed to BTSolve website?</p>
     </div>
   );
+
+
 
   return (
     <div className="btssection container-fluid">
@@ -42,8 +43,7 @@ function Btsolve() {
             <br /><br />
             <Popover
               content={content}
-              title="Title"
-              trigger="hover"
+               trigger="hover"
               style={{
                 display: "flex",
                 justifyContent: "center",
@@ -59,27 +59,8 @@ function Btsolve() {
                   textDecoration: "none",
                 }}
               >
-                <Button
-                  data-aos="fade-right"
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center", // Changed alignContent to alignItems for button alignment
-                    backgroundColor: "var(--blue)",
-                    borderColor: "var(--yellow)",
-                    borderRadius: "50px",
-                    fontSize: "1.1rem",
-                    borderWidth: "3px",
-                    alignSelf: "center",
-                    color: "var(--yellow)",
-                    width: "8rem",
-                    height:"auto",
-                  }}
-                  type="primary"
-                >
-                  <span style={{ alignSelf: "center", textDecoration: "none" }}>
-                    View
-                  </span>
+                <Button type="primary"  target="_blank">
+                    View more
                 </Button>
               </a>
             </Popover>

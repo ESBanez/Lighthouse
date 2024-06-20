@@ -21,28 +21,52 @@ $size-height: 350px;
   margin: 0 auto;
 }
 
-.btscarousel {
-  display: flex;
-  width: $size-width * 3;
-  animation: sliding 12s infinite;
-  div {
-    width: $size-width;
-    height: $size-height;
-    background-size: cover;
-    background-position: center;
-  }
-  &:hover {
-    animation-play-state: paused;
-  }
-  .btsimage-one {
-    background-image: url("/Bangtan.png");
-  }
-  .btsimage-two {
-    background-image: url("/btshoneycomb.png");
-  }
-  .btsimage-three {
-    background-image: url("/bts3.png");
-  }
+// .btscarousel {
+//   display: flex;
+//   width: $size-width * 3;
+//   animation: sliding 12s infinite;
+//   div {
+//     width: $size-width;
+//     height: $size-height;
+//     background-size: cover;
+//     background-position: center;
+//   }
+//   &:hover {
+//     animation-play-state: paused;
+//   }
+//   .btsimage-one {
+//     background-image: url("/Bangtan.png");
+//   }
+//   .btsimage-two {
+//     background-image: url("/btshoneycomb.png");
+//   }
+//   .btsimage-three {
+//     background-image: url("/bts3.png");
+//   }
+// }
+.btsimage-one, .btsimage-two, .btsimage-three {
+  height: 25rem;  // Adjust height as needed
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+
+.btsimage-one {
+  background-image: url("/Bangtan.png");
+}
+
+.btsimage-two {
+  background-image: url("/btshoneycomb.png");
+}
+
+.btsimage-three {
+  background-image: url("/bts3.png");
+}
+
+.btsimage-one:hover, .btsimage-two:hover, .btsimage-three:hover {
+  transform: scale(1.05);  // Slightly zoom in on hover
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  // Add a shadow effect on hover
 }
 
 @keyframes sliding {
