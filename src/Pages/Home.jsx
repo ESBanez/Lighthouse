@@ -12,7 +12,7 @@ import Rapid1 from "./../Components/Rapid1";
 import Service from "../Components/Service";
 import FooterKen from "./../Components/FooterKen";
 import "../Sass/Home.css";
-import Timelinee from '../Components/Timelinee';
+// import Timelinee from '../Components/Timelinee';
 
 function Home() {
     React.useEffect(() => {
@@ -26,27 +26,31 @@ function Home() {
     return (
         <>
             <Box sx={{ width: '100%' }}>
-                <Grid container rowSpacing={0} columnSpacing={{ xs: 1, sm: 2, md: 3 }} style={{display:"flex", flexDirection:"column"}}>
+                <Grid container className='grid' rowSpacing={0} columnSpacing={{ xs: 1, sm: 2, md: 3 }} style={{display:"flex", flexDirection:"column"}}>
                     <div>
                         <nav><Navbar/></nav>
                     </div>
                     <div className="carouselComp">
                         <CarouselComponent onScrollToSection={scrollToSection} />
                     </div>
-                    <div className="spacer"></div> {/* Use CSS to create space */}
-                    <div className="missionvi">
-                        <MissionVision/>
-                    </div>
-                    <div className="spacer"></div> {/* Use CSS to create space */}
 
-                    <div className="TextReveal" id="section2">
-                        <LighthousePart onScrollToSection={scrollToSection} />
-                    </div>
                     <div className="btrapiserv">
+                        <div className="spacer"></div> {/* Use CSS to create space */}
+                        <div className="missionvi">
+                            <MissionVision/>
+                        </div>
+
+                        <div className="spacer"></div> {/* Use CSS to create space */}
+
+                        <div className="TextReveal" id="section2">
+                            <LighthousePart onScrollToSection={scrollToSection} />
+                        </div>
+                        <div className="spacer"></div> {/* Use CSS to create space */}
+
                         <div className="" id="section5"> 
                             <Btsolve onScrollToSection={scrollToSection} />
                         </div>
-                        <div style={{backgroundColor:"white", height:"10vh"}}></div>
+                        <div className="spacer"></div> {/* Use CSS to create space */}
                         <div className="Rapidite" id="section3">
                             <Rapid1 onScrollToSection={scrollToSection} />
                         </div>

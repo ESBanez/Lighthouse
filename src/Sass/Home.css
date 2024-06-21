@@ -36,6 +36,15 @@
     width: 50rem;
 }
 
+.grid {
+  background-image: url(../../public/white.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9999;
+  position: relative;
+}
+
 .hero-section {
     background-image: url(../../public/Light.jpg);
     background-repeat: no-repeat;
@@ -84,7 +93,6 @@
   /*=======================  */
 
 .btrapiserv{
-  width: "";
 
 }
 
@@ -108,14 +116,12 @@
 }
 
 .spacer {
-  background-color: #ffffff;
   height: 5rem; /* Adjust the height as needed for spacing */
   z-index: 100;
 }
 
 .Rapidite, nav, .TextReveal, .btrapiserv, .missionvi, .carouselComp {
-    z-index: 100;
-    background-color: #ffffff;
+    z-index: 999;
 }
 
 .missionvi{
@@ -126,10 +132,6 @@
   display: flex;
 
 }
-.Footer{
-
-}
-
 
 
 
