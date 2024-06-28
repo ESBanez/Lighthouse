@@ -1,4 +1,3 @@
-import React from "react";
 import "../Sass/LighthousePart.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -246,49 +245,49 @@ function LighthousePart() {
           </Accordion>
         </div>
       </section>
-      
-      {/* Dialog */}<Dialog
-  open={open}
-  onClose={handleClose}
-  aria-labelledby="alert-dialog-title"
-  aria-describedby="alert-dialog-description"
-  style={{ zIndex: "99999" }}
->
-  <DialogTitle id="alert-dialog-title" style={{ alignSelf: "center" }}>
-    {selectedImage && selectedImage.title} {/* Corrected syntax */}
-  </DialogTitle>
-  <DialogContent>
-    <DialogContentText id="alert-dialog-description">
-      {selectedImage && (
-        <div style={{ display: "flex" }}>
-          <div>
-            <img
-              src={selectedImage.url}
-              alt={selectedImage.title}
-              style={{
-                width: "200px",
-                height: "200px",
-                objectFit: "cover",
-              }}
-            />
-          </div>
-          <div style={{ padding: "1rem" }}>
-            {selectedImage.hovercomment}
-          </div>
-        </div>
-      )}
-    </DialogContentText>
-  </DialogContent>
-  <DialogActions>
-    <Button onClick={handleClose} disabled>
-      Disagree
-    </Button>
-    <Button onClick={handleClose} autoFocus>
-      Agree
-    </Button>
-  </DialogActions>
-</Dialog>
 
+      {/* Dialog */}
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+        style={{ zIndex: "99999" }}
+      >
+        <DialogTitle id="alert-dialog-title" style={{ alignSelf: "center" }}>
+          {selectedImage && selectedImage.title} {/* Corrected syntax */}
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            {selectedImage && (
+              <div style={{ display: "flex" }}>
+                <div>
+                  <img
+                    src={selectedImage.url}
+                    alt={selectedImage.title}
+                    style={{
+                      width: "200px",
+                      height: "200px",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
+                <div style={{ padding: "1rem" }}>
+                  {selectedImage.hovercomment}
+                </div>
+              </div>
+            )}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} disabled>
+            Disagree
+          </Button>
+          <Button onClick={handleClose} autoFocus>
+            Agree
+          </Button>
+        </DialogActions>
+      </Dialog>
     </div>
   );
 }

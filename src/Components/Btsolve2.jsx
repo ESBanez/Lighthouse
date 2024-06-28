@@ -1,6 +1,6 @@
-import "../Sass/Rapid.css";
+import "../Sass/Bts.css";
 import { Popover } from "antd";
-import RapidCarousel from "./RapidCarousel";
+import AOS from "aos";
 import "aos/dist/aos.css";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -20,12 +20,12 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Tooltip from "@mui/material/Tooltip";
 import "../Sass/Services.scss";
 
-
-function Rapid1() {
+function Btsolve2() {
+  AOS.init();
 
   const content = (
     <div>
-      <p data-aos="fade-right">Proceed to Rapid website?</p>
+      <p>Proceed to BTSolve website?</p>
     </div>
   );
 
@@ -148,60 +148,94 @@ const images = [
     transition: theme.transitions.create("opacity"),
   }));
   
+
   return (
-      <div className="rapidsection container">
-        <div className="rapidcomponent">
-          <div className="rapiddefinition">
-            <div className="rapiddefinitioncomponent">
-              <div className="rapidlogocomponent" data-aos="fade-right">
-                <div className="rapidlogoholder">
-                  <img src="Rapid-logo.png" className="rapidlogo" />
-                </div>
-                <div>R A P I D</div>
-              </div>
-              <br />
-              <br />
-              <div className="rapidparagraphholder" data-aos="fade-left">
-                <div className="rapidparagraph">"Motivation and Success."</div>
-              </div>
-              <br />
-              <br />
-              <Popover
-                content={content}
-                title="Rapid"
-                trigger="hover"
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignContent: "center",
+
+    <div>
+    <div style={{ padding: "2rem", display: "flex" }}>
+      <div
+        style={{
+          height: "60vh",
+          width: "60%",
+          textAlignLast: "right",
+        }}
+      >
+        {/* <div className="btslady">
+                    
+                </div> */}
+        <img src="/public/bts.png" style={{ height: "110%" }} />
+      </div>
+      <div
+        style={{
+          height: "60vh",
+          width: "50%",
+          alignContent: "center",
+          display: "flex",
+        }}
+      >
+        <div className="btsdefinitioncomponent"
+            style={{
+                height: "60vh",
+                width: "50%",
+                alignContent: "center",
+                color: "black",
                 }}
-              >
-                <a
-                  href="https://rapidonline.ph/guest/dashboard"
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    textDecoration: "none",
-                  }}
-                >
-                  <Button type="primary">
-                    <span
-                      style={{ alignSelf: "center", textDecoration: "none" }}
-                    >
-                      View more
-                    </span>
-                  </Button>
-                </a>
-              </Popover>
+        >
+          <div data-aos="fade-left" className="btslogocomponent">
+            <div className="btslogoholder">
+              <img src="btslogo.png" className="btslogo" />
+            </div>
+            <div>BTSolve Inc.</div>
+          </div>
+          <br />
+          <br />
+          <div className="btsparagraphholder">
+            <div className="btsparagraph"
+            style={{
+                color: "black",
+                }}
+            >
+              "Stable, secure and scalable cloud solutions."
             </div>
           </div>
-          <div className="rapidcardcontainer ">
-            <div className="rapidCard">
-              <RapidCarousel />
-            </div>
-          </div>
+          <br />
+          <br />
+          <Popover
+            content={content}
+            trigger="hover"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignContent: "center",
+            }}
+            data-aos="fade-right"
+          >
+            <a
+              href="https://sslinux.btsolve.com/btssite/"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                textDecoration: "none",
+              }}
+            >
+                <Button variant="contained" color="primary" target="_blank">
+                    View more
+                </Button>
+            </a>
+          </Popover>
         </div>
-        <div className="companyservices">
+        <div className="btsdefinitioncomponent"
+                    style={{
+                        height: "60vh",
+                        width: "40%",
+                        alignContent: "center",
+                        }}
+        >
+
+        </div>
+      </div>
+    </div>
+    <div className="companyservices">
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -317,10 +351,8 @@ const images = [
           </Button>
         </DialogActions>
       </Dialog>
-  
-      </div>
-
+    </div>
   );
 }
 
-export default Rapid1;
+export default Btsolve2;

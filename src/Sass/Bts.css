@@ -17,6 +17,12 @@
 
 
  
+.btslady{
+    background-image: url("/bts.png");
+    background-size: cover;
+    height: max-content;
+    width: 10rem;
+}
 
 .btscomponent {
     display: flex;
