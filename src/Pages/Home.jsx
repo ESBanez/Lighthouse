@@ -14,6 +14,7 @@ import FooterKen from "./../Components/FooterKen";
 import "../Sass/Home.css";
 import Btsolve2 from '../Components/Btsolve2';
 // import Timelinee from '../Components/Timelinee';
+import Testimonials from "../Components/Testimonials";
 
 function Home() {
     React.useEffect(() => {
@@ -46,6 +47,7 @@ function Home() {
                         <div className="TextReveal" id="section2">
                             <LighthousePart onScrollToSection={scrollToSection} />
                         </div>
+                        <div className="spacer"></div> {/* Use CSS to create space */}
 
                         <div className="" id="section5"> 
                             {/* <Btsolve onScrollToSection={scrollToSection} /> */}
@@ -58,9 +60,9 @@ function Home() {
                         </div>
                         <div className="spacer"></div> {/* Use CSS to create space */}
                         <div className="spacer"></div> {/* Use CSS to create space */}
-
-                        {/* <Timelinee/> */}
-                        <div className="spacer"></div> {/* Use CSS to create space */}
+                        <div className="client">
+                            <Testimonials/>
+                        </div>
                         <div className="spacer"></div> {/* Use CSS to create space */}
                         <div className="spacer"></div> {/* Use CSS to create space */}
 

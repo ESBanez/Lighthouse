@@ -66,14 +66,14 @@ $size-height: 350px;
   }
 }
 
-// @media screen and (max-width: 768px) {
-//   $size-width: 240px;
-//   $size-height: 150px;
-//   .carousel-wrapper {
-//     width: $size-width * 1.3;
-//     height: $size-height * 1.4;
-//   }
-
+@media screen and (max-width: 768px) {
+  .slider{
+    text-align: -webkit-center;
+  }
+  .rapidcarousel-wrapper {
+    width: 25rem;
+  }
+}
 //   .carousel-container {
 //     width: $size-width;
 //     height: $size-height;

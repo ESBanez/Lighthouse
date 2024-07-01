@@ -49,14 +49,20 @@
     align-self: center;
 } 
 
-@media screen and (max-width: 736px) {
+@media screen  and (min-width: 0) and (max-width: 768px) {
 
     .rapidcomponent {
         display: flex;
         flex-direction: column-reverse;
+        width: fit-content;
+        align-self: center;
+        height: 30rem;
     }
     .rapidparagraph{
         display: flex;
         justify-content: center;
+    }
+    .rapidcomponentgeneral{
+        flex-direction: column-reverse;
     }
 }

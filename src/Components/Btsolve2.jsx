@@ -152,7 +152,7 @@ const images = [
   return (
 
     <div>
-    <div style={{ padding: "2rem", display: "flex" }}>
+    <div className="btscomponent" style={{ padding: "2rem", display: "flex" }}>
       <div
         style={{
           height: "60vh",
@@ -160,23 +160,16 @@ const images = [
           textAlignLast: "right",
         }}
       >
-        {/* <div className="btslady">
-                    
-                </div> */}
-        <img src="/public/bts.png" style={{ height: "110%" }} />
+        <img src="/public/bts.webp" style={{ height: "110%" }} />
       </div>
-      <div
+      <div className="btsdefinitioncomponentholder"
         style={{
-          height: "60vh",
-          width: "50%",
           alignContent: "center",
           display: "flex",
         }}
       >
         <div className="btsdefinitioncomponent"
             style={{
-                height: "60vh",
-                width: "50%",
                 alignContent: "center",
                 color: "black",
                 }}
@@ -223,15 +216,6 @@ const images = [
                 </Button>
             </a>
           </Popover>
-        </div>
-        <div className="btsdefinitioncomponent"
-                    style={{
-                        height: "60vh",
-                        width: "40%",
-                        alignContent: "center",
-                        }}
-        >
-
         </div>
       </div>
     </div>

@@ -92,8 +92,8 @@
   }
   /*=======================  */
 
-.btrapiserv{
-
+.client{
+  text-align: -webkit-center;
 }
 
 /* .lhi{
@@ -128,8 +128,9 @@
   padding-top: 5rem;
 }
 
+
 .Rapidite{
-  display: flex;
+  text-align: -webkit-center;
 
 }
 
