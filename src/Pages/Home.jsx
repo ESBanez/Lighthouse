@@ -15,6 +15,8 @@ import "../Sass/Home.css";
 import Btsolve2 from '../Components/Btsolve2';
 // import Timelinee from '../Components/Timelinee';
 import Testimonials from "../Components/Testimonials";
+import MyDivider from '../Components/Divider';
+import ProductCarousel from '../Components/ProductCarousel';
 
 function Home() {
     React.useEffect(() => {
@@ -65,11 +67,12 @@ function Home() {
                         </div>
                         <div className="spacer"></div> {/* Use CSS to create space */}
                         <div className="spacer"></div> {/* Use CSS to create space */}
-
-                        
-                        <div className="spacer"></div> {/* Use CSS to create space */}
-
-                        <div className="spacer"></div> {/* Use CSS to create space */}
+                        <div>
+                            <MyDivider/>
+                        </div>
+                        <div className="mydividerprod">
+                            <ProductCarousel/>
+                        </div>
 
                     </div>
                     <div>

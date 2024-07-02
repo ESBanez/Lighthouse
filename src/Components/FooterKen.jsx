@@ -198,17 +198,17 @@ function FooterKen() {
                         </div>
                         <div className="footeremaillist">
                             <li className="c-nav-tool_item">
-                                <a href="#section2" className="emails">
+                                <a href="#section2" className="emails" style={{color: 'white'}}>
                                     info@lighthousemanila.com
                                 </a>
                             </li>
                             <li className="c-nav-tool_item">
-                                <a href="#section5" className="emails">
+                                <a href="#section5" className="emails" style={{color: 'white'}}>
                                     support@btsolve.com
                                 </a>
                             </li>
                             <li className="c-nav-tool_item">
-                                <a href="#section3" className="emails">
+                                <a href="#section3" className="emails" style={{color: 'white'}}>
                                     info@rapidonline.ph
                                 </a>
                             </li>
