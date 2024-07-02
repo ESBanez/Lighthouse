@@ -1,5 +1,4 @@
 import "../Sass/Bts.css";
-import { Popover } from "antd";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Accordion from "@mui/material/Accordion";
@@ -42,10 +41,7 @@ function Btsolve2() {
     setSelectedImage(null);
   };
 
-
-
-  
-const images = [
+  const images = [
     {
       url: "content-creation.jpg",
       title: "Content creation",
@@ -82,7 +78,7 @@ const images = [
       hovercomment: "Technical Ship Management for social media.",
     },
   ];
-  
+
   const ImageButton = styled(ButtonBase)(({ theme }) => ({
     position: "relative",
     height: "200px",
@@ -104,7 +100,7 @@ const images = [
       },
     },
   }));
-  
+
   const ImageSrc = styled("span")({
     position: "absolute",
     left: 0,
@@ -114,7 +110,7 @@ const images = [
     backgroundSize: "cover",
     backgroundPosition: "center 40%",
   });
-  
+
   const Image = styled("span")(({ theme }) => ({
     position: "absolute",
     left: 0,
@@ -126,7 +122,7 @@ const images = [
     justifyContent: "center",
     color: theme.palette.common.white,
   }));
-  
+
   const ImageBackdrop = styled("span")(({ theme }) => ({
     position: "absolute",
     left: 0,
@@ -137,7 +133,7 @@ const images = [
     opacity: 0.4,
     transition: theme.transitions.create("opacity"),
   }));
-  
+
   const ImageMarked = styled("span")(({ theme }) => ({
     height: 3,
     width: 18,
@@ -147,151 +143,105 @@ const images = [
     left: "calc(50% - 9px)",
     transition: theme.transitions.create("opacity"),
   }));
-  
 
   return (
-
     <div>
-    <div className="btscomponent" style={{ padding: "2rem", display: "flex" }}>
-      <div
-        style={{
-          height: "60vh",
-          width: "60%",
-          textAlignLast: "right",
-        }}
-      >
-        <img src="/public/bts.webp" style={{ height: "110%" }} />
-      </div>
-      <div className="btsdefinitioncomponentholder"
-        style={{
-          alignContent: "center",
-          display: "flex",
-        }}
-      >
-        <div className="btsdefinitioncomponent"
-            style={{
-                alignContent: "center",
-                color: "black",
-                }}
-        >
-          <div data-aos="fade-left" className="btslogocomponent">
-            <div className="btslogoholder">
-              <img src="btslogo.png" className="btslogo" />
-            </div>
-            <div>BTSolve Inc.</div>
-          </div>
-          <br />
-          <br />
-          <div className="btsparagraphholder">
-            <div className="btsparagraph"
-            style={{
-                color: "black",
-                }}
-            >
-              "Stable, secure and scalable cloud solutions."
-            </div>
-          </div>
-          <br />
-          <br />
-          <Popover
-            content={content}
-            trigger="hover"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignContent: "center",
-            }}
-            data-aos="fade-right"
-          >
-            <a
-              href="https://sslinux.btsolve.com/btssite/"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                textDecoration: "none",
-              }}
-            >
-                <Button variant="contained" color="primary" target="_blank">
-                    View more
-                </Button>
-            </a>
-          </Popover>
+      <div className="btscomponent">
+        <div className="btslady btscomponents">
+          <img src="/public/bts.webp" />
         </div>
-      </div>
-    </div>
-    <div className="companyservices">
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1-content"
-              id="panel1-header"
-              className="accordionsummary"
-              style={{
-                color: "#FEC804",
-                justifyContent: "space-between",
-              }}
-            >
-              <div>Services</div>
-              <div
-                className="companys"
-                style={{
-                  fontFamily: "montserrat",
-                  color: "white",
-                  fontSize: "large",
-                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
 
-                }}
-              >
-                Btsolve Inc.
-              </div>
-              <div
-                style={{
-                  fontFamily: "montserrat",
-                  color: "transparent",
-                  fontSize: "large",
-                }}
-              >
-                Services
-              </div>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Box className="servicecard">
-                {images.map((image) => (
-                  <ImageButton
-                    key={image.title}
-                    className="servicebut"
-                    onClick={() => handleClickOpen(image)}
-                  >
-                    <ImageSrc
-                      style={{ backgroundImage: `url(${image.url})` }}
-                    />
-                    <ImageBackdrop className="MuiImageBackdrop-root" />
-                    <Image>
-                      <Tooltip title={image.hovercomment}>
-                        <Typography
-                          component="span"
-                          variant="subtitle1"
-                          color="inherit"
-                          sx={{
-                            position: "relative",
-                            p: 4,
-                            fontSize: "12px",
-                            pt: 2,
-                            pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-                          }}
-                        >
-                          {image.title}
-                          <ImageMarked className="MuiImageMarked-root" />
-                        </Typography>
-                      </Tooltip>
-                    </Image>
-                  </ImageButton>
-                ))}
-              </Box>
-            </AccordionDetails>
-          </Accordion>
+        <div className="btscard btscomponents">
+          
+          <div className="to-be-place-left">
+            
+            <div data-aos="fade-left" className="btslogocomponent">
+              <img src="btslogo.png" className="btslogo" />
+              <div className="btslogoword">BTSolve Inc.</div>
+            </div>
+
+            <br/>
+
+            <div>"Stable, secure and scalable cloud solutions."</div>
+
+            <br/>
+
+
+            <Button variant="contained">View more</Button>
+          </div>
         </div>
-        
+
+      </div>
+
+      <div className="companyservices">
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1-content"
+            id="panel1-header"
+            className="accordionsummary"
+            style={{
+              color: "#FEC804",
+              justifyContent: "space-between",
+            }}
+          >
+            <div>Services</div>
+            <div
+              className="companys"
+              style={{
+                fontFamily: "montserrat",
+                color: "white",
+                fontSize: "large",
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+              }}
+            >
+              Btsolve Inc.
+            </div>
+            <div
+              style={{
+                fontFamily: "montserrat",
+                color: "transparent",
+                fontSize: "large",
+              }}
+            >
+              Services
+            </div>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Box className="servicecard">
+              {images.map((image) => (
+                <ImageButton
+                  key={image.title}
+                  className="servicebut"
+                  onClick={() => handleClickOpen(image)}
+                >
+                  <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+                  <ImageBackdrop className="MuiImageBackdrop-root" />
+                  <Image>
+                    <Tooltip title={image.hovercomment}>
+                      <Typography
+                        component="span"
+                        variant="subtitle1"
+                        color="inherit"
+                        sx={{
+                          position: "relative",
+                          p: 4,
+                          fontSize: "12px",
+                          pt: 2,
+                          pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                        }}
+                      >
+                        {image.title}
+                        <ImageMarked className="MuiImageMarked-root" />
+                      </Typography>
+                    </Tooltip>
+                  </Image>
+                </ImageButton>
+              ))}
+            </Box>
+          </AccordionDetails>
+        </Accordion>
+      </div>
 
       {/* Dialog */}
       <Dialog
