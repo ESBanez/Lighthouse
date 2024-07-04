@@ -8,7 +8,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useState } from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
 import Dialog from "@mui/material/Dialog";
@@ -78,14 +78,17 @@ function Btsolve2() {
       hovercomment: "Technical Ship Management for social media.",
     },
   ];
-
   const ImageButton = styled(ButtonBase)(({ theme }) => ({
     position: "relative",
     height: "200px",
     boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.5)",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
-      height: "150px",
+      height: "200px",
+    },
+    [theme.breakpoints.up("xl")]: {
+      width: "100%",
+      height: "calc(15vw)",
     },
     "&:hover, &.Mui-focusVisible": {
       zIndex: 1,
@@ -121,6 +124,18 @@ function Btsolve2() {
     alignItems: "center",
     justifyContent: "center",
     color: theme.palette.common.white,
+    [theme.breakpoints.up("xxl")]: {
+      fontSize: "300px", // Increase font size for xl
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "30px", // Increase font size for xl
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "16px", // Increase font size for lg
+    },
+    [theme.breakpoints.down("md")]: {
+      fontSize: "14px", // Adjust font size for md and down
+    },
   }));
 
   const ImageBackdrop = styled("span")(({ theme }) => ({
@@ -148,29 +163,25 @@ function Btsolve2() {
     <div>
       <div className="btscomponent">
         <div className="btslady btscomponents">
-          <img src="/public/bts.webp" />
+          <img src="/bts.webp" />
         </div>
 
         <div className="btscard btscomponents">
-          
           <div className="to-be-place-left">
-            
             <div data-aos="fade-left" className="btslogocomponent">
               <img src="btslogo.png" className="btslogo" />
-              <div className="btslogoword">BTSolve Inc.</div>
+              <div className="btslogoword">BTSolve</div>
             </div>
 
-            <br/>
+            <br />
 
             <div>"Stable, secure and scalable cloud solutions."</div>
 
-            <br/>
-
+            <br />
 
             <Button variant="contained">View more</Button>
           </div>
         </div>
-
       </div>
 
       <div className="companyservices">
@@ -226,7 +237,7 @@ function Btsolve2() {
                         sx={{
                           position: "relative",
                           p: 4,
-                          fontSize: "12px",
+                          fontSize: "inherit", // Use inherited font size
                           pt: 2,
                           pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
                         }}

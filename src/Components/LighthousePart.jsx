@@ -61,9 +61,17 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: "relative",
   height: "200px",
   boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.5)",
+  // [theme.breakpoints.down("sm")]: {
+  //   width: "100%",
+  //   height: "150px",
+  // },
   [theme.breakpoints.down("sm")]: {
     width: "100%",
-    height: "150px",
+    height: "200px",
+  },
+  [theme.breakpoints.up("xl")]: {
+    width: "100%",
+    height: "calc(15vw)",
   },
   "&:hover, &.Mui-focusVisible": {
     zIndex: 1,

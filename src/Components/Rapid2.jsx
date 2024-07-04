@@ -85,7 +85,11 @@ function Rapid2() {
     boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.5)",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
-      height: "150px",
+      height: "200px",
+    },
+    [theme.breakpoints.up("xl")]: {
+      width: "100%",
+      height: "calc(15vw)",
     },
     "&:hover, &.Mui-focusVisible": {
       zIndex: 1,
@@ -121,6 +125,18 @@ function Rapid2() {
     alignItems: "center",
     justifyContent: "center",
     color: theme.palette.common.white,
+    [theme.breakpoints.up("xxl")]: {
+      fontSize: "30px", // Increase font size for xl
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "30px", // Increase font size for xl
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "16px", // Increase font size for lg
+    },
+    [theme.breakpoints.down("md")]: {
+      fontSize: "14px", // Adjust font size for md and down
+    },
   }));
 
   const ImageBackdrop = styled("span")(({ theme }) => ({
@@ -149,7 +165,7 @@ function Rapid2() {
       <div className="spacer"></div> {/* Use CSS to create space */}
 
       <div className="rapidcomponentgeneral" style={{display:"flex", justifyContent: "center"}}>
-        <div className="rapidcomponent" style={{alignContent:"center", marginRight: "5%", display: "flow"}}>
+        <div className="rapidcomponent" style={{alignContent:"center", display: "flow"}}>
           <div className="rapidlogocomponent" data-aos="fade-right">
             <div className="rapidlogoholder">
               <img src="Rapid-logo.png" className="rapidlogo" />
@@ -179,11 +195,8 @@ function Rapid2() {
                 textDecoration: "none",
               }}
             >
-              <Button type="primary">
-                <span style={{ alignSelf: "center", textDecoration: "none" }}>
-                  View more
-                </span>
-              </Button>
+            <Button variant="contained">View more</Button>
+
             </a>
           </Popover>
         </div>
@@ -195,8 +208,8 @@ function Rapid2() {
       </div>
 
 
-      <div className="spacer"></div> {/* Use CSS to create space */}
-      <div className="spacer"></div> {/* Use CSS to create space */}
+      <div className="rapiduniquespacer"></div> {/* Use CSS to create space */}
+      <div className="rapiduniquespacer"></div> {/* Use CSS to create space */}
 
       
     <div className="companyservices">
