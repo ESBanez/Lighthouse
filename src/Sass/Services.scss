@@ -1,6 +1,11 @@
 
 
-.MuiAccordionDetails-root{
+.accordionsummary:hover {
+  transform: scale(1.005); /* Makes the element 5% bigger on hover */
+}
+
+
+.MuiAccordionDetails-root {
   background: radial-gradient(
     circle at right, /* Radial gradient centered */
     #333E6A 10%, /* Start with a dark color close to the center */
@@ -9,10 +14,10 @@
     #0a547c 60%, /* Deep purple or blue as the third color */
     #04486d 80%, /* Lighter purple towards the outer edge */
     #333E6A 100% /* A lighter shade at the very edge */
-);
-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
-
+  );
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 }
+
 
 .servicecard {
   
@@ -38,7 +43,7 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 .accordionsummary{
   background: radial-gradient(
     circle at right, /* Radial gradient centered */
-    #333E6A 10%, /* Start with a dark color close to the center */
+    #333E5A  10%, /* Start with a dark color close to the center */
     #0f4867 30%, /* Dark blue as the second color */
     #0a5882 50%, /* Deep purple or blue as the third color */
     #0a547c 60%, /* Deep purple or blue as the third color */

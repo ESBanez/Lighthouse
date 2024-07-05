@@ -4,7 +4,6 @@ import AOS from "aos";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useState } from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -17,6 +16,12 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
+
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
+
+
 import "../Sass/Services.scss";
 
 const images = [
@@ -185,7 +190,7 @@ function LighthousePart() {
         <div className="companyservices">
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<FontAwesomeIcon icon={faAnglesDown} bounce style={{color: 'white'}}/>}
               aria-controls="panel1-content"
               id="panel1-header"
               className="accordionsummary"

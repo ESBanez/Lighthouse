@@ -24,9 +24,9 @@ function Home() {
     }, []);
 
     const scrollToSection = (sectionId) => {
-        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
     };
-
+    
     return (
         <>
             <Box sx={{ width: '100%' }}>
@@ -58,7 +58,7 @@ function Home() {
                         <div className="spacer"></div> {/* Use CSS to create space */}
                         <div className="spacer"></div> {/* Use CSS to create space */}
                         <div className="Rapidite" id="section3">
-                            <Rapid2 onScrollToSection={scrollToSection} />
+                            <Rapid2 onScrollToSection={scrollToSection} id="section3"/>
                         </div>
                         <div className="spacer"></div> {/* Use CSS to create space */}
                         <div className="spacer"></div> {/* Use CSS to create space */}

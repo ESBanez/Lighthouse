@@ -22,6 +22,7 @@ const Insight = ({onScrollToSection}) => {
                         <li>How can the Achievers Mindset tool help me develop the qualities I need to succeed in the maritime industry? or maritime businesses?</li>
                     </ul>
                     <br />
+                    
                     <Button 
                         variant="contained" 
                         className="carouselbutton"

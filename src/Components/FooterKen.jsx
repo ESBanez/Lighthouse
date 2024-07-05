@@ -86,8 +86,8 @@ function FooterKen() {
                 <source src="backvid.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-            <div className="footerbody container">
-                <form className="footerform" onSubmit={handleSubmit}>
+            <div className="footerbody container" >
+                <form className="footerform" onSubmit={handleSubmit} data-aos="fade-right">
                     <div className="footernameemail">
                         <div className="px-3">
                             <TextField
@@ -162,8 +162,8 @@ function FooterKen() {
                         <Button variant="contained" id="button" type="submit">Submit</Button>
                     </div>
                 </form>
-                <div className="footeremail">
-                    <div className="footeremailcardtab">
+                <div className="footeremail" >
+                    <div className="footeremailcardtab" data-aos="fade-left">
                         <Card sx={{ 
                             maxWidth: 340,  
                             width: "15rem",
@@ -184,16 +184,20 @@ function FooterKen() {
                                 </Typography>
                             </CardContent>
                             <CardActions style={{ display: "flex", justifyContent: "space-around" }}>
-                                <Button size="small">Share</Button>
-                                <Button size="small">Learn More</Button>
+                                <a href="https://maps.app.goo.gl/jdBvbtUrrAWP8Wne7" target='_blank'>
+                                    <Button size="small">Locate</Button>
+                                </a>
+                                <a href="https://maps.app.goo.gl/jdBvbtUrrAWP8Wne7" target='_blank'>
+                                    <Button size="small">Share</Button>
+                                </a>
                             </CardActions>
                         </Card>
                     </div>
                     <br />
                     <br />
                     <br />
-                    <div className="footeremailtab">
-                        <div className="footeremailustitle">
+                    <div className="footeremailtab" data-aos="fade-up">
+                        <div className="footeremailustitle" >
                             Email Us
                         </div>
                         <div className="footeremaillist">

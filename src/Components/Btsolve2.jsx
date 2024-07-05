@@ -17,6 +17,9 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Tooltip from "@mui/material/Tooltip";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
+
 import "../Sass/Services.scss";
 
 function Btsolve2() {
@@ -43,8 +46,8 @@ function Btsolve2() {
 
   const images = [
     {
-      url: "content-creation.jpg",
-      title: "Content creation",
+      url: "bts3.png",
+      title: "Android App Development",
       hovercomment:
         "The process of generating material for online platforms, including articles, videos, images, and more, to engage and inform an audience.",
     },
@@ -179,7 +182,17 @@ function Btsolve2() {
 
             <br />
 
-            <Button variant="contained">View more</Button>
+            <a
+              href="https://sslinux.btsolve.com/btssite/"
+              target="_blank"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                textDecoration: "none",
+              }}
+            >
+              <Button variant="contained">View more</Button>
+            </a>
           </div>
         </div>
       </div>
@@ -187,7 +200,7 @@ function Btsolve2() {
       <div className="companyservices">
         <Accordion>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<FontAwesomeIcon icon={faAnglesDown} bounce style={{color: 'white'}}/>}
             aria-controls="panel1-content"
             id="panel1-header"
             className="accordionsummary"
