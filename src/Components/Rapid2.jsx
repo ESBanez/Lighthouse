@@ -167,7 +167,7 @@ function Rapid2() {
 
   return (
     <div >   
-      <div className="spacer" ></div> {/* Use CSS to create space */}
+      <div className="spacer" id="section3"></div> {/* Use CSS to create space */}
 
       <div className="rapidcomponentgeneral" style={{display:"flex", justifyContent: "center"}}>
         <div className="rapidcomponent" style={{alignContent:"center", display: "flow"}}>

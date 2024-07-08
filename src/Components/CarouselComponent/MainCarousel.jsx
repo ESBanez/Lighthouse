@@ -15,7 +15,6 @@ function MainCarousel({ onScrollToSection }) {
               <span className="cd-words-wrapper">
                 <b className="is-visible">
                   <a
-                    href="#visi"
                     className="text-warning"
                     onClick={() => onScrollToSection('visibility')}
                   >
@@ -24,7 +23,6 @@ function MainCarousel({ onScrollToSection }) {
                 </b>
                 <b>
                   <a
-                    href="#insi"
                     className="text-warning"
                     onClick={() => onScrollToSection('insight')}
                   >
@@ -33,7 +31,6 @@ function MainCarousel({ onScrollToSection }) {
                 </b>
                 <b>
                   <a
-                    href="#valu"
                     className="text-warning"
                     onClick={() => onScrollToSection('values')}
                   >

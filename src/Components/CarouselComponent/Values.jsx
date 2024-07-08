@@ -9,7 +9,7 @@ const Values = ({ onScrollToSection }) => {
                     <div className="carouseltitle">
                         <a 
                         onClick={() => onScrollToSection("section2")}
-                        id="valu">
+                        id="values">
                             Value
                         </a> 
                     </div>

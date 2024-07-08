@@ -163,7 +163,7 @@ function Btsolve2() {
   }));
 
   return (
-    <div>
+    <div style={{textAlign: '-webkit-center'}} id="section5">
       <div className="btscomponent">
         <div className="btslady btscomponents">
           <img src="/bts.webp" />

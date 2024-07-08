@@ -9,7 +9,7 @@ const Insight = ({onScrollToSection}) => {
         <>
             <div>
                 <div className="carouseltitleholder">
-                    <div className="carouseltitle">
+                    <div className="carouseltitle" id="insight">
                         <a onClick={() => onScrollToSection("section3")} id="insi">
                             Insight
                         </a> 
@@ -22,7 +22,6 @@ const Insight = ({onScrollToSection}) => {
                         <li>How can the Achievers Mindset tool help me develop the qualities I need to succeed in the maritime industry? or maritime businesses?</li>
                     </ul>
                     <br />
-                    
                     <Button 
                         variant="contained" 
                         className="carouselbutton"

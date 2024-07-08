@@ -7,11 +7,20 @@ import Values from '../CarouselComponent/Values.jsx';
 function CarouselComponent() {
   const [position, setPosition] = useState(0); // Using state to track position
 
+  const handleScrollToSection = (sectionId) => {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleScrollToCarousel = (section) => {
+    handleScrollToSection(section);
+    setPosition(pictures.findIndex((picture) => picture.key === section)); // Update position based on the section key
+  };
+
   const pictures = [
-    { key: 'main', component: <MainCarousel onScrollToSection={""} /> },
-    { key: 'visibility', component: <Visibility /> },
-    { key: 'insight', component: <Insight /> },
-    { key: 'values', component: <Values /> },
+    { key: 'main', component: <MainCarousel onScrollToSection={handleScrollToCarousel} /> },
+    { key: 'visibility', component: <Visibility onScrollToSection={handleScrollToSection} /> },
+    { key: 'insight', component: <Insight onScrollToSection={handleScrollToSection} /> },
+    { key: 'values', component: <Values onScrollToSection={handleScrollToSection} /> },
   ];
 
   const moveRight = () => {
@@ -23,8 +32,6 @@ function CarouselComponent() {
       prevPosition === 0 ? pictures.length - 1 : prevPosition - 1
     );
   };
-
-
 
   useEffect(() => {
     // Automatically move to the next slide every 10 seconds

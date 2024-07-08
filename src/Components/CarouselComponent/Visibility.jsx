@@ -11,7 +11,7 @@ const Visibility = ({onScrollToSection}) => {
                     <div className="carouseltitle" >
                         <a 
                         onClick={() => onScrollToSection("section5")}
-                        id="visi">
+                        id="visibility">
                             Visibility
                         </a> 
                     </div>
