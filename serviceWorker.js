@@ -1,7 +1,7 @@
 const CACHE_NAME = 'my-site-cache-v1';
 const urlsToCache = [
   '/',
-  '/App.jsx',                // Adjust path if needed
+  '/App.jsx',
   '/Main.jsx',
   '/Pages/Home.jsx',
 
@@ -11,7 +11,6 @@ const urlsToCache = [
   '/Components/LighthousePart.jsx',
   '/Components/MissionVision.jsx',
   '/Components/Navbar.jsx',
-  '/Components/ProductCarousel.jsx',
   '/Components/Rapid2.jsx',
   '/Components/RapidCarousel.jsx',
   '/Components/Testimonials.jsx',
@@ -39,10 +38,7 @@ const urlsToCache = [
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(cache => {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
+      .then(cache => cache.addAll(urlsToCache.map(url => `${self.location.origin}${url}`)))
   );
 });
 
@@ -55,7 +51,7 @@ self.addEventListener('fetch', event => {
           return response;
         }
 
-        // Clone the request because it's a one-time use object
+        // Clone the request to make a fetch
         const fetchRequest = event.request.clone();
 
         return fetch(fetchRequest).then(response => {
@@ -64,7 +60,7 @@ self.addEventListener('fetch', event => {
             return response;
           }
 
-          // Clone the response because it's a one-time use object
+          // Clone the response to cache it
           const responseToCache = response.clone();
 
           caches.open(CACHE_NAME)
