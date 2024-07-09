@@ -17,6 +17,7 @@ function MainCarousel({ onScrollToSection }) {
                   <a
                     className="text-warning"
                     onClick={() => onScrollToSection('visibility')}
+                    style={{ pointerEvents: 'auto' }}
                   >
                     Visibility
                   </a>
@@ -25,6 +26,7 @@ function MainCarousel({ onScrollToSection }) {
                   <a
                     className="text-warning"
                     onClick={() => onScrollToSection('insight')}
+                    style={{ pointerEvents: 'auto' }}
                   >
                     Insight
                   </a>
@@ -33,6 +35,7 @@ function MainCarousel({ onScrollToSection }) {
                   <a
                     className="text-warning"
                     onClick={() => onScrollToSection('values')}
+                    style={{ pointerEvents: 'auto' }}
                   >
                     Value
                   </a>

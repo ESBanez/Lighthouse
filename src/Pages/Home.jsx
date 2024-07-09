@@ -17,6 +17,7 @@ import Btsolve2 from '../Components/Btsolve2';
 import Testimonials from "../Components/Testimonials";
 import MyDivider from '../Components/Divider';
 import ProductCarousel from '../Components/ProductCarousel';
+import "../Javascript/home.js";
 
 function Home() {
     React.useEffect(() => {
@@ -39,6 +40,15 @@ function Home() {
                     </div>
 
                     <div className="btrapiserv">
+
+                        <div className="spacer"></div> {/* Use CSS to create space */}
+                        <div className="spacer"></div> {/* Use CSS to create space */}
+                        <div className="spacer"></div> {/* Use CSS to create space */}
+
+                        <div className='websitevideo'>
+                            <video src="/lighthousewebvid.webm" muted controls autoPlay autoFocus loop className="videoStyles" controlsList="nodownload"></video>
+                        </div>
+
                         <div className="spacer"></div> {/* Use CSS to create space */}
                         <div className="missionvi">
                             <MissionVision/>

@@ -18,9 +18,9 @@ function CarouselComponent() {
 
   const pictures = [
     { key: 'main', component: <MainCarousel onScrollToSection={handleScrollToCarousel} /> },
-    { key: 'visibility', component: <Visibility onScrollToSection={handleScrollToSection} /> },
-    { key: 'insight', component: <Insight onScrollToSection={handleScrollToSection} /> },
-    { key: 'values', component: <Values onScrollToSection={handleScrollToSection} /> },
+    { key: 'visibility', section: 'visibility', component: <Visibility onScrollToSection={handleScrollToSection} /> },
+    { key: 'insight', section: 'insight', component: <Insight onScrollToSection={handleScrollToSection} /> },
+    { key: 'values', section: 'values', component: <Values onScrollToSection={handleScrollToSection} /> },
   ];
 
   const moveRight = () => {

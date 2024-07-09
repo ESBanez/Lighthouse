@@ -114,6 +114,32 @@
     text-align: -webkit-center;
 
 }
+.websitevideo {
+  background-image: url(/mydividerbg.svg);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.videoStyles {
+  height: 40rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  background: radial-gradient(
+    circle at right,
+    #333e6a 10%,
+    #0f4867 30%,
+    #0a5882 50%,
+    #0a547c 60%,
+    #04486d 80%,
+    #333e6a 100%
+  );
+  margin-bottom: 3rem;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+}
 
 .spacer {
   height: 5rem; /* Adjust the height as needed for spacing */
