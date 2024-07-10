@@ -12,7 +12,7 @@
 }
 .lighthouseimage{
     max-width: 100%; /* Limit the image width to 100% of its container */
-    height: 80vh; 
+    height: auto !important; 
 }
 @media screen and (max-width: 736px) {
     .lighthousecomponent {

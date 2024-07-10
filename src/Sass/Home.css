@@ -43,6 +43,8 @@
   background-position: center;
   z-index: 9999;
   position: relative;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .hero-section {

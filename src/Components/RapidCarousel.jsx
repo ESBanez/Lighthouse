@@ -10,6 +10,7 @@ function RapidCarousel() {
               <a href="https://rapidonline.ph/guest/demo/seamula-demo/dashboard"><div className="rapidimage-one"></div></a>
               <a href="https://rapidonline.ph/guest/dashboard"><div className="rapidimage-two"></div></a>
               <a href="https://rapidonline.ph/guest/demo/socat-demo/dashboard"><div className="rapidimage-three"></div></a>
+              <a href="https://rapidonline.ph/guest/demo/socat-demo/dashboard"><div className="rapidimage-four"></div></a>
             </div>
           </div>
         </div>

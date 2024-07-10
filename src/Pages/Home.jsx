@@ -31,7 +31,7 @@ function Home() {
     return (
         <>
             <Box sx={{ width: '100%' }}>
-                <Grid container className='grid' rowSpacing={0} columnSpacing={{ xs: 1, sm: 2, md: 3 }} style={{display:"flex", flexDirection:"column"}}>
+                <Grid container className='grid' rowSpacing={0} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={{ marginLeft: 0, marginRight: 0, display: 'flex', flexDirection: 'column' }}>
                     <div>
                         <nav><Navbar/></nav>
                     </div>

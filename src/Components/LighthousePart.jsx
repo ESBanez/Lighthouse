@@ -190,8 +190,8 @@ function LighthousePart() {
         <div className="companyservices">
           <Accordion>
             <AccordionSummary
-              expandIcon={<FontAwesomeIcon icon={faAnglesDown} bounce style={{color: 'white'}}/>}
-              aria-controls="panel1-content"
+            expandIcon={<FontAwesomeIcon icon={faAnglesDown} bounce style={{color: 'white', height: '1.3rem'}}/>}
+            aria-controls="panel1-content"
               id="panel1-header"
               className="accordionsummary"
               style={{
