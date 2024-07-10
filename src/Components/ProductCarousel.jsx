@@ -5,7 +5,7 @@ function ProductCarousel() {
         <div className="slyder" data-aos="fade-left">
             <div className="slyde-track">
                 <div className="slyde">
-                    <img src="/Imec.webp~" height="100" width="250" alt="" />
+                    <img src="/imec.webp" height="100" width="250" alt="" />
                 </div>
                 <div className="slyde">
                     <img src="/misuga.webp" height="100" width="250" alt="" />
@@ -26,7 +26,7 @@ function ProductCarousel() {
                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
                 </div>
                 <div className="slyde">
-                    <img src="/Imec.webp~" height="100" width="250" alt="" />
+                    <img src="/imec.webp" height="100" width="250" alt="" />
                 </div>
                 <div className="slyde">
                     <img src="/misuga.webp" height="100" width="250" alt="" />
