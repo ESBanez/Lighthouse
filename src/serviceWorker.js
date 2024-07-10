@@ -3,7 +3,6 @@ const urlsToCache = [
   '/',
   '/App.jsx',
   '/Main.jsx',
-  '/Pages/Home.jsx',
 
   '/Components/Btsolve2.jsx',
   '/Components/Divider.jsx',
