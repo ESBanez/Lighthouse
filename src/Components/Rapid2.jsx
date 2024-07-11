@@ -48,39 +48,40 @@ function Rapid2() {
 
   const images = [
     {
-      url: "content-creation.jpg",
-      title: "Content creation",
+      url: "examachievers.webp",
+      title: "Achiever's Mindset Test",
       hovercomment:
-        "The process of generating material for online platforms, including articles, videos, images, and more, to engage and inform an audience.",
+        "A tool that identifies eight qualities that drive a person towards success in the field of seafaring.",
     },
     {
-      url: "bookkeeping.jpg",
-      title: "Bookkeeping",
+      url: "examcapt.webp",
+      title: "CAPT Test",
       hovercomment:
-        "The systematic recording, organizing, and managing of financial transactions for a business, ensuring accuracy and compliance with regulations.",
+        "Constructive Anxiety Personality Tool - a personality tool to measure the level of constructive anxiety and safety awareness in the maritime and general context",
     },
     {
-      url: "social-media-management.jpg",
-      title: "Social Media Posting",
+      url: "exammensura.webp",
+      title: "Mensura - Personality Exam",
       hovercomment:
         "The act of publishing content, such as updates, photos, or videos, on social media platforms to communicate with and engage an audience.",
     },
     {
-      url: "socialmediaadvertisement.jpg",
-      title: "Social Media Advertisement",
+      url: "exampc.webp",
+      title: "PC - ADT Exam",
       hovercomment:
-        "Paid promotional content displayed on social media platforms to increase brand visibility, drive traffic, and achieve marketing goals.",
+      "Point-and-Call: Awareness Development Tool - an assessment game to measure the focus and awareness levels of participants to combat complacency.",
     },
     {
-      url: "community.jpg",
-      title: "Community Engagement",
+      url: "examseamula.webp",
+      title: "Seamula Exam",
       hovercomment:
-        "Interaction and involvement with a group of people sharing common interests or characteristics, often facilitated through activities, events, or online discussions.",
+      "Filipino Seafarer Multidimensional Assessment - a personality tool developed specifically for Filipino Seafarers for Leadership.",
     },
     {
-      url: "Technical-Ship-Management.jpg",
-      title: "Technical Ship Management",
-      hovercomment: "Technical Ship Management for social media.",
+      url: "examsocat.webp",
+      title: "Socat Exam",
+      hovercomment: 
+      "Socio-Cultural Adaptability Tool - a tool to measure your adaptability skill level on 3 important aspects in the Maritime Industry.",
     },
   ];
 

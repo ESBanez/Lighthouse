@@ -46,40 +46,36 @@ function Btsolve2() {
 
   const images = [
     {
-      url: "bts3.png",
-      title: "Android App Development",
+      url: "btscms.webp",
+      title: "Crew Management Solutions",
       hovercomment:
-        "The process of generating material for online platforms, including articles, videos, images, and more, to engage and inform an audience.",
+      "Specifically designed for use of Manning Agencies that can manage their crew (crew information, documents, trainings, certificates and licenses, career management).",
     },
     {
-      url: "bookkeeping.jpg",
-      title: "Bookkeeping",
+      url: "btscva.webp",
+      title: "CloudView Accounting",
       hovercomment:
-        "The systematic recording, organizing, and managing of financial transactions for a business, ensuring accuracy and compliance with regulations.",
+      "An accounting system that can be tailor-fitted for crew and vessel accounting for manning and ship management companies with in depth financial visibility and reports.",
     },
     {
-      url: "social-media-management.jpg",
-      title: "Social Media Posting",
+      url: "btscps.webp",
+      title: "Crew Payroll System",
       hovercomment:
-        "The act of publishing content, such as updates, photos, or videos, on social media platforms to communicate with and engage an audience.",
+      "Designed to work with our Crew Management System to facilitate the crew payroll and allotment.",
     },
     {
-      url: "socialmediaadvertisement.jpg",
-      title: "Social Media Advertisement",
+      url: "btsisms.webp",
+      title: "Integrated Ship Management Solutions",
       hovercomment:
-        "Paid promotional content displayed on social media platforms to increase brand visibility, drive traffic, and achieve marketing goals.",
+      "Specifically design to work with ship management companies with both shore and and vessel management available to sync online and offline depending on the internet on-board the vessel",
     },
     {
-      url: "community.jpg",
-      title: "Community Engagement",
+      url: "btstala.webp",
+      title: "TALA Learning Management Solutions",
       hovercomment:
-        "Interaction and involvement with a group of people sharing common interests or characteristics, often facilitated through activities, events, or online discussions.",
+      "TALA Maritime is an app designed for seafarers to improve their technical knowledge through videos, flashcards, quizzes and more.",
     },
-    {
-      url: "Technical-Ship-Management.jpg",
-      title: "Technical Ship Management",
-      hovercomment: "Technical Ship Management for social media.",
-    },
+
   ];
   const ImageButton = styled(ButtonBase)(({ theme }) => ({
     position: "relative",
@@ -148,7 +144,7 @@ function Btsolve2() {
     top: 0,
     bottom: 0,
     backgroundColor: theme.palette.common.black,
-    opacity: 0.4,
+    opacity: 0.6,
     transition: theme.transitions.create("opacity"),
   }));
 
