@@ -35,7 +35,7 @@ function Home() {
                     <div>
                         <nav><Navbar/></nav>
                     </div>
-                    <div className="carouselComp">
+                     <div className="carouselComp">
                         <CarouselComponent onScrollToSection={scrollToSection} />
                     </div>
 
@@ -68,17 +68,18 @@ function Home() {
                      
                         <div className="spacer"></div>  
                         <div className="spacer"></div>  
+                        
                         <div className="Rapidite" id="section3">
                             <Rapid2 onScrollToSection={scrollToSection} id="section3"/>
                         </div>
 
-                           
+                         
                         <div className="spacer"></div>  
                         <div className="spacer"></div>  
                         <div className="client">
                             <Testimonials/>
                         </div>
-                        
+                          
                         <div className="spacer"></div>  
                         <div className="spacer"></div>  
                         <div>
@@ -92,7 +93,7 @@ function Home() {
                         <div id="section4" className="Footer"> 
                             <FooterKen/>
                         </div>
-                    </div>
+                    </div> 
                 </Grid>
             </Box>
         </>
