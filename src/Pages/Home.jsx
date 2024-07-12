@@ -18,6 +18,7 @@ import Testimonials from "../Components/Testimonials";
 import MyDivider from '../Components/Divider';
 import ProductCarousel from '../Components/ProductCarousel';
 import "../Javascript/home.js";
+import { FloatButton } from 'antd';
 
 function Home() {
     React.useEffect(() => {
@@ -27,6 +28,10 @@ function Home() {
     const scrollToSection = (sectionId) => {
         document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
     };
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     
     return (
         <>
@@ -35,7 +40,7 @@ function Home() {
                     <div>
                         <nav><Navbar/></nav>
                     </div>
-                     <div className="carouselComp">
+                     <div className="carouselComp" >
                         <CarouselComponent onScrollToSection={scrollToSection} />
                     </div>
 
@@ -89,6 +94,8 @@ function Home() {
                             <ProductCarousel/>
                         </div>
                     </div>
+                    <FloatButton.BackTop visibilityHeight={1} onClick={scrollToTop} style={{ zIndex: "999999" }} />
+
                     <div>
                         <div id="section4" className="Footer"> 
                             <FooterKen/>
