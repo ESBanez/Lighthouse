@@ -65,18 +65,18 @@ const images = [
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: "relative",
   height: "200px",
-  boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.5)",
+  boxShadow: "5px 5px 20px rgba(0, 0, 0, 0.7)",
   // [theme.breakpoints.down("sm")]: {
   //   width: "100%",
   //   height: "150px",
   // },
-  [theme.breakpoints.between(0, 320)]: {
+  [theme.breakpoints.down("xs")]: {
     width: "100%",
-    height: "180px",  // Make it 1:1 by setting height equal to width
+    height: "10rem",
   },
   [theme.breakpoints.down("sm")]: {
     width: "100%",
-    height: "200px",
+    height: "10rem",
   },
   [theme.breakpoints.up("xl")]: {
     width: "100%",
