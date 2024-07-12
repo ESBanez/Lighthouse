@@ -30,7 +30,7 @@ function Home() {
     
     return (
         <>
-            <Box sx={{ width: '100%' }}>
+            <Box sx={{ width: '100%', overflow: 'hidden'}}>
                 <Grid container className='grid' rowSpacing={0} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={{ marginLeft: 0, marginRight: 0, display: 'flex', flexDirection: 'column' }}>
                     <div>
                         <nav><Navbar/></nav>
@@ -41,49 +41,52 @@ function Home() {
 
                     <div className="btrapiserv">
 
-                        <div className="spacer"></div> {/* Use CSS to create space */}
-                        <div className="spacer"></div> {/* Use CSS to create space */}
-                        <div className="spacer"></div> {/* Use CSS to create space */}
+                        <div className="spacer"></div>  
+                        <div className="spacer"></div>  
+                        <div className="spacer"></div>  
 
                         <div className='websitevideo'>
                             <video src="/lighthousewebvid.webm" muted controls autoPlay autoFocus loop className="videoStyles" controlsList="nodownload"></video>
                         </div>
 
-                        <div className="spacer"></div> {/* Use CSS to create space */}
+                        <div className="spacer"></div>  
                         <div className="missionvi">
                             <MissionVision/>
                         </div>
 
-                        <div className="spacer"></div> {/* Use CSS to create space */}
+                        <div className="spacer"></div>  
 
                         <div className="TextReveal" id="section2">
                             <LighthousePart onScrollToSection={scrollToSection} />
                         </div>
-                        <div className="spacer"></div> {/* Use CSS to create space */}
+                        <div className="spacer"></div>  
 
                         <div className="" id="section5"> 
-                            {/* <Btsolve onScrollToSection={scrollToSection} /> */}
+                           
                             <Btsolve2 onScrollToSection={scrollToSection} /> 
                         </div>
-                        <div className="spacer"></div> {/* Use CSS to create space */}
-                        <div className="spacer"></div> {/* Use CSS to create space */}
+                     
+                        <div className="spacer"></div>  
+                        <div className="spacer"></div>  
                         <div className="Rapidite" id="section3">
                             <Rapid2 onScrollToSection={scrollToSection} id="section3"/>
                         </div>
-                        <div className="spacer"></div> {/* Use CSS to create space */}
-                        <div className="spacer"></div> {/* Use CSS to create space */}
+
+                           
+                        <div className="spacer"></div>  
+                        <div className="spacer"></div>  
                         <div className="client">
                             <Testimonials/>
                         </div>
-                        <div className="spacer"></div> {/* Use CSS to create space */}
-                        <div className="spacer"></div> {/* Use CSS to create space */}
+                        
+                        <div className="spacer"></div>  
+                        <div className="spacer"></div>  
                         <div>
                             <MyDivider/>
                         </div>
                         <div className="mydividerprod">
                             <ProductCarousel/>
                         </div>
-
                     </div>
                     <div>
                         <div id="section4" className="Footer"> 

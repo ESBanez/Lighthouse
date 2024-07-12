@@ -199,13 +199,12 @@ function LighthousePart() {
                 justifyContent: "space-between",
               }}
             >
-              <div>Services</div>
+              <div className="companyaccordions">Services</div>
               <div
                 className="companys"
                 style={{
                   fontFamily: "montserrat",
                   color: "white",
-                  fontSize: "large",
                 }}
               >
                 Lighthouse
@@ -213,9 +212,7 @@ function LighthousePart() {
               <div
                 style={{
                   fontFamily: "montserrat",
-                  color: "transparent",
-                  fontSize: "large",
-                }}
+                  color: "transparent",                }}
               >
                 Services
               </div>
@@ -273,7 +270,7 @@ function LighthousePart() {
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
             {selectedImage && (
-              <div style={{ display: "flex" }}>
+              <div className="modalflexin">
                 <div>
                   <img
                     src={selectedImage.url}

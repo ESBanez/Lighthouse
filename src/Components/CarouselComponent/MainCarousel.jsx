@@ -1,13 +1,14 @@
 import "../../Sass/maincarousel.css";
 import "../../Javascript/animated-headline.js";
+import "../../Sass/Home.css";
 
 function MainCarousel({ onScrollToSection }) {
   return (
     <div className="maincarousel">
-      <div className="container">
+      <div className="">
         <div className="row">
-          <div className="col-lg-12 col-12 mb-5 mb-lg-0">
-            <h2 className="text-white" style={{ fontSize: "xx-large" }}>
+          <div className="col-lg-10 col-10 mb-5 mb-lg-0">
+            <h2 className="text-white">
               Lighthouse Innovations Inc.
             </h2>
 

@@ -3,6 +3,7 @@ import MainCarousel from '../CarouselComponent/MainCarousel.jsx';
 import Visibility from '../CarouselComponent/Visibility.jsx';
 import Insight from '../CarouselComponent/Insight.jsx';
 import Values from '../CarouselComponent/Values.jsx';
+import "../../Sass/Home.css";
 
 function CarouselComponent() {
   const [position, setPosition] = useState(0); // Using state to track position

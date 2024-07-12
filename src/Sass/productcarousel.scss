@@ -55,3 +55,28 @@ $animationSpeed: 40s;
 		width: 250px;
 	}
 }
+
+@media only screen and (max-width: 1024px){
+	.slyder{
+        width: 50rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+	.slyder{
+        width: 30rem;
+    }
+}
+
+@media only screen and (max-width: 545px){
+	.slyder{
+        width: 20rem;
+    }
+
+}
+@media only screen and (max-width: 320px){
+	.slyder{
+        width: "";
+    }
+
+}

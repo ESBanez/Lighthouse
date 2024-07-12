@@ -80,6 +80,71 @@ $size-height: 350px;
   .rapidcarousel-wrapper {
     width: 25rem;
   }
+
+}
+@media screen and (max-width: 379px) {
+  $size-width: 300px;
+  $size-height: 250x;
+  
+  .rapidcarousel-wrapper {
+    width: 18rem;
+    height: 19rem;
+  }
+  
+.rapidcarousel {
+  display: flex;
+  width: $size-width * 4; // Adjusted to accommodate four images
+  animation: sliding 16s infinite; // Adjusted animation duration
+  div {
+    width: $size-width;
+    height: $size-height;
+    background-size: cover;
+    background-position: center;
+  }
+  &:hover {
+    animation-play-state: paused;
+  }
+  .rapidimage-one {
+    background-image: url("/seamula_v3.png");
+  }
+  .rapidimage-two {
+    background-image: url("/achie_v3.png");
+  }
+  .rapidimage-three {
+    background-image: url("/socat_v3.png");
+  }
+  .rapidimage-four { // Added class for the fourth image
+    background-image: url("/seawoman1.png");
+  }
+}
+
+@keyframes sliding {
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-$size-width);
+  }
+  45% {
+    transform: translateX(-$size-width);
+  }
+  50% {
+    transform: translateX(-$size-width * 2);
+  }
+  70% {
+    transform: translateX(-$size-width * 2);
+  }
+  75% {
+    transform: translateX(-$size-width * 3);
+  }
+  95% {
+    transform: translateX(-$size-width * 3);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 }
 
 //   .carousel-container {

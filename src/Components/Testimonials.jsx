@@ -9,7 +9,7 @@ function Testimonials() {
 
   return (
     <>
-            <div style={{ color: "#333e5b", fontSize: "6rem", display: "flex", justifyContent: "center"}}>#What <p style={{ color: "#FEC804"}}> they've </p> said?</div>
+            <div className="testi" style={{ color: "#333e5b", display: "flex", justifyContent: "center"}}>#What <p style={{ color: "#FEC804"}}> they've </p> said?</div>
 
       <div className="outerdiv">
         <div className="innerdiv">

@@ -102,5 +102,11 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 }
 
 @media screen and (min-width: 0px) and ( max-width: 375px ) {
+.navbar-brand{
+  width: 6rem;
 
+}
+.navbarlogoholder{
+  
+}
 }

@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import "../../Sass/maincarousel.css";
+import "../../Sass/Home.css";
 
 const Values = ({ onScrollToSection }) => {
     return (

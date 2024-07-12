@@ -81,3 +81,17 @@
         display: none ;
       }
 }
+
+@media screen  and (min-width: 0) and (max-width: 390px) {
+
+    .rapidlogoholder >img {
+        height: 4rem;
+        margin-right: -0.5rem;
+    }
+    .rapidlogocomponent {
+        font-size: 1.8rem;
+    }
+    .rapidparagraph {
+        font-size: 1rem;
+    }
+}

@@ -277,7 +277,7 @@ function Btsolve2() {
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
             {selectedImage && (
-              <div style={{ display: "flex" }}>
+              <div className="modalflexin">
                 <div>
                   <img
                     src={selectedImage.url}

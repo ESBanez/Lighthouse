@@ -126,7 +126,7 @@
 
 
 .videoStyles {
-  height: 40rem;
+  width: 70vw;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   background: radial-gradient(
     circle at right,
@@ -168,12 +168,18 @@
   background-repeat: no-repeat;
   align-content: center;
   height: 20rem;
+  background-position: center;
 }
 
 
 
 @media screen and (min-width: 1440px) and (max-width: 2720px) {
     /* Your CSS rules for this screen width range go here */
+    .carouselbody >ul{
+      padding: 0;  
+      padding: 2rem 2rem 0 2rem;
+      font-size: 1rem;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   /* Your CSS rules for this screen width range go here */
@@ -186,14 +192,63 @@
 }
 @media screen and (min-width: 0) and (max-width: 768px) {
   /* Your CSS rules for this screen width range go here */
- .spacer{}
+  .carousel__viewport{
+    padding: 0;
+  }
+
+  .carouselparent{
+    width: 100%;
+  }
+  .carouselComp {
+
+      margin-bottom: 2.4rem;
+  }
+  .carousel__snapper{
+    width: 100%;
+  }
+  #carousel__slide1{
+    text-align: -webkit-center;
+    }
+  .carouselbody >ul{
+    padding: 0;  
+    padding: 2rem 2rem 0 2rem;
+    font-size: 1rem;
+  }
+  .hero-section{
+    height: auto !important;
+  }
+  .videoStyles {
+    width: 90vw;
+  }
 }
 @media screen and (min-width: 0) and (max-width: 320px) {
   /* Your CSS rules for this screen width range go here */
-
-  .carouselComp {
-      margin-top: -4rem;
-      margin-bottom: 2.4rem;
+  .carousel__viewport{
+    padding: 0;
   }
 
+  .carouselparent{
+    width: 100%;
+  }
+  .carouselComp {
+
+      margin-bottom: 2.4rem;
+  }
+  .carousel__snapper{
+    width: 100%;
+  }
+  #carousel__slide1{
+    text-align: -webkit-center;
+    }
+  .carouselbody >ul{
+    padding: 0;  
+    padding: 2rem 2rem 0 2rem;
+    font-size: 1rem;
+  }
+  .hero-section{
+    height: auto !important;
+  }
+  .videoStyles {
+    width: 90vw;
+  }
 }

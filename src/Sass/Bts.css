@@ -70,6 +70,15 @@
 .btscard  {
     align-self: center;
 }
+.btslogoword{
+    font-size: 1rem;
 
+}
+.btslogocomponent > img {
+    width: 5rem;
+}
+.btslady >img{
+    height: 30vh;
+}
 }
 

@@ -1,7 +1,33 @@
 .we-partnered-with{
     background-image: url(/public/qoute.webp);
     height: 10vh;
-    width: vw;
+    font-size: 4rem;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.wepartneredtext{
+    font-size: 2rem};
+
+@media only screen and (max-width: 768px){
+	.wepartneredtext{
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 545px){
+	.wepartneredtext{
+        font-size: 2rem;
+
+    }
+
+}
+@media only screen and (max-width: 320px){
+	.wepartneredtext{
+        font-size: 1.5rem;
+
+    }
+    .we-partnered-with{
+        background-image: none !important;
+    }
 }

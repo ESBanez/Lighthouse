@@ -87,6 +87,10 @@
   padding: 1rem 0;
 }
 
+.modalflexin{
+  display: flex;}
+
+
 .servicebut {
   width: 100%;
   height: 200px;
@@ -101,5 +105,12 @@
 @media (min-width: 900px) {
   .servicecard {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 0) and (max-width: 480px) {
+  .modalflexin{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
   }
 }

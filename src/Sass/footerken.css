@@ -1,4 +1,4 @@
-.footercomponent{
+.footercomponent {
     overflow: hidden; /* Ensure the video doesn't overflow */
     padding: 1.5rem;
     position: relative;
@@ -14,18 +14,16 @@
     position: relative;
     z-index: 1;
     padding: 20px;
-
 }
 
-
-.footerform{
+.footerform {
     background-color: white;
     opacity: 0.9;
     padding: 1.3rem;
     border-radius: 15px;
     box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
-
 }
+
 .video-background {
     position: absolute;
     top: 50%;
@@ -38,21 +36,21 @@
     transform: translate(-50%, -50%);
     background-size: cover;
     opacity: ""; /* Semi-transparent video */
-  }
-  
+}
 
-.footernameemail, .footerphonecompany, .footerinquiries, .footersubmit{
+.footernameemail, .footerphonecompany, .footerinquiries, .footersubmit {
     display: flex;
 }
 
-.footernameemail{
+.footernameemail {
     margin-top: 1rem;
 }
 
-.footeremail{
+.footeremail {
     text-align: -webkit-center;
 }
-.footeremailcardtab{
+
+.footeremailcardtab {
     width: 35rem;
     height: 15rem;
     background-image: url(../../public/WorldMap.svg);
@@ -63,30 +61,35 @@
     align-items: center;
 }
 
-.footerinquiriestab{
+.footerinquiriestab {
     width: 100%;
 }
-.footersubmit{
+
+.footersubmit {
     padding: 1rem;
 }
-.footersubmit > button{
+
+.footersubmit > button {
     width: 100%;
 }
-.footeremailustitle{
+
+.footeremailustitle {
     padding: 1rem;
     color: white;
     font-size: 1.3rem;
 }
-.emails{
+
+.emails {
     padding: 1rem;
 }
-.footerlogo{
+
+.footerlogo {
     display: flex;
     justify-content: center;
     width: fit-content;
 }
 
-.footerlogotab{
+.footerlogotab {
     display: flex;
     justify-content: center;
     width: 35rem;
@@ -94,9 +97,9 @@
     background-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
-
 }
-.footeremailtab{
+
+.footeremailtab {
     text-align-last: center;
     background: center;
     margin-bottom: 3rem;
@@ -104,48 +107,90 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     width: fit-content;
     height: 10rem;
-
 }
+
 .footerlogoholder > img {
     height: 5rem;
 }
-.emails{
+
+.emails {
     text-decoration: none;
     color: white;
 }
 
-.footerall{
+.footerall {
     text-align: center;
     color: white;
     padding: 1rem;
 }
 
+.footerlogoholder img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-@media screen and (min-width: 0px) and (max-width: 1079px){
-    .footerbody{
-        
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 2rem;
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-    flex-direction: column;
+.footerlogoholder img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    .footernameemail, .footerphonecompany {
+        flex-direction: column;
+        row-gap: 1rem;
     }
-    .footerform{
+
+    .footerbody {
+        flex-direction: column;
+    }
+
+    .footerform {
         margin-bottom: 3rem;
     }
-    .footeremailtab{
+
+    .footeremailtab {
+        height: 7rem;
+    }
+
+    .footerlogotab{
+        flex-flow: column-reverse;
+        width: auto !important;
+        padding: 1rem;
+    }
+    .footeremailcardtab{
+        width: auto !important;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 1079px) {
+    .footerbody {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2rem;
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .footerform {
+        margin-bottom: 3rem;
+    }
+
+    .footeremailtab {
         height: 7rem;
     }
 }
 
-.footerlogoholder img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .footerlogoholder img:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-  }
+@media screen and (min-width: 1080px) and (max-width: 1439px) {
+    .footerbody {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2720px) {
+    .footerbody {
+        flex-direction: row;
+    }
+}
+ 

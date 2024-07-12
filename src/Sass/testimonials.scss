@@ -18,6 +18,9 @@ body{
 a:link,a:active,a:visited,a:hover{
 	color:#3f51b5;
 }
+.testi{
+	font-size: 6rem;
+}
 
 .outerdiv
 {
@@ -190,18 +193,27 @@ a:link,a:active,a:visited,a:hover{
 		transform: scale(0.6);
 	}
 }
-@media only screen and (max-width: 736px)
+@media only screen and (max-width: 768px)
 {
+	.testi{
+		font-size: 2rem;
+	}
 	.div1 {
 		background-position-x: 10rem;
+	}
+	.outerdiv {
+		padding: 0;
+		width: fit-content;
+	}
+	.eachdiv{
+		width: 100%;
 	}
 	.innerdiv
 	{
 		display: flex; 
 		flex-direction: column;
 		transform: scale(1);
-		margin: 2rem;
-		margin-bottom: 5rem;
+
 	}
 	.attribution
 	{

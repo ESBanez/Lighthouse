@@ -6,6 +6,12 @@
       align-items: center;
   }
 }
+
+
+
+
+
+
 .rec-carousel-item{
 align-content: center;
 }
@@ -21,7 +27,7 @@ align-content: center;
 .maincarousel{
   display: flex;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 50%;
 }
 
 .carouseltitle {
@@ -35,7 +41,6 @@ color: white;
   font-size: 1.3rem;
   color: white;
   border-radius: 15px;
-  padding: 2.5rem 2rem 0.5rem 2rem;
   text-align: -webkit-center;
   width: auto;
   background-color: rgba(255, 255, 255, 0.1);
@@ -456,7 +461,7 @@ transform: scale(1.1);
   .carousel__snapper {
     animation-name: tonext, snap;
     animation-timing-function: ease;
-    animation-duration: 15s; /* Set animation duration to 10 seconds */
+    animation-duration: 40s; /* Set animation duration to 10 seconds */
     animation-iteration-count: infinite;
   }
 
