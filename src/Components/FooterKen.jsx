@@ -162,7 +162,7 @@ function FooterKen() {
                         <Button variant="contained" id="button" type="submit">Submit</Button>
                     </div>
                 </form>
-           {/*      <div className="footeremail" >
+                <div className="footeremail" >
                     <div className="footeremailcardtab" data-aos="fade-left">
                         <Card sx={{ 
                             maxWidth: 340,  
@@ -218,7 +218,7 @@ function FooterKen() {
                             </li>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
             <br />
             <div className="footerlogo container">

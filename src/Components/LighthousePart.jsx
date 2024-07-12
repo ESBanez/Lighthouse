@@ -70,6 +70,10 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   //   width: "100%",
   //   height: "150px",
   // },
+  [theme.breakpoints.between(0, 320)]: {
+    width: "100%",
+    height: "180px",  // Make it 1:1 by setting height equal to width
+  },
   [theme.breakpoints.down("sm")]: {
     width: "100%",
     height: "200px",
@@ -78,6 +82,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
     width: "100%",
     height: "calc(15vw)",
   },
+
   "&:hover, &.Mui-focusVisible": {
     zIndex: 1,
     "& .MuiImageBackdrop-root": {
