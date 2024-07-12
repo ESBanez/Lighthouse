@@ -18,7 +18,7 @@ const MyDivider = () => {
     <>
       <Divider orientation="left" plain className='we-partnered-with' data-aos="fade-right">
         <div className="wepartneredtext" style={{ color: "#333e5b", display: "flex", justifyContent: "center", alignItems: "center"}}>
-           We <p style={{ color: "#FEC804", margin: "0 1rem" }}>partnered</p> with <span style={{ marginLeft: "1rem" }}><FontAwesomeIcon icon={faTag} beat /></span>
+           We <p style={{ color: "", margin: "0 1rem" }}>partnered</p> with <span style={{ marginLeft: "1rem" }}><FontAwesomeIcon icon={faTag} beat style={{color: "#FFC903"}}/></span>
         </div>
       </Divider>
     </>
