@@ -183,7 +183,7 @@ function Btsolve2() {
 
             <br />
 
-            <div>"Stable, secure and scalable cloud solutions."</div>
+              <div className="btsparag">"Stable, secure and scalable cloud solutions."</div>
 
             <br />
 

@@ -14,9 +14,9 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 
 @media (min-width: 0px) and (max-width: 3073px) {
   * {
-    --bs-navbar-color: var(--yellow); 
-    --bs-navbar-hover-color: var(--yellow); 
-    --bs-navbar-disabled-color: var(--yellow); 
+    --bs-navbar-color: white; 
+    --bs-navbar-hover-color: transparent; 
+    --bs-navbar-disabled-color: white; 
   
     --bs-border-width: 0.5px;
     --bs-border-style: solid;
@@ -29,11 +29,11 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
   }
 
   .navbar-toggler-icon {
-    color: var(--yellow) !important;
+    color: white !important;
   }
 
   .navbar-toggler:hover {
-    border-color: var(--yellow) !important;
+    border-color: white !important;
   }
 
   .navbar-toggler {
@@ -42,7 +42,7 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
     line-height: 1;
     color: var(--blue); 
     background-color: transparent;
-    border: var(--bs-border-width) solid var(--bs-border-color);
+    border: var(--bs-border-width) solid white;
     border-radius: var(--bs-navbar-toggler-border-radius);
     transition: var(--bs-navbar-toggler-transition);
   }

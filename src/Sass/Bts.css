@@ -82,3 +82,9 @@
 }
 }
 
+@media screen and (min-width: 0)and (max-width: 320px) {
+ .btsparag {
+    font-weight: 0.8rem;
+
+ }
+}
