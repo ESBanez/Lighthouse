@@ -90,5 +90,7 @@
 }
 @media screen and (min-width: 0) and (max-width: 320px) {
   /* Your CSS rules for this screen width range go here */
-
+    .missiovisionnsub{
+        width: 100%;
+    }
 }
