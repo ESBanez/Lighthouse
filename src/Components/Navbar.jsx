@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import "../Sass/Navbar.css"
+import { useEffect } from 'react';
 
 
 
@@ -35,10 +36,36 @@ const NavbarContainer = styled.nav`
 `;
 
 
+
 function Navbar() {
   const refreshPage = () => {
     window.location.reload();
 };
+
+  
+useEffect(() => {
+  function handleResize() {
+      const navLinks = document.querySelectorAll('.nav-link');
+      if (window.innerWidth <= 1199) {
+          navLinks.forEach(link => {
+              link.style.paddingBottom = '0';
+          });
+      } else {
+          navLinks.forEach(link => {
+              link.style.paddingBottom = ''; // Reset to default or remove inline style
+          });
+      }
+  }
+
+  window.addEventListener('load', handleResize);
+  window.addEventListener('resize', handleResize);
+
+  // Cleanup event listeners on component unmount
+  return () => {
+      window.removeEventListener('load', handleResize);
+      window.removeEventListener('resize', handleResize);
+  };
+}, []);
 
   return (
   <NavbarContainer className="navbar navbar-expand-xl navbarmaincomponent">
@@ -61,7 +88,8 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <a href="#updates" className="nav-link">Updates</a>
-          </li>          <li className="nav-item">
+          </li>
+          <li className="nav-item">
             <a href="#contact" className="nav-link">Contact</a>
           </li>
         </ul>

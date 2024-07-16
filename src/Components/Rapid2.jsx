@@ -177,9 +177,7 @@ function Rapid2() {
 
   return (
     <div >   
-      <div className="spacer" id="section3"></div> {/* Use CSS to create space */}
-
-      <div className="rapidcomponentgeneral" style={{display:"flex", justifyContent: "center"}}>
+      <div className="rapidcomponentgeneral" id="section3" style={{display:"flex", justifyContent: "center"}}>
         <div className="rapidcomponent" style={{alignContent:"center", display: "flow"}}>
           <div className="rapidlogocomponent" data-aos="fade-right">
             <div className="rapidlogoholder">
@@ -187,11 +185,12 @@ function Rapid2() {
             </div>
             <div>R A P I D</div>
           </div>
+          <br />
           <div className="rapidparagraphholder" data-aos="fade-left">
             <div className="rapidparagraph">"Motivation and Success."</div>
           </div>
           <br />
-          <br />
+
           <Popover
             content={content}
             title="Rapid"
@@ -216,6 +215,9 @@ function Rapid2() {
             </a>
           </Popover>
         </div>
+        <div className="rapiduniquespacer"></div>
+        <div className="rapiduniquespacer"></div>
+
         <div>
           <div className="rapidCard">
             <RapidCarousel />
@@ -224,9 +226,8 @@ function Rapid2() {
       </div>
 
 
-      <div className="rapiduniquespacer"></div> {/* Use CSS to create space */}
-      <div className="rapiduniquespacer"></div> {/* Use CSS to create space */}
-
+      <div className="rapiduniquespacer"></div>
+      <div className="rapiduniquespacer"></div> 
       
     <div className="companyservices">
           <Accordion>

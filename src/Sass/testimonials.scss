@@ -21,7 +21,74 @@ a:link,a:active,a:visited,a:hover{
 .testi{
 	font-size: 6rem;
 }
+// ====================they've=======================
 
+.text {
+	font-family: "";
+	font-size: 100px;
+	display: flex;
+	position: absolute;
+	bottom: 20vh;
+	left: 50%;
+	transform: translateX(-50%);
+	user-select: none;
+
+	.lettering {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+		.letter {
+			transition: ease-out 1s;
+			transform: translateY(40%);
+		}
+		.shadow {
+			transform: scale(1, -1);
+			color: #999;
+			transition: ease-in 5s, ease-out 5s;
+		}
+		&:hover {
+			.letter {
+				transform: translateY(-200%);
+			}
+			.shadow {
+				opacity: 0;
+				transform: translateY(200%);
+			}
+		}
+	}
+}
+
+
+// ==================================================
+.mirror-text-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.mirror-text {
+    font-size: 4rem; /* Adjust as needed */
+    color: #333e5b; /* Adjust as needed */
+}
+
+.mirror-text p {
+    display: inline;
+    margin: 0 0.5rem; /* Adjust spacing as needed */
+}
+
+.mirror-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%; /* Position below the original text */
+    left: 0;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5); /* Adjust reflection color */
+    transform: scaleY(-1); /* Flip the text vertically */
+    transform-origin: top;
+    opacity: 0.3; /* Adjust reflection opacity */
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for depth */
+}
+// ===========================================
 .outerdiv
 {
 	width: 100%;

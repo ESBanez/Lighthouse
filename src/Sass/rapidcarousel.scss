@@ -42,7 +42,7 @@ $size-height: 350px;
     background-image: url("/socat_v3.png");
   }
   .rapidimage-four { // Added class for the fourth image
-    background-image: url("/seawoman1.png");
+    background-image: url("/seawoman1.webp");
   }
 }
 
@@ -79,6 +79,7 @@ $size-height: 350px;
   }
   .rapidcarousel-wrapper {
     width: 25rem;
+    
   }
 
 }
@@ -88,10 +89,12 @@ $size-height: 350px;
   
   .rapidcarousel-wrapper {
     width: 18rem;
-    height: 19rem;
+    height: 18rem;
+    contain: content;
   }
   
 .rapidcarousel {
+  
   display: flex;
   width: $size-width * 4; // Adjusted to accommodate four images
   animation: sliding 16s infinite; // Adjusted animation duration

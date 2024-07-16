@@ -8,9 +8,11 @@
     #04486d 80%, /* Lighter purple towards the outer edge */
     #333E6A 100% /* A lighter shade at the very edge */
 );
-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9); /* Adjust the values as needed */
 
 }
+
+
 
 @media (min-width: 0px) and (max-width: 3073px) {
   * {
@@ -106,7 +108,10 @@ box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
   width: 6rem;
 
 }
-.navbarlogoholder{
-  
+.a .nav-link {
+  padding-bottom: 0;
 }
+
 }
+
+

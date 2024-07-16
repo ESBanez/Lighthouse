@@ -44,21 +44,28 @@ function Home() {
                     <div>
                         <nav><Navbar/></nav>
                     </div>
-                     <div className="carouselComp" >
+
+                    <div className="carouselComp" >
                         <CarouselComponent onScrollToSection={scrollToSection} />
+                    </div>
+                    <div className="spacer"></div>  
+                    <div className="spacer"></div>  
+
+                    <div style={{padding: '2rem', display: 'flex', justifyContent: 'center'}}>
+                        <div style={{color: 'black', fontSize: '0.875rem'}}>
+                        Lighthouse Innovations Inc. is a dynamic conglomerate dedicated 
+                        to empowering businesses through the strategic use of technology.
+                        </div>
                     </div>
 
                     <div className="btrapiserv">
 
-                        <div className="spacer"></div>  
-                        <div className="spacer"></div>  
                         <div className="spacer"></div>  
 
                         <div className='websitevideo'>
                             <video src="/lighthousewebvid.webm" muted controls autoPlay autoFocus loop className="videoStyles" controlsList="nodownload"></video>
                         </div>
 
-                        <div className="spacer"></div>  
                         <div className="missionvi">
                             <MissionVision/>
                         </div>

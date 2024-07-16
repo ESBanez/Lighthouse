@@ -130,12 +130,12 @@
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   background: radial-gradient(
     circle at right,
-    #333e6a 10%,
-    #0f4867 30%,
-    #0a5882 50%,
-    #0a547c 60%,
-    #04486d 80%,
-    #333e6a 100%
+    rgba(51, 62, 106, 0.9) 10%,   /* #333e6a with 90% opacity */
+    rgba(15, 72, 103, 0.8) 30%,   /* #0f4867 with 80% opacity */
+    rgba(10, 88, 130, 0.7) 50%,   /* #0a5882 with 70% opacity */
+    rgba(10, 84, 124, 0.6) 60%,   /* #0a547c with 60% opacity */
+    rgba(4, 72, 109, 0.5) 80%,    /* #04486d with 50% opacity */
+    rgba(51, 62, 106, 0.1) 100%   /* #333e6a with 90% opacity */
   );
   margin-bottom: 3rem;
   text-align: center;

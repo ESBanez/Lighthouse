@@ -68,7 +68,6 @@
         flex-direction: column-reverse;
         width: fit-content;
         align-self: center;
-        height: 30rem;
     }
     .rapidparagraph{
         display: flex;
@@ -78,7 +77,7 @@
         flex-direction: column-reverse;
     }
     .rapiduniquespacer {
-        display: none ;
+        height: 1rem;
       }
 }
 
@@ -92,6 +91,6 @@
         font-size: 1.8rem;
     }
     .rapidparagraph {
-        font-size: 1rem;
+        font-size: 0.857rem;
     }
 }
