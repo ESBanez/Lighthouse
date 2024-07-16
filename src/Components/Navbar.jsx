@@ -54,13 +54,15 @@ function Navbar() {
       <div className="collapse navbar-collapse justify-content-end order-lg-1" id="navbarSupportedContent">
         <ul className="navbar-nav" style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-evenly" }}>
           <li className="nav-item">
-            <a href="#section1" className="nav-link" aria-current="page"  onClick={refreshPage}>Home</a>
+            <a href="/" className="nav-link" aria-current="page"  onClick={refreshPage}>Home</a>
           </li>
           <li className="nav-item">
-            <a href="#section2" className="nav-link">About</a>
+            <a href="#about" className="nav-link">About</a>
           </li>
           <li className="nav-item">
-            <a href="#section4" className="nav-link">Contact</a>
+            <a href="#updates" className="nav-link">Updates</a>
+          </li>          <li className="nav-item">
+            <a href="#contact" className="nav-link">Contact</a>
           </li>
         </ul>
       </div>

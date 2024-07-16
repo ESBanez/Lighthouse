@@ -61,7 +61,7 @@ function Home() {
 
                         <div className="spacer"></div>  
 
-                        <div className="TextReveal" id="section2">
+                        <div className="TextReveal" id="about">
                             <LighthousePart onScrollToSection={scrollToSection} />
                         </div>
                         <div className="spacer"></div>  
@@ -93,10 +93,10 @@ function Home() {
                             <ProductCarousel/>
                         </div>
                     </div>
-                    <FloatButton.BackTop visibilityHeight={1} onClick={scrollToTop} style={{ zIndex: "999999" }} />
+                    <FloatButton.BackTop visibilityHeight={1} onClick={scrollToTop} style={{ zIndex: "999999", height: '4rem', width: '4rem'}} />
 
                     <div>
-                        <div id="section4" className="Footer"> 
+                        <div id="contact" className="Footer"> 
                             <FooterKen/>
                         </div>
                     </div> 
