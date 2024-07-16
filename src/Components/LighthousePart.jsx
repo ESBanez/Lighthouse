@@ -4,7 +4,7 @@ import AOS from "aos";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
@@ -141,7 +141,15 @@ const ImageMarked = styled("span")(({ theme }) => ({
 }));
 
 function LighthousePart() {
-  AOS.init();
+
+  useEffect(() => {
+    AOS.init({
+        duration: 1200, // Animation duration in milliseconds
+        once: true, // Whether animation should happen only once - while scrolling down
+        mirror: false, // Whether elements should animate out while scrolling past them
+    });
+}, []);
+
   const [open, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
