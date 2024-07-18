@@ -19,6 +19,7 @@ import MyDivider from '../Components/Divider';
 import ProductCarousel from '../Components/ProductCarousel';
 import "../Javascript/home.js";
 import { FloatButton } from 'antd';
+import Calendar from '../Components/Calendar.jsx';
 
 function Home() {
     React.useEffect(() => {
@@ -96,6 +97,13 @@ function Home() {
                             <Testimonials/>
                         </div>
                           
+                        <div className="spacer"></div>  
+                        <div className="spacer"></div>  
+
+                        <div id="updates">
+                            <Calendar/>
+                        </div>
+
                         <div className="spacer"></div>  
                         <div className="spacer"></div>  
 

@@ -1,0 +1,130 @@
+
+.companyupdates {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 2rem;
+  text-align: center; /* Center text within each line */
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.informed {
+  font-weight: bold; /* Adjust as needed */
+}
+
+
+.informed{
+    color: #FEC804 ;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.calendar-container{
+    text-align: -webkit-center;
+    display: flex;
+    place-content: center;
+}
+
+
+.announcestitlenews
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.annoucestitle{
+    font-size: 2rem;
+    font-weight: 1000;
+    display: flex;
+    place-content: center;
+    
+}
+
+.calendaryo {
+    height: 70vh;
+    width: 40vw;
+    background-color: transparent;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+}
+
+.announces{
+    width: 40vw;
+}
+
+
+
+/* card update on the right */
+.carddate{
+    height: auto;
+    background-color: #FFC903;
+    width: 3rem;
+    color: black;
+}
+.carddatenumber{
+    
+}
+
+.carddatemonth{
+    
+}
+
+.cardupdate{
+    display: flex;
+    justify-content: left;
+    background-color: transparent;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    width: 15rem;
+    margin-bottom: 20px;
+}
+
+
+.cardupdatetitle{
+    padding: 0.5rem;
+}
+/*  */
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .calendar-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .calendaryo{
+        height: 70vh;
+        width: 90vw;
+        margin-bottom: 4rem;
+    }
+    .cardupdate{
+        width: 80%;
+    }
+    .announces{
+        width: 80%;
+    }
+}
