@@ -6,30 +6,33 @@
 
 
 .MuiAccordionDetails-root {
-  background: radial-gradient(
-    circle at right, /* Radial gradient centered */
-    #333E6A 10%, /* Start with a dark color close to the center */
-    #0f4867 30%, /* Dark blue as the second color */
-    #0a5882 50%, /* Deep purple or blue as the third color */
-    #0a547c 60%, /* Deep purple or blue as the third color */
-    #04486d 80%, /* Lighter purple towards the outer edge */
-    #333E6A 100% /* A lighter shade at the very edge */
-  );
+  // background: radial-gradient(
+  //   circle at right, /* Radial gradient centered */
+  //   #333E6A 10%, /* Start with a dark color close to the center */
+  //   #0f4867 30%, /* Dark blue as the second color */
+  //   #0a5882 50%, /* Deep purple or blue as the third color */
+  //   #0a547c 60%, /* Deep purple or blue as the third color */
+  //   #04486d 80%, /* Lighter purple towards the outer edge */
+  //   #333E6A 100% /* A lighter shade at the very edge */
+  // );
+  background: transparent;
+
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 }
 
 
 .servicecard {
   
-  background: radial-gradient(
-    circle at right, /* Radial gradient centered */
-    #333E6A 10%, /* Start with a dark color close to the center */
-    #0f4867 30%, /* Dark blue as the second color */
-    #0a5882 50%, /* Deep purple or blue as the third color */
-    #0a547c 60%, /* Deep purple or blue as the third color */
-    #04486d 80%, /* Lighter purple towards the outer edge */
-    #333E6A 100% /* A lighter shade at the very edge */
-);
+//   background: radial-gradient(
+//     circle at right, /* Radial gradient centered */
+//     #333E6A 10%, /* Start with a dark color close to the center */
+//     #0f4867 30%, /* Dark blue as the second color */
+//     #0a5882 50%, /* Deep purple or blue as the third color */
+//     #0a547c 60%, /* Deep purple or blue as the third color */
+//     #04486d 80%, /* Lighter purple towards the outer edge */
+//     #333E6A 100% /* A lighter shade at the very edge */
+// );
+  background: transparent;
   text-decoration: none;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -53,6 +56,7 @@
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
   color: #FEC804;
   justify-content: space-between;
+  font-size: 0.875rem;
 }
 
 .MuiSvgIcon-fontSizeMedium {
@@ -64,6 +68,9 @@
 
 }
 
+.css-eqpfi5-MuiAccordionSummary-content{
+  align-items: center;
+}
 
 
 .servicesweoffercontainer {
@@ -112,5 +119,12 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+  }
+  .servicecard {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .companyservices{
+    width: 95%;
   }
 }

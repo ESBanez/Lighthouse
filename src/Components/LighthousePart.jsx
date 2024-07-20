@@ -76,7 +76,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   },
   [theme.breakpoints.down("sm")]: {
     width: "100%",
-    height: "10rem",
+    height: "7rem",
   },
   [theme.breakpoints.up("xl")]: {
     width: "100%",

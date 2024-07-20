@@ -91,7 +91,7 @@ function Btsolve2() {
     },
     [theme.breakpoints.down("sm")]: {
       width: "100%",
-      height: "10rem",
+      height: "7rem",
     },
     [theme.breakpoints.up("xl")]: {
       width: "100%",
@@ -220,7 +220,6 @@ function Btsolve2() {
               style={{
                 fontFamily: "montserrat",
                 color: "white",
-                fontSize: "large",
                 textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
               }}
             >
