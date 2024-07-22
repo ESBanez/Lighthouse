@@ -675,4 +675,5 @@ button .arrow {
 
 .carousel__slide{
   align-content: center;
+  align-self: center;
 }
