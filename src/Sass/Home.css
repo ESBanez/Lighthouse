@@ -170,7 +170,11 @@
   height: 20rem;
   background-position: center;
 }
-
+.carouselbody >ul{
+  padding: 0;  
+  padding: 2rem 2rem 0 2rem;
+  font-size: 1rem;
+}
 
 
 @media screen and (min-width: 1440px) and (max-width: 2720px) {
@@ -208,6 +212,7 @@
   }
   #carousel__slide1{
     text-align: -webkit-center;
+    align-self: center;
     }
   .carouselbody >ul{
     padding: 0;  
