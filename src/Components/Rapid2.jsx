@@ -244,7 +244,7 @@ function Rapid2() {
               id="panel1-header"
               className="accordionsummary"
               style={{
-                color: "#FEC804",
+                color: 'transparent',
                 justifyContent: "space-between",
               }}
             >
