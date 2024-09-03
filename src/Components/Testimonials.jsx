@@ -87,25 +87,17 @@ function Testimonials() {
                 />
               </div>
               <div className="detbox">
-                <p className="name">Doroteo Aquino</p>
+                <p className="name">Kendric Ong</p>
                 <p className="designation">Verified Graduate</p>
               </div>
             </div>
             <div className="review">
-              <h4>
-                A Health Revolution: Transforming Healthcare with Telehealth
-                Apps and Websites
-              </h4>
+            <h4>
+              Revolutionizing Maritime Accounting: Tailor-Fitted Solutions for Manning and Ship Management
+            </h4>
+
               <p>
-                Telehealth apps and health information websites have been a
-                lifeline in these times, ushering in an unprecedented era of
-                healthcare accessibility. They've fundamentally transformed the
-                way I approach my well-being and medical needs. With these
-                innovative tools, I can seamlessly connect with healthcare
-                professionals, access my medical records, and proactively
-                monitor my health, all from the comfort of my home. These
-                platforms offer more than just convenience; they provide a sense
-                of security and empowerment.”
+              An accounting system that can be tailor-fitted for crew and vessel accounting for manning and ship management companies with in-depth financial visibility and reports has been a game-changer for our operations. The system's customization options allow us to precisely address our unique accounting needs, streamlining our financial processes. With its comprehensive reporting features, we gain valuable insights into our financial health, enabling us to make informed decisions swiftly.
               </p>
             </div>
           </div>
@@ -128,11 +120,9 @@ function Testimonials() {
               </div>
             </div>
             <div className="review">
-              <h4>Exploring New Culinary Horizons.</h4>
+              <h4>Exploring New Horizons.</h4>
               <p>
-                “Cooking and recipe apps have turned me into a culinary
-                explorer. I've discovered new recipes, learned cooking
-                techniques, and even created my own signature dishes.”
+              TALA Maritime has significantly enhanced my technical knowledge as a seafarer. The app's videos, flashcards, and quizzes make learning engaging and effective.
               </p>
             </div>
           </div>
@@ -185,17 +175,16 @@ function Testimonials() {
                 />
               </div>
               <div className="detbox">
-                <p className="name dark">Klarizza Hernandez</p>
+                <p className="name dark">Angelica Presidente</p>
                 <p className="designation dark">
-                  Verified social media enthusiast
+                  Accounting Assistant
                 </p>
               </div>
             </div>
             <div className="review dark">
-              <h4>An overall wonderful and rewarding experience</h4>
-              <p>
-                “Health and fitness apps have been a game-changer for me. With
-                the help of workout apps and nutrition websites”
+              <h4>An overall rewarding experience</h4>
+              <p> 
+                Integrated with our Crew Management System, it ensures accurate and efficient handling of financial tasks. This app has significantly reduced administrative burden and improved overall workflow.
               </p>
             </div>
           </div>
@@ -213,23 +202,16 @@ function Testimonials() {
                 />
               </div>
               <div className="detbox">
-                <p className="name">Patrick Abrams</p>
-                <p className="designation">Verified Graduate</p>
+                <p className="name">Mike Espanol</p>
+                <p className="designation">SFAI Cadet</p>
               </div>
             </div>
             <div className="review">
               <h4>
-                Online forums and social media apps have connected me with
-                people who share my interests and challenges, It's like having a
-                global support network.
+              Elevating Seafaring Skills: Learning with TALA Maritime.
               </h4>
               <p>
-                “ Communication apps and social media platforms have brought
-                people closer together, no matter the distance. I can connect
-                with friends and family, participate in group chats, and share
-                memorable moments instantly. These apps have made it easier to
-                stay in touch and maintain relationships, even in our busy
-                lives. ”
+              TALA Maritime has been an invaluable resource for advancing my technical skills. The diverse learning tools, including videos, flashcards, and quizzes, have made mastering complex concepts straightforward and enjoyable. This app has truly elevated my professional development as a seafarer.
               </p>
             </div>
           </div>
