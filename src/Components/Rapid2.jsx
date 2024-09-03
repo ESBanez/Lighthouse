@@ -83,6 +83,13 @@ function Rapid2() {
       hovercomment: 
       "Socio-Cultural Adaptability Tool - a tool to measure your adaptability skill level on 3 important aspects in the Maritime Industry.",
     },
+    {
+      url: "l2l.webp",
+      title: "Learning to Learn",
+      hovercomment: 
+      "This new assessment tool is a collection of personality inventories that measure traits that contribute to an individual's interest, willingness, and disposition to learning.",
+    },
+
   ];
 
   const ImageButton = styled(ButtonBase)(({ theme }) => ({

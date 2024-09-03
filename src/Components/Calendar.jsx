@@ -10,10 +10,9 @@ function Calendar() {
   };
 
   const events = [
-    { title: 'Interview', date: '2024-07-01' },
-    { title: 'Meeting with Imec', date: '2024-07-16' },
-    { title: 'Meeting with Southfield', date: '2024-07-23' },
-    { title: 'Meeting with PAPS', date: '2024-08-22' }
+    { title: 'Grant Meeting', date: '2024-09-06' },
+    { title: 'Grant Meeting', date: '2024-09-13' },
+
   ];
 
   const getMonthNameAndDate = (dateString) => {
