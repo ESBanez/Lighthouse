@@ -175,7 +175,7 @@ function Testimonials() {
                 />
               </div>
               <div className="detbox">
-                <p className="name dark">Angelica Presidente</p>
+                <p className="name dark">Angelie Presidente</p>
                 <p className="designation dark">
                   Accounting Assistant
                 </p>
