@@ -10,8 +10,9 @@ function Calendar() {
   };
 
   const events = [
-    { title: 'Grant Meeting', date: '2024-09-06' },
-    { title: 'Grant Meeting', date: '2024-09-13' },
+
+    { title: 'Grant Meeting', date: '2024-11-25' },
+    { title: 'Christmas Party', date: '2024-12-17' },
 
   ];
 
