@@ -12,7 +12,7 @@ function Calendar() {
   const events = [
 
     { title: 'Grant Meeting', date: '2024-11-25' },
-    { title: 'Christmas Party', date: '2024-12-17' },
+    { title: 'Lighthouse Christmas Party', date: '2024-12-17' },
 
   ];
 
