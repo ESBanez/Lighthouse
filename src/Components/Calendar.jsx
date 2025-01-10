@@ -10,10 +10,11 @@ function Calendar() {
   };
 
   const events = [
-    { title: 'Grant Meeting', date: '2024-11-25' },
-    { title: 'Grant Meeting', date: '2024-12-02' },
-    { title: 'Lighthouse Christmas Party', date: '2024-12-17' },
 
+    { title: 'Lighthouse Christmas Party', date: '2024-12-17' },
+    { title: 'Jesus Nazareno Feast', date: '2025-01-9' },
+    { title: 'Grant Meeting', date: '2025-01-10' },
+    { title: 'Araw ng Kagitingan', date: '2025-04-9' },
   ];
 
   const getMonthNameAndDate = (dateString) => {
