@@ -10,9 +10,7 @@ function Calendar() {
   };
 
   const events = [
-
   
-    { title: 'Jesus Nazareno Feast', date: '2025-01-9' },
     { title: 'Grant Meeting', date: '2025-01-10' },
     { title: 'Planning 2025', date: '2025-01-30' },
     { title: 'Araw ng Kagitingan', date: '2025-04-9' },

@@ -53,7 +53,7 @@ function Home() {
                     <div className="spacer"></div>  
 
                     <div style={{padding: '2rem', display: 'flex', justifyContent: 'center'}}>
-                        <div style={{color: 'black', fontSize: '0.875rem'}}>
+                        <div style={{color: 'black', fontSize: '1.25rem'}}>
                         Lighthouse Innovations Inc. is a dynamic conglomerate dedicated 
                         to empowering businesses through the strategic use of technology.
                         </div>

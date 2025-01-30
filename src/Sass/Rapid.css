@@ -39,7 +39,7 @@
 }
 .rapidparagraph{
     color: rgb(0, 0, 0);
-    font-size: 0.875rem;
+    font-size: 1.25rem;
 }
 .rapiddefinitioncomponent{
     padding: 1rem;
@@ -91,6 +91,6 @@
         font-size: 1.8rem;
     }
     .rapidparagraph {
-        font-size: 0.857rem;
+        /* font-size: 0.857rem; */
     }
 }

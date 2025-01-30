@@ -173,7 +173,7 @@
 .carouselbody >ul{
   padding: 0;  
   padding: 2rem 2rem 0 2rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 
@@ -182,7 +182,6 @@
     .carouselbody >ul{
       padding: 0;  
       padding: 2rem 2rem 0 2rem;
-      font-size: 1rem;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1440px) {
@@ -217,7 +216,6 @@
   .carouselbody >ul{
     padding: 0;  
     padding: 2rem 2rem 0 2rem;
-    font-size: 1rem;
   }
   .hero-section{
     height: auto !important;
@@ -248,7 +246,6 @@
   .carouselbody >ul{
     padding: 0;  
     padding: 2rem 2rem 0 2rem;
-    font-size: 1rem;
   }
   .hero-section{
     height: auto !important;

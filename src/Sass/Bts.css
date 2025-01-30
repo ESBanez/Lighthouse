@@ -11,7 +11,9 @@
 
 }
 
-
+.btsparag{
+    font-size: 1.25rem;
+}
 
 
 .btscomponent{
@@ -84,7 +86,7 @@
 
 @media screen and (min-width: 0)and (max-width: 320px) {
  .btsparag {
-    font-weight: 0.875rem;
+    /* font-weight: 1.25rem; */
 
  }
 }
