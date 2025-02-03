@@ -179,8 +179,8 @@ function FooterKen() {
                                 target="_blank"
                             />
                             <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    Malate, Manila
+                                <Typography gutterBottom variant="h6" component="div">
+                                Altoha bldg, 3F
                                 </Typography>
                             </CardContent>
                             <CardActions style={{ display: "flex", justifyContent: "space-around" }}>
