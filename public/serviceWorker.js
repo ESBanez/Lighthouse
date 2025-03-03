@@ -30,45 +30,30 @@ const urlsToCache = [
   '/Sass/Rapid.css',
   '/Sass/testimonials.css',
 
-  '/public/assets/lighthousewebvid.webm',
-  '/public/assets/backvid.mp4',
+  '/lighthousewebvid.mp4',
+  '/backvid.mp4',
 ];
-
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(urlsToCache.map(url => `${self.location.origin}${url}`)))
+    caches.open(CACHE_NAME).then(cache => {
+      console.log('Opened cache');
+      return cache.addAll(urlsToCache);
+    })
   );
+  self.skipWaiting(); // Forces new service worker activation
 });
 
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-
-        // Clone the request to make a fetch
-        const fetchRequest = event.request.clone();
-
-        return fetch(fetchRequest).then(response => {
-          // Check if we received a valid response
-          if (!response || response.status !== 200 || response.type !== 'basic') {
-            return response;
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cache => {
+          if (cache !== CACHE_NAME) {
+            console.log('Deleting old cache:', cache);
+            return caches.delete(cache);
           }
-
-          // Clone the response to cache it
-          const responseToCache = response.clone();
-
-          caches.open(CACHE_NAME)
-            .then(cache => {
-              cache.put(event.request, responseToCache);
-            });
-
-          return response;
-        });
-      })
+        })
+      );
+    })
   );
 });

@@ -53,7 +53,7 @@
 .footeremailcardtab {
     width: 35rem;
     height: 15rem;
-    background-image: url(../../public/WorldMap.svg);
+    background-image: url(/WorldMap.svg);
     background-size: cover;
     background-position: center;
     display: flex;

@@ -17,9 +17,10 @@ import Btsolve2 from '../Components/Btsolve2';
 import Testimonials from "../Components/Testimonials";
 import MyDivider from '../Components/Divider';
 import ProductCarousel from '../Components/ProductCarousel';
-import "../Javascript/home.js";
 import { FloatButton } from 'antd';
 import Calendar from '../Components/Calendar.jsx';
+import {useEffect} from 'react';
+
 
 function Home() {
     React.useEffect(() => {
@@ -37,6 +38,17 @@ function Home() {
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
+
+    useEffect(() => {
+        const video = document.getElementById("video");
+        if (video) {
+            video.addEventListener("play", () => {
+                video.muted = false;
+            });
+        } else {
+            console.error("Video element not found!");
+        }
+    }, []);
     
     return (
         <>
@@ -65,8 +77,8 @@ function Home() {
 
                         <div className='websitevideo'>
                         <video 
-                            // src="/lighthousewebvid.webm" 
-                            src="/lighthousewebvid.mp4"
+                            id="video" 
+                            src="/lighthousewebvid.mp4" 
                             muted 
                             controls 
                             autoPlay 
@@ -74,6 +86,7 @@ function Home() {
                             className="videoStyles"
                             controlsList="nodownload">
                         </video>
+
                         </div>
 
                         <div className="missionvi">

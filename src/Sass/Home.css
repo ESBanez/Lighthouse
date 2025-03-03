@@ -37,7 +37,7 @@
 }
 
 .grid {
-  background-image: url(../../public/white.png);
+  background-image: url(/white.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -48,7 +48,7 @@
 }
 
 .hero-section {
-    background-image: url(../../public/Light.jpg);
+    background-image: url(/Light.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -163,7 +163,7 @@
 }
 
 .mydividerprod{
-  background-image: url(/public/mydividerbg.svg);
+  background-image: url(/mydividerbg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   align-content: center;
