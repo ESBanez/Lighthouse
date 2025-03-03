@@ -11,9 +11,8 @@ function Calendar() {
 
   const events = [
   
-    { title: 'Grant Meeting', date: '2025-01-10' },
-    { title: 'Planning 2025', date: '2025-01-30' },
-    { title: 'Araw ng Kagitingan', date: '2025-04-9' },
+
+    { title: 'Araw ng Kagitingan', date: '2025-04-09'},
   ];
 
   const getMonthNameAndDate = (dateString) => {
