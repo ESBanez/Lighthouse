@@ -64,7 +64,16 @@ function Home() {
                         <div className="spacer"></div>  
 
                         <div className='websitevideo'>
-                            <video src="/lighthousewebvid.webm" muted controls autoPlay autoFocus loop className="videoStyles" controlsList="nodownload"></video>
+                        <video 
+                            // src="/lighthousewebvid.webm" 
+                            src="/lighthousewebvid.mp4"
+                            muted 
+                            controls 
+                            autoPlay 
+                            loop 
+                            className="videoStyles"
+                            controlsList="nodownload">
+                        </video>
                         </div>
 
                         <div className="missionvi">
