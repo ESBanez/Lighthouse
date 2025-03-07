@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const itemData = [
     { 
-      img: "https://allacademy.com/wp-content/uploads/2019/05/Group-photo-Manila-23-April-2019-1024x768.jpg",
+      img: "https://i.imgur.com/WqyVdar.jpeg",
       title: "Tomato basil" ,
       Name: "Capt. Paul Zamesa",
       BriefDescription: "Paul is a seasoned professional with over 30 years of experience in the maritime industry.",
@@ -16,7 +16,7 @@ const itemData = [
       FullDesciption: "Capt. Paul has worked in various capacities and has a wealth of experience in the field. He is a certified Master Mariner and has a passion for the industry. He is a visionary leader and has a keen eye for detail. He is a great mentor and has a passion for developing the next generation of maritime professionals. He is a great asset to the team and has been instrumental in the growth of the company.",
     },
     {
-      img: "https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.6435-9/184757739_1892250470928870_1874322117775056214_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFMbPK-d-UZi1gAppAkE_MTRT_SnT9wvUxFP9KdP3C9TKUj1Y62ZIZsSo2H4_1Cn0aNXDh2lATVpb-e8nnJ0s-u&_nc_ohc=iu4Fs2dGGhgQ7kNvgElF_5l&_nc_oc=AdgiQCHbZSLKlaMk6uMyRpOZ_kbsuz9rjil3wqe_4Ljty2vNuWuKruqMMXW4f-5v7qw&_nc_zt=23&_nc_ht=scontent.fmnl9-1.fna&_nc_gid=ASUIrWZZWx98sqGU3QVhDlE&oh=00_AYHVU3iSu0gQTv9BaX9_V2T0g5zb1VHl9HVffx8eyW-hIw&oe=67F1AA7A", 
+      img: "https://i.imgur.com/kRyD2mE.jpeg", 
       title: "Sea star", 
       Name: "Jose C. Padua",
       BriefDescription: "Jose has been in the maritime industry for over 25 years, leading with innovation.",

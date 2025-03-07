@@ -52,6 +52,7 @@ const Interns = () => {
       <div style={{ padding: "2rem", textAlign: "center" }}>
         <h1>Meet Our Interns</h1>
       </div>
+   
 
       {/* BreadcrumbMenu replaces previous menu and breadcrumbs */}
       <BreadcrumbMenu 
@@ -59,6 +60,10 @@ const Interns = () => {
         handleClose={handleClose} 
         handleClick={handleClick} 
       />
+           <br />
+      <br />
+
+
 
       {/* Lighthouse Section */}
       <div className="BannerGallery">
@@ -72,6 +77,12 @@ const Interns = () => {
                   src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
                   alt={item.title}
                   loading="lazy"
+                  style={{
+                    width: "100%",      // Ensures full width inside the grid
+                    height: "164px",    // Fixed height for uniformity
+                    objectFit: "cover", // Ensures images are cropped rather than stretched
+                    borderRadius: "8px" // Optional: adds rounded corners
+                  }}
                 />
               </ImageListItem>
             ))}
