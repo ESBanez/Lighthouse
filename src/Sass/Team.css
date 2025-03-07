@@ -1,0 +1,86 @@
+.MuiTypography-root{
+    justify-items: center;
+}
+/* Breadcrubms
+ */
+.TeamBannertop{
+    justify-self: center;
+    color: #FFC903;
+    font-size: clamp(2rem, 5vw, 5em); /* Adjusts between 2rem and 5em based on screen width */
+    font-family: montserrat;
+    /* Makes the font bold */
+    font-weight: bolder;
+}
+
+.TeamBannerRotated{
+    transform: rotate(270deg);
+    margin-right: -7rem;
+    align-self: center;
+    color: #FFC903;
+    font-size: clamp(2rem, 5vw, 5em); /* Adjusts between 2rem and 5em based on screen width */
+    font-family: montserrat;
+    /* Makes the font bold */
+    font-weight: bolder;
+}
+
+.BannerGallery{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+
+#RapidBannerTop, #RapidBannerRotated{
+    color: blueviolet;
+}
+
+#RapidBannerRotated{
+    transform: rotate(90deg);
+    margin-left: -13rem;
+    justify-self: center;
+}
+
+.RapidBannerGallery{
+    margin-right: -4rem;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    align-items: center;
+    justify-self: center;
+}
+
+
+#btsBannertop, #btsolveBannerRotated{
+    color: #000000;
+}
+
+#btsolveBannerRotated{
+    margin-right: -4rem;
+
+}
+
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+  }
+  
+  /* Medium screens: 2 columns (480px - 720px) */
+  @media screen and (min-width: 480px) and (max-width: 720px) {
+    .image-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .TeamBannerRotated{
+        display: none;
+    }
+  }
+  
+  /* Small screens: 1 column (0 - 480px) */
+  @media screen and (max-width: 480px) {
+    .image-gallery {
+      grid-template-columns: 1fr;
+    }
+    .TeamBannerRotated{
+        display: none;
+    }
+  }
