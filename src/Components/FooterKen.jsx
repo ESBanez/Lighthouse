@@ -9,6 +9,10 @@ import TextField from '@mui/material/TextField';
 import FormHelperText from '@mui/material/FormHelperText';
 import emailjs from 'emailjs-com';
 import "../Sass/footerken.css";
+import { Link, useLocation, useNavigate } from 'react-router-dom'; // Import useNavigate
+import "../Sass/Navbar.css";
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+
 
 // Initialize emailjs
 emailjs.init('rwtQS8LXen3PXBWRU');
@@ -20,6 +24,11 @@ function FooterKen() {
     const [company, setCompany] = useState('');
     const [inquiry, setInquiry] = useState('');
     const [message, setMessage] = useState('');
+
+    
+    const location = useLocation(); // Get the current URL path
+    const navigate = useNavigate(); // For navigation
+
 
     const handleNameChange = (e) => {
         setName(e.target.value);
@@ -79,6 +88,24 @@ function FooterKen() {
             btn.textContent = 'Submit';
         }
     };
+
+    const handleNavClick = (sectionId) => {
+        setTimeout(() => {
+          const section = document.getElementById(sectionId);
+          if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+          } else if (location.pathname !== "/") {
+            navigate("/"); // Only navigate to home if the section doesn't exist on the current page
+            setTimeout(() => {
+              const newSection = document.getElementById(sectionId);
+              if (newSection) {
+                newSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }, 300);
+          }
+        }, 100);
+      };
+      
 
     return (
         <div className="footercomponent">
@@ -180,7 +207,7 @@ function FooterKen() {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h6" component="div">
-                                Altoha bldg, 3F
+                                3/F Altoha Bldg. 2100, Madre Ignacia St., Malate, Manila
                                 </Typography>
                             </CardContent>
                             <CardActions style={{ display: "flex", justifyContent: "space-around" }}>
@@ -219,17 +246,43 @@ function FooterKen() {
                         </div>
                     </div>
                 </div>
+                <div>
+                        <a href="https://www.facebook.com/lighthouseinnovationsmanila/" className="footeremailustitle">
+                            <FacebookOutlinedIcon style={{ fontSize: 40 }} />
+                        </a>
+                        <hr style={{color: "white"}} />
+                        <div className="footeremaillist">
+                            <Link to="/leaders" className="nav-link">
+                                Our Leadership
+                            </Link>
+                            <li className="c-nav-tool_item">
+                                <Link to="/team" className="nav-link">
+                                    Our Team
+                                </Link>
+                            </li>
+                            <li className="c-nav-tool_item">
+                                <Link to="/interns" className="nav-link">
+                                    Our Interns
+                                </Link>
+                            </li>
+                            <li className="c-nav-tool_item">
+                                <Link to="/blog" className="nav-link">
+                                    Blog
+                                </Link>
+                            </li>
+                        </div>
+                    </div>
             </div>
             <br />
             <div className="footerlogo container">
                 <div className="footerlogotab">
-                    <a href="#section5" className="footerlogoholder">
+                    <a href="#section5" className="footerlogoholder" onClick={() => handleNavClick("section5")} >
                         <img src="logo btsolve black.png" alt="BTSolve Logo"/>
                     </a>
-                    <a href="#section3" className="footerlogoholder">
+                    <a href="#section3" className="footerlogoholder"onClick={() => handleNavClick("section3")} >
                         <img src="logo rapid.png" alt="Rapid Logo"/>
                     </a>
-                    <a href="#section2" className="footerlogoholder">
+                    <a href="#section2" className="footerlogoholder" onClick={() => handleNavClick("about")} >
                         <img src="logo lighthouse.png" alt="Lighthouse Logo"/>
                     </a>
                 </div>

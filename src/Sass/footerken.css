@@ -48,10 +48,11 @@
 
 .footeremail {
     text-align: -webkit-center;
+    margin-top: 2.5rem;
 }
 
 .footeremailcardtab {
-    width: 35rem;
+    width: 28rem;
     height: 15rem;
     background-image: url(/WorldMap.svg);
     background-size: cover;
@@ -74,7 +75,6 @@
 }
 
 .footeremailustitle {
-    padding: 1rem;
     color: white;
     font-size: 1.3rem;
 }
@@ -88,6 +88,15 @@
     justify-content: center;
     width: fit-content;
 }
+
+.footeremaillist {
+    color: white !important;
+}
+.footeremaillist a {
+    color: white !important;
+    text-decoration: none;
+}
+
 
 .footerlogotab {
     display: flex;
@@ -174,12 +183,14 @@
         flex-direction: column;
     }
 
+
     .footerform {
         margin-bottom: 3rem;
     }
 
     .footeremailtab {
         height: 7rem;
+        width: 25rem;
     }
 }
 
