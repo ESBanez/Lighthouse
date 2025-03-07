@@ -247,11 +247,16 @@ function FooterKen() {
                     </div>
                 </div>
                 <div>
-                        <a href="https://www.facebook.com/lighthouseinnovationsmanila/" className="footeremailustitle">
+                        <a href="https://www.facebook.com/lighthouseinnovationsmanila/" 
+                        className="footeremailustitle" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        data-aos="fade-up">
                             <FacebookOutlinedIcon style={{ fontSize: 40 }} />
                         </a>
+
                         <hr style={{color: "white"}} />
-                        <div className="footeremaillist">
+                        <div className="footeremaillist" data-aos="fade-up">
                             <Link to="/leaders" className="nav-link">
                                 Our Leadership
                             </Link>
