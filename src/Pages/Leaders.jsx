@@ -61,7 +61,7 @@ const Leaders = () => {
       <br />
       <br />
 
-      <div style={{ padding: "2rem", textAlign: "center" }}>
+      <div style={{ padding: "2rem", textAlign: "center" }} id="leaderships">
         <h1>Leadership Team</h1>
       </div>
 
