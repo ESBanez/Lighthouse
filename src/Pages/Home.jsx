@@ -19,10 +19,14 @@ import MyDivider from '../Components/Divider';
 import ProductCarousel from '../Components/ProductCarousel';
 import { FloatButton } from 'antd';
 import Calendar from '../Components/Calendar.jsx';
-import {useEffect} from 'react';
+import { useEffect, useRef } from "react";
 
 
 function Home() {
+
+    const videoRef = useRef(null);
+
+
     React.useEffect(() => {
         AOS.init({
             duration: 1200, // Animation duration in milliseconds
@@ -39,15 +43,29 @@ function Home() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
+
     useEffect(() => {
-        const video = document.getElementById("video");
-        if (video) {
-            video.addEventListener("play", () => {
-                video.muted = false;
-            });
-        } else {
-            console.error("Video element not found!");
-        }
+        const video = videoRef.current;
+        if (!video) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                });
+            },
+            { threshold: 0.5 } // Adjust threshold for when the video should pause
+        );
+
+        observer.observe(video);
+
+        return () => {
+            observer.unobserve(video);
+        };
     }, []);
     
     return (
@@ -76,16 +94,16 @@ function Home() {
                         <div className="spacer"></div>  
 
                         <div className='websitevideo'>
-                        <video 
-                            id="video" 
-                            src="/lighthousewebvid.mp4" 
-                            muted 
-                            controls 
-                            autoPlay 
-                            loop 
+                        <video
+                            ref={videoRef}
+                            src="/lighthousewebvid.mp4"
+                            muted
+                            controls
+                            autoPlay
+                            loop
                             className="videoStyles"
-                            controlsList="nodownload">
-                        </video>
+                            controlsList="nodownload"
+                        ></video>
 
                         </div>
 
