@@ -43,22 +43,50 @@ function Home() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-
     useEffect(() => {
         const video = videoRef.current;
         if (!video) return;
+
+        const fadeOutAudio = () => {
+            let volume = video.volume;
+            const fade = () => {
+                if (volume > 0.05) { // Prevent sudden mute
+                    volume -= 0.05;
+                    video.volume = volume;
+                    requestAnimationFrame(fade);
+                } else {
+                    video.volume = 0;
+                    video.pause(); // Pause after fade-out
+                }
+            };
+            fade();
+        };
+
+        const fadeInAudio = () => {
+            video.play();
+            let volume = 0;
+            video.volume = volume;
+            const fade = () => {
+                if (volume < 1) {
+                    volume += 0.05;
+                    video.volume = volume;
+                    requestAnimationFrame(fade);
+                }
+            };
+            fade();
+        };
 
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        video.play();
+                        fadeInAudio(); // Slowly fade in
                     } else {
-                        video.pause();
+                        fadeOutAudio(); // Slowly fade out
                     }
                 });
             },
-            { threshold: 0.5 } // Adjust threshold for when the video should pause
+            { threshold: 0.5 }
         );
 
         observer.observe(video);
@@ -67,6 +95,7 @@ function Home() {
             observer.unobserve(video);
         };
     }, []);
+
     
     return (
         <>
@@ -94,10 +123,11 @@ function Home() {
                         <div className="spacer"></div>  
 
                         <div className='websitevideo'>
+                            
                         <video
                             ref={videoRef}
                             src="/lighthousewebvid.mp4"
-                            muted
+                            muted={false} // Make sure it's not muted initially
                             controls
                             autoPlay
                             loop
