@@ -16,7 +16,7 @@ const lighthouseCompany = [
   { img: "https://i.imgur.com/dVIKgfz.jpeg", title: "Thyra B." },
   { img: "https://i.imgur.com/4iAxKMb.jpeg2", title: "Kristelle" },
   { img: "https://i.imgur.com/dRdDY0r.jpeg", title: "Daniel" },
-  { img:  "https://i.imgur.com/J9KWYW9.png", title: "Ederick"},
+  { img:  "https://i.imgur.com/1I0oAx6.jpeg", title: "Ederick"},
   { img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25", title: "Mushrooms" },
   { img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af", title: "Tomato basil" },
   { img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1", title: "Sea star" },
