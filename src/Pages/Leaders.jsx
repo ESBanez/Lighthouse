@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const itemData = [
     { 
-      img: "https://i.imgur.com/WqyVdar.jpeg",
+      img: "https://i.imgur.com/BgUcb4Q.jpeg",
       title: "Tomato basil" ,
       Name: "Capt. Paul Zamesa",
       BriefDescription: "Paul is a seasoned professional with over 30 years of experience in the maritime industry.",
