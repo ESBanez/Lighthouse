@@ -33,6 +33,9 @@ const urlsToCache = [
   '/lighthousewebvid.mp4',
   '/backvid.mp4',
 ];
+
+
+// Install event - Cache assets
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
@@ -40,9 +43,10 @@ self.addEventListener('install', event => {
       return cache.addAll(urlsToCache);
     })
   );
-  self.skipWaiting(); // Forces new service worker activation
+  self.skipWaiting();
 });
 
+// Activate event - Cleanup old caches
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(cacheNames => {
@@ -54,6 +58,15 @@ self.addEventListener('activate', event => {
           }
         })
       );
+    })
+  );
+});
+
+// Fetch event - Serve cached assets
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request).then(response => {
+      return response || fetch(event.request);
     })
   );
 });
