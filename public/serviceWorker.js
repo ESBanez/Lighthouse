@@ -4,6 +4,12 @@ const urlsToCache = [
   '/App.jsx',
   '/Main.jsx',
 
+  '/Pages/Home.jsx',
+  '/Pages/Team.jsx',
+  '/Pages/Interns.jsx',
+  '/Pages/Leaders.jsx',
+  '/Pages/Blog.jsx',
+
   '/Components/Btsolve2.jsx',
   '/Components/Divider.jsx',
   '/Components/FooterKen.jsx',
@@ -32,6 +38,10 @@ const urlsToCache = [
 
   '/lighthousewebvid.mp4',
   '/backvid.mp4',
+
+  '/Components/Javascript/animated-headline.js',
+  '/Components/btscarousel.js',
+  '/Components/index.js',
 ];
 
 
